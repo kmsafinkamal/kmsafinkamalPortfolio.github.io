@@ -1,0 +1,273 @@
+[
+  {
+    "id": "p1",
+    "title": "Deep learning models for classification of red blood cells in microscopy images for anemia diagnosis",
+    "category": "biomedical",
+    "citations": 7,
+    "year": 2024,
+    "authors": "N Zaman, MF Billah, KE Haque, MA Morshed, K. M. Safin Kamal, et al.",
+    "venue": "IEEE ICCAS",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in IEEE ICCAS (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "https://ieeexplore.ieee.org",
+      "link DOI": "https://doi.org"
+    }
+  },
+  {
+    "id": "p2",
+    "title": "Greener and energy-efficient data center for blockchain-based cryptocurrency mining",
+    "category": "green-cloud",
+    "citations": 5,
+    "year": 2025,
+    "authors": "A Mahmud, K. M. Safin Kamal, AW Reza.",
+    "venue": "Elsevier Procedia",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in Elsevier Procedia (2025). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "https://sciencedirect.com",
+      "link DOI": "https://doi.org"
+    }
+  },
+  {
+    "id": "p3",
+    "title": "Explainable Artificial Intelligence for Deep Learning-Based Detection of Pneumonia in Chest X-ray Images",
+    "category": "biomedical",
+    "citations": 4,
+    "year": 2024,
+    "authors": "M Jihad, S Siam, LA Anannya, FR Anonto, K. M. Safin Kamal, AW Reza.",
+    "venue": "Springer ICIDA",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in Springer ICIDA (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#",
+      "link Springer": "#"
+    }
+  },
+  {
+    "id": "p4",
+    "title": "Green task scheduling algorithm in green-cloud",
+    "category": "green-cloud",
+    "citations": 4,
+    "year": 2023,
+    "authors": "MM Priyanka, K. M. Safin Kamal, MH Rahman, AS Yasmin, AW Reza, MS Arefin.",
+    "venue": "Springer ICO",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in Springer ICO (2023). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#",
+      "link Springer": "#"
+    }
+  },
+  {
+    "id": "p5",
+    "title": "Flattening the recall line using a voting classifier for forest cover type data",
+    "category": "computer-vision",
+    "citations": 3,
+    "year": 2023,
+    "authors": "A Suny, MM Priyanka, K. M. Safin Kamal, MA Liza, SS Jennifer, AW Reza.",
+    "venue": "ICO 2023",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in ICO 2023 (2023). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#",
+      "link DOI": "#"
+    }
+  },
+  {
+    "id": "p6",
+    "title": "Deep Learning-Based Soil Image Classification for Sustainable Agriculture: A Case Study on Crop Recommendation",
+    "category": "computer-vision",
+    "citations": 2,
+    "year": 2024,
+    "authors": "MM Hossain, MJ Simu, N Sakib, K. M. Safin Kamal, AW Reza.",
+    "venue": "ICIDA 2024",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in ICIDA 2024 (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#",
+      "link DOI": "#"
+    }
+  },
+  {
+    "id": "p7",
+    "title": "A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection",
+    "category": "biomedical",
+    "citations": 2,
+    "year": 2024,
+    "authors": "MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, K. M. Safin Kamal, et al.",
+    "venue": "ICDMIS 2024",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in ICDMIS 2024 (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#",
+      "link Springer": "#"
+    }
+  },
+  {
+    "id": "p8",
+    "title": "White blood cells to classify leukemic blood images using deep learning and image processing",
+    "category": "biomedical",
+    "citations": 2,
+    "year": 2024,
+    "authors": "I Hasan, MS Hossain, MG Muhit, M Bahauddin, K. M. Safin Kamal, MA Morshed, et al.",
+    "venue": "IEEE ICCAS",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in IEEE ICCAS (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#",
+      "link IEEE": "#"
+    }
+  },
+  {
+    "id": "p9",
+    "title": "A comparative study of convolutional neural network architectures for detecting prostate cancer",
+    "category": "biomedical",
+    "citations": 2,
+    "year": 2023,
+    "authors": "K. M. Safin Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza.",
+    "venue": "Springer ICO",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in Springer ICO (2023). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#",
+      "link Springer": "#"
+    }
+  },
+  {
+    "id": "p10",
+    "title": "Precision Orthopedics with Deep Learning Models for Meniscal Injury Detection in MRI Images",
+    "category": "biomedical",
+    "citations": 1,
+    "year": 2025,
+    "authors": "K. M. Safin Kamal, MA Morshed, TT Ritom, MH Rahman, M Tahsin, AW Reza.",
+    "venue": "ICCIS 2025",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in ICCIS 2025 (2025). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#",
+      "link DOI": "#"
+    }
+  },
+  {
+    "id": "p11",
+    "title": "AI and Espionage: AI for Spyware Development",
+    "category": "security",
+    "citations": 1,
+    "year": 2026,
+    "authors": "MM Islam, MA Morshed, K. M. Safin Kamal, MH Ferdaus, MS Ali, MF Mridha.",
+    "venue": "",
+    "abstract": "Cyber Espionage and National Security Challenges: Cyber Wargaming &amp; Offensive Defense.",
+    "links": {
+      "link Publisher Link": "#"
+    }
+  },
+  {
+    "id": "p12",
+    "title": "SwiftCNN: a deep learning model for B-ALL diagnosis and subtype classification from blood smear images",
+    "category": "biomedical",
+    "citations": 1,
+    "year": 2024,
+    "authors": "FI Chowdhury, S Dey, TA Mila, K. M. Safin Kamal, AW Reza, MS Arefin.",
+    "venue": "IEEE SPIS",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in IEEE SPIS (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#",
+      "link IEEE": "#"
+    }
+  },
+  {
+    "id": "p13",
+    "title": "Automatic Bangla Digital Number Plate Detection and Recognition System Using Image Processing and Deep Learning",
+    "category": "computer-vision",
+    "citations": 1,
+    "year": 2024,
+    "authors": "N Faria, P Banik, A Saha, A Majumder, K. M. Safin Kamal, AW Reza.",
+    "venue": "ICIDA",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in ICIDA (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#"
+    }
+  },
+  {
+    "id": "p14",
+    "title": "Multi-class brain tumour classification with CNN on MRI scans",
+    "category": "biomedical",
+    "citations": 1,
+    "year": 2024,
+    "authors": "N Mridha, SN Rafa, MSI Shayon, N Sultana, K. M. Safin Kamal, AW Reza, et al.",
+    "venue": "IEEE SPIS",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in IEEE SPIS (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#"
+    }
+  },
+  {
+    "id": "p15",
+    "title": "Resource scheduling algorithm based on greedy strategy in green cloud",
+    "category": "green-cloud",
+    "citations": 1,
+    "year": 2024,
+    "authors": "JF Tithi, MF Tamim, FA Nidha, K. M. Safin Kamal, AW Reza.",
+    "venue": "ICIDA 2024",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in ICIDA 2024 (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "description PDF": "#"
+    }
+  },
+  {
+    "id": "p16",
+    "title": "Bone Abnormality Detection Using Deep Learning Models",
+    "category": "biomedical",
+    "citations": 1,
+    "year": 2024,
+    "authors": "P Barua, MBA Mannan, Z Islam, AMA Rahim, NS Mim, K. M. Safin Kamal, et al.",
+    "venue": "ICDMIS",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in ICDMIS (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "link DOI": "#"
+    }
+  },
+  {
+    "id": "p17",
+    "title": "Optimizing Image Classification and Segmentation: A Comparative Study of Deep Learning and Machine Learning Model",
+    "category": "computer-vision",
+    "citations": 1,
+    "year": 2024,
+    "authors": "MA Zafor, I Jahan, WR Parsub, F Hossain, K. M. Safin Kamal, AW Reza.",
+    "venue": "ICDMIS",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in ICDMIS (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "link Springer": "#"
+    }
+  },
+  {
+    "id": "p18",
+    "title": "Development of a deep learning model for accurate classification of peptic ulcer and digestive tract disorders using endoscopic images",
+    "category": "biomedical",
+    "citations": 1,
+    "year": 2024,
+    "authors": "P Islam, M Asif Hasan, IH Farabi, SMS Sobhani, K. M. Safin Kamal, et al.",
+    "venue": "ICDMIS",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in ICDMIS (2024). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "link Springer": "#"
+    }
+  },
+  {
+    "id": "p19",
+    "title": "Region of confidence measurement for the purpose of localization in wireless sensor networks",
+    "category": "green-cloud",
+    "citations": 0,
+    "year": 2026,
+    "authors": "A Rahman, K. M. Safin Kamal.",
+    "venue": "IJEECS",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in IJEECS (2026). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "link Journal": "#"
+    }
+  },
+  {
+    "id": "p20",
+    "title": "Eyes Wide Open: A Deep Learning Comparison of CNN Models for Retinal Disease Detection from Fundus Images",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2026,
+    "authors": "Z Rafa, AM Pathan, A Islam, KO Ahammed, MS Hossain, K. M. Safin Kamal, et al.",
+    "venue": "IEEE QP-AI",
+    "abstract": "Scholarly publication by K. M. Safin Kamal et al. in IEEE QP-AI (2026). Investigates algorithmic methods and empirical evaluation.",
+    "links": {
+      "link IEEE": "#"
+    }
+  }
+]

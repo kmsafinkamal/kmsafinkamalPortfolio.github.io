@@ -1,0 +1,876 @@
+[
+  {
+    "id": "p1",
+    "title": "Deep learning models for classification of red blood cells in microscopy images for anemia diagnosis",
+    "category": "biomedical",
+    "citations": 7,
+    "year": 2024,
+    "authors": "N Zaman, MF Billah, KE Haque, MA Morshed, KMS Kamal, MA Morshed, ...",
+    "venue": "2024 IEEE International Conference on Computing, Applications and Systems ...",
+    "abstract": "Academic research contribution by N Zaman, MF Billah, KE Haque, MA Morshed, KMS Kamal, MA Morshed, ... titled \"Deep learning models for classification of red blood cells in microscopy images for anemia diagnosis\". Published in 2024 IEEE International Conference on Computing, Applications and Systems ... (2024) with 7 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:2P1L_qKh6hAC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:2P1L_qKh6hAC",
+      "DOI": "https://scholar.google.com/scholar?q=Deep+learning+models+for+classification+of+red+blood+cells+in+microscopy+images+for+anemia+diagnosis",
+      "Search": "https://scholar.google.com/scholar?q=Deep+learning+models+for+classification+of+red+blood+cells+in+microscopy+images+for+anemia+diagnosis"
+    },
+    "bibtex": "@inproceedings{zaman2024p1,\n  title = {Deep learning models for classification of red blood cells in microscopy images for anemia diagnosis},\n  author = {N Zaman, MF Billah, KE Haque, MA Morshed, KMS Kamal, MA Morshed, ...},\n  booktitle = {2024 IEEE International Conference on Computing, Applications and Systems ...},\n  year = {2024},\n  citations = {7}\n}",
+    "apa": "N Zaman, MF Billah, KE Haque, MA Morshed, KMS Kamal, MA Morshed, ... (2024). Deep learning models for classification of red blood cells in microscopy images for anemia diagnosis. 2024 IEEE International Conference on Computing, Applications and Systems ....",
+    "ieee": "N Zaman, MF Billah, KE Haque, MA Morshed, KMS Kamal, MA Morshed, ..., \"Deep learning models for classification of red blood cells in microscopy images for anemia diagnosis,\" in 2024 IEEE International Conference on Computing, Applications and Systems ..., 2024."
+  },
+  {
+    "id": "p2",
+    "title": "Greener and energy-efficient data center for blockchain-based cryptocurrency mining",
+    "category": "green-cloud",
+    "citations": 5,
+    "year": 2025,
+    "authors": "A Mahmud, KMS Kamal, AW Reza",
+    "venue": "Procedia Computer Science 252, 192-201",
+    "abstract": "Academic research contribution by A Mahmud, KMS Kamal, AW Reza titled \"Greener and energy-efficient data center for blockchain-based cryptocurrency mining\". Published in Procedia Computer Science 252, 192-201 (2025) with 5 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:g5m5HwL7SMYC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:g5m5HwL7SMYC",
+      "DOI": "https://scholar.google.com/scholar?q=Greener+and+energy+efficient+data+center+for+blockchain+based+cryptocurrency+mining",
+      "Search": "https://scholar.google.com/scholar?q=Greener+and+energy+efficient+data+center+for+blockchain+based+cryptocurrency+mining"
+    },
+    "bibtex": "@inproceedings{mahmud2025p2,\n  title = {Greener and energy-efficient data center for blockchain-based cryptocurrency mining},\n  author = {A Mahmud, KMS Kamal, AW Reza},\n  booktitle = {Procedia Computer Science 252, 192-201},\n  year = {2025},\n  citations = {5}\n}",
+    "apa": "A Mahmud, KMS Kamal, AW Reza (2025). Greener and energy-efficient data center for blockchain-based cryptocurrency mining. Procedia Computer Science 252, 192-201.",
+    "ieee": "A Mahmud, KMS Kamal, AW Reza, \"Greener and energy-efficient data center for blockchain-based cryptocurrency mining,\" in Procedia Computer Science 252, 192-201, 2025."
+  },
+  {
+    "id": "p3",
+    "title": "Explainable Artificial Intelligence for Deep Learning-Based Detection of Pneumonia in Chest X-ray Images",
+    "category": "biomedical",
+    "citations": 4,
+    "year": 2024,
+    "authors": "M Jihad, S Siam, LA Anannya, FR Anonto, KM Safin Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 273-287",
+    "abstract": "Academic research contribution by M Jihad, S Siam, LA Anannya, FR Anonto, KM Safin Kamal, AW Reza titled \"Explainable Artificial Intelligence for Deep Learning-Based Detection of Pneumonia in Chest X-ray Images\". Published in International Conference on Innovations in Data Analytics, 273-287 (2024) with 4 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:_xSYboBqXhAC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:_xSYboBqXhAC",
+      "DOI": "https://scholar.google.com/scholar?q=Explainable+Artificial+Intelligence+for+Deep+Learning+Based+Detection+of+Pneumonia+in+Chest+X+ray+Images",
+      "Search": "https://scholar.google.com/scholar?q=Explainable+Artificial+Intelligence+for+Deep+Learning+Based+Detection+of+Pneumonia+in+Chest+X+ray+Images"
+    },
+    "bibtex": "@inproceedings{jihad2024p3,\n  title = {Explainable Artificial Intelligence for Deep Learning-Based Detection of Pneumonia in Chest X-ray Images},\n  author = {M Jihad, S Siam, LA Anannya, FR Anonto, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 273-287},\n  year = {2024},\n  citations = {4}\n}",
+    "apa": "M Jihad, S Siam, LA Anannya, FR Anonto, KM Safin Kamal, AW Reza (2024). Explainable Artificial Intelligence for Deep Learning-Based Detection of Pneumonia in Chest X-ray Images. International Conference on Innovations in Data Analytics, 273-287.",
+    "ieee": "M Jihad, S Siam, LA Anannya, FR Anonto, KM Safin Kamal, AW Reza, \"Explainable Artificial Intelligence for Deep Learning-Based Detection of Pneumonia in Chest X-ray Images,\" in International Conference on Innovations in Data Analytics, 273-287, 2024."
+  },
+  {
+    "id": "p4",
+    "title": "Green task scheduling algorithm in green-cloud",
+    "category": "green-cloud",
+    "citations": 4,
+    "year": 2023,
+    "authors": "MM Priyanka, KMS Kamal, MH Rahman, AS Yasmin, AW Reza, MS Arefin",
+    "venue": "International Conference on Intelligent Computing & Optimization, 75-87",
+    "abstract": "Academic research contribution by MM Priyanka, KMS Kamal, MH Rahman, AS Yasmin, AW Reza, MS Arefin titled \"Green task scheduling algorithm in green-cloud\". Published in International Conference on Intelligent Computing & Optimization, 75-87 (2023) with 4 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:35N4QoGY0k4C",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:35N4QoGY0k4C",
+      "DOI": "https://scholar.google.com/scholar?q=Green+task+scheduling+algorithm+in+green+cloud",
+      "Search": "https://scholar.google.com/scholar?q=Green+task+scheduling+algorithm+in+green+cloud"
+    },
+    "bibtex": "@inproceedings{priyanka2023p4,\n  title = {Green task scheduling algorithm in green-cloud},\n  author = {MM Priyanka, KMS Kamal, MH Rahman, AS Yasmin, AW Reza, MS Arefin},\n  booktitle = {International Conference on Intelligent Computing & Optimization, 75-87},\n  year = {2023},\n  citations = {4}\n}",
+    "apa": "MM Priyanka, KMS Kamal, MH Rahman, AS Yasmin, AW Reza, MS Arefin (2023). Green task scheduling algorithm in green-cloud. International Conference on Intelligent Computing & Optimization, 75-87.",
+    "ieee": "MM Priyanka, KMS Kamal, MH Rahman, AS Yasmin, AW Reza, MS Arefin, \"Green task scheduling algorithm in green-cloud,\" in International Conference on Intelligent Computing & Optimization, 75-87, 2023."
+  },
+  {
+    "id": "p5",
+    "title": "Deep Learning-Based Soil Image Classification for Sustainable Agriculture: A Case Study on Crop Recommendation",
+    "category": "computer-vision",
+    "citations": 3,
+    "year": 2024,
+    "authors": "MM Hossain, MJ Simu, N Sakib, KM Safin Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 151-165",
+    "abstract": "Academic research contribution by MM Hossain, MJ Simu, N Sakib, KM Safin Kamal, AW Reza titled \"Deep Learning-Based Soil Image Classification for Sustainable Agriculture: A Case Study on Crop Recommendation\". Published in International Conference on Innovations in Data Analytics, 151-165 (2024) with 3 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:EUQCXRtRnyEC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:EUQCXRtRnyEC",
+      "DOI": "https://scholar.google.com/scholar?q=Deep+Learning+Based+Soil+Image+Classification+for+Sustainable+Agriculture++A+Case+Study+on+Crop+Recommendation",
+      "Search": "https://scholar.google.com/scholar?q=Deep+Learning+Based+Soil+Image+Classification+for+Sustainable+Agriculture++A+Case+Study+on+Crop+Recommendation"
+    },
+    "bibtex": "@inproceedings{hossain2024p5,\n  title = {Deep Learning-Based Soil Image Classification for Sustainable Agriculture: A Case Study on Crop Recommendation},\n  author = {MM Hossain, MJ Simu, N Sakib, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 151-165},\n  year = {2024},\n  citations = {3}\n}",
+    "apa": "MM Hossain, MJ Simu, N Sakib, KM Safin Kamal, AW Reza (2024). Deep Learning-Based Soil Image Classification for Sustainable Agriculture: A Case Study on Crop Recommendation. International Conference on Innovations in Data Analytics, 151-165.",
+    "ieee": "MM Hossain, MJ Simu, N Sakib, KM Safin Kamal, AW Reza, \"Deep Learning-Based Soil Image Classification for Sustainable Agriculture: A Case Study on Crop Recommendation,\" in International Conference on Innovations in Data Analytics, 151-165, 2024."
+  },
+  {
+    "id": "p6",
+    "title": "Flattening the recall line using a voting classifier for forest cover type data",
+    "category": "computer-vision",
+    "citations": 3,
+    "year": 2023,
+    "authors": "A Suny, MM Priyanka, KM Safin Kamal, MA Liza, SS Jennifer, AW Reza",
+    "venue": "International Conference on Intelligent Computing & Optimization, 324-334",
+    "abstract": "Academic research contribution by A Suny, MM Priyanka, KM Safin Kamal, MA Liza, SS Jennifer, AW Reza titled \"Flattening the recall line using a voting classifier for forest cover type data\". Published in International Conference on Intelligent Computing & Optimization, 324-334 (2023) with 3 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:70eg2SAEIzsC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:70eg2SAEIzsC",
+      "DOI": "https://scholar.google.com/scholar?q=Flattening+the+recall+line+using+a+voting+classifier+for+forest+cover+type+data",
+      "Search": "https://scholar.google.com/scholar?q=Flattening+the+recall+line+using+a+voting+classifier+for+forest+cover+type+data"
+    },
+    "bibtex": "@inproceedings{suny2023p6,\n  title = {Flattening the recall line using a voting classifier for forest cover type data},\n  author = {A Suny, MM Priyanka, KM Safin Kamal, MA Liza, SS Jennifer, AW Reza},\n  booktitle = {International Conference on Intelligent Computing & Optimization, 324-334},\n  year = {2023},\n  citations = {3}\n}",
+    "apa": "A Suny, MM Priyanka, KM Safin Kamal, MA Liza, SS Jennifer, AW Reza (2023). Flattening the recall line using a voting classifier for forest cover type data. International Conference on Intelligent Computing & Optimization, 324-334.",
+    "ieee": "A Suny, MM Priyanka, KM Safin Kamal, MA Liza, SS Jennifer, AW Reza, \"Flattening the recall line using a voting classifier for forest cover type data,\" in International Conference on Intelligent Computing & Optimization, 324-334, 2023."
+  },
+  {
+    "id": "p7",
+    "title": "A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection",
+    "category": "biomedical",
+    "citations": 2,
+    "year": 2024,
+    "authors": "MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, KMS Kamal, ...",
+    "venue": "International Conference On Data Mining And Information Security, 421-433",
+    "abstract": "Academic research contribution by MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, KMS Kamal, ... titled \"A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection\". Published in International Conference On Data Mining And Information Security, 421-433 (2024) with 2 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:xtRiw3GOFMkC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:xtRiw3GOFMkC",
+      "DOI": "https://scholar.google.com/scholar?q=A+Privacy+Preserving+Federated+Ensemble+Learning+Approach+for+Malaria+Detection",
+      "Search": "https://scholar.google.com/scholar?q=A+Privacy+Preserving+Federated+Ensemble+Learning+Approach+for+Malaria+Detection"
+    },
+    "bibtex": "@inproceedings{rahman2024p7,\n  title = {A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection},\n  author = {MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, KMS Kamal, ...},\n  booktitle = {International Conference On Data Mining And Information Security, 421-433},\n  year = {2024},\n  citations = {2}\n}",
+    "apa": "MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, KMS Kamal, ... (2024). A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection. International Conference On Data Mining And Information Security, 421-433.",
+    "ieee": "MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, KMS Kamal, ..., \"A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection,\" in International Conference On Data Mining And Information Security, 421-433, 2024."
+  },
+  {
+    "id": "p8",
+    "title": "White blood cells to classify leukemic blood images using deep learning and image processing",
+    "category": "biomedical",
+    "citations": 2,
+    "year": 2024,
+    "authors": "I Hasan, MS Hossain, MG Muhit, M Bahauddin, KMS Kamal, MA Morshed, ...",
+    "venue": "2024 IEEE International Conference on Computing, Applications and Systems ...",
+    "abstract": "Academic research contribution by I Hasan, MS Hossain, MG Muhit, M Bahauddin, KMS Kamal, MA Morshed, ... titled \"White blood cells to classify leukemic blood images using deep learning and image processing\". Published in 2024 IEEE International Conference on Computing, Applications and Systems ... (2024) with 2 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:M05iB0D1s5AC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:M05iB0D1s5AC",
+      "DOI": "https://scholar.google.com/scholar?q=White+blood+cells+to+classify+leukemic+blood+images+using+deep+learning+and+image+processing",
+      "Search": "https://scholar.google.com/scholar?q=White+blood+cells+to+classify+leukemic+blood+images+using+deep+learning+and+image+processing"
+    },
+    "bibtex": "@inproceedings{hasan2024p8,\n  title = {White blood cells to classify leukemic blood images using deep learning and image processing},\n  author = {I Hasan, MS Hossain, MG Muhit, M Bahauddin, KMS Kamal, MA Morshed, ...},\n  booktitle = {2024 IEEE International Conference on Computing, Applications and Systems ...},\n  year = {2024},\n  citations = {2}\n}",
+    "apa": "I Hasan, MS Hossain, MG Muhit, M Bahauddin, KMS Kamal, MA Morshed, ... (2024). White blood cells to classify leukemic blood images using deep learning and image processing. 2024 IEEE International Conference on Computing, Applications and Systems ....",
+    "ieee": "I Hasan, MS Hossain, MG Muhit, M Bahauddin, KMS Kamal, MA Morshed, ..., \"White blood cells to classify leukemic blood images using deep learning and image processing,\" in 2024 IEEE International Conference on Computing, Applications and Systems ..., 2024."
+  },
+  {
+    "id": "p9",
+    "title": "A comparative study of convolutional neural network architectures for detecting prostate cancer",
+    "category": "biomedical",
+    "citations": 2,
+    "year": 2023,
+    "authors": "KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza",
+    "venue": "International Conference on Intelligent Computing & Optimization, 3-13",
+    "abstract": "Academic research contribution by KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza titled \"A comparative study of convolutional neural network architectures for detecting prostate cancer\". Published in International Conference on Intelligent Computing & Optimization, 3-13 (2023) with 2 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:vV6vV6tmYwMC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:vV6vV6tmYwMC",
+      "DOI": "https://scholar.google.com/scholar?q=A+comparative+study+of+convolutional+neural+network+architectures+for+detecting+prostate+cancer",
+      "Search": "https://scholar.google.com/scholar?q=A+comparative+study+of+convolutional+neural+network+architectures+for+detecting+prostate+cancer"
+    },
+    "bibtex": "@inproceedings{kamal2023p9,\n  title = {A comparative study of convolutional neural network architectures for detecting prostate cancer},\n  author = {KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza},\n  booktitle = {International Conference on Intelligent Computing & Optimization, 3-13},\n  year = {2023},\n  citations = {2}\n}",
+    "apa": "KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza (2023). A comparative study of convolutional neural network architectures for detecting prostate cancer. International Conference on Intelligent Computing & Optimization, 3-13.",
+    "ieee": "KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza, \"A comparative study of convolutional neural network architectures for detecting prostate cancer,\" in International Conference on Intelligent Computing & Optimization, 3-13, 2023."
+  },
+  {
+    "id": "p10",
+    "title": "AI and Espionage: AI for Spyware Development",
+    "category": "security",
+    "citations": 1,
+    "year": 2026,
+    "authors": "MM Islam, MA Morshed, KM Safin Kamal, MH Ferdaus, MS Ali, MF Mridha",
+    "venue": "Cyber Espionage and National Security Challenges: Cyber Wargaming for ...",
+    "abstract": "Academic research contribution by MM Islam, MA Morshed, KM Safin Kamal, MH Ferdaus, MS Ali, MF Mridha titled \"AI and Espionage: AI for Spyware Development\". Published in Cyber Espionage and National Security Challenges: Cyber Wargaming for ... (2026) with 1 verified Google Scholar citation.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:LPZeul_q3PIC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:LPZeul_q3PIC",
+      "DOI": "https://scholar.google.com/scholar?q=AI+and+Espionage++AI+for+Spyware+Development",
+      "Search": "https://scholar.google.com/scholar?q=AI+and+Espionage++AI+for+Spyware+Development"
+    },
+    "bibtex": "@inproceedings{islam2026p10,\n  title = {AI and Espionage: AI for Spyware Development},\n  author = {MM Islam, MA Morshed, KM Safin Kamal, MH Ferdaus, MS Ali, MF Mridha},\n  booktitle = {Cyber Espionage and National Security Challenges: Cyber Wargaming for ...},\n  year = {2026},\n  citations = {1}\n}",
+    "apa": "MM Islam, MA Morshed, KM Safin Kamal, MH Ferdaus, MS Ali, MF Mridha (2026). AI and Espionage: AI for Spyware Development. Cyber Espionage and National Security Challenges: Cyber Wargaming for ....",
+    "ieee": "MM Islam, MA Morshed, KM Safin Kamal, MH Ferdaus, MS Ali, MF Mridha, \"AI and Espionage: AI for Spyware Development,\" in Cyber Espionage and National Security Challenges: Cyber Wargaming for ..., 2026."
+  },
+  {
+    "id": "p11",
+    "title": "Precision Orthopedics with Deep Learning Models for Meniscal Injury Detection in MRI Images",
+    "category": "biomedical",
+    "citations": 1,
+    "year": 2025,
+    "authors": "KMS Kamal, MA Morshed, TT Ritom, MH Rahman, M Tahsin, AW Reza",
+    "venue": "International Conference on Computational Intelligence and Information ...",
+    "abstract": "Academic research contribution by KMS Kamal, MA Morshed, TT Ritom, MH Rahman, M Tahsin, AW Reza titled \"Precision Orthopedics with Deep Learning Models for Meniscal Injury Detection in MRI Images\". Published in International Conference on Computational Intelligence and Information ... (2025) with 1 verified Google Scholar citation.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:fQNAKQ3IYiAC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:fQNAKQ3IYiAC",
+      "DOI": "https://scholar.google.com/scholar?q=Precision+Orthopedics+with+Deep+Learning+Models+for+Meniscal+Injury+Detection+in+MRI+Images",
+      "Search": "https://scholar.google.com/scholar?q=Precision+Orthopedics+with+Deep+Learning+Models+for+Meniscal+Injury+Detection+in+MRI+Images"
+    },
+    "bibtex": "@inproceedings{kamal2025p11,\n  title = {Precision Orthopedics with Deep Learning Models for Meniscal Injury Detection in MRI Images},\n  author = {KMS Kamal, MA Morshed, TT Ritom, MH Rahman, M Tahsin, AW Reza},\n  booktitle = {International Conference on Computational Intelligence and Information ...},\n  year = {2025},\n  citations = {1}\n}",
+    "apa": "KMS Kamal, MA Morshed, TT Ritom, MH Rahman, M Tahsin, AW Reza (2025). Precision Orthopedics with Deep Learning Models for Meniscal Injury Detection in MRI Images. International Conference on Computational Intelligence and Information ....",
+    "ieee": "KMS Kamal, MA Morshed, TT Ritom, MH Rahman, M Tahsin, AW Reza, \"Precision Orthopedics with Deep Learning Models for Meniscal Injury Detection in MRI Images,\" in International Conference on Computational Intelligence and Information ..., 2025."
+  },
+  {
+    "id": "p12",
+    "title": "Resource scheduling algorithm based on greedy strategy in green cloud",
+    "category": "green-cloud",
+    "citations": 1,
+    "year": 2024,
+    "authors": "JF Tithi, MF Tamim, FA Nidha, KMS Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 77-91",
+    "abstract": "Academic research contribution by JF Tithi, MF Tamim, FA Nidha, KMS Kamal, AW Reza titled \"Resource scheduling algorithm based on greedy strategy in green cloud\". Published in International Conference on Innovations in Data Analytics, 77-91 (2024) with 1 verified Google Scholar citation.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:dshw04ExmUIC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:dshw04ExmUIC",
+      "DOI": "https://scholar.google.com/scholar?q=Resource+scheduling+algorithm+based+on+greedy+strategy+in+green+cloud",
+      "Search": "https://scholar.google.com/scholar?q=Resource+scheduling+algorithm+based+on+greedy+strategy+in+green+cloud"
+    },
+    "bibtex": "@inproceedings{tithi2024p12,\n  title = {Resource scheduling algorithm based on greedy strategy in green cloud},\n  author = {JF Tithi, MF Tamim, FA Nidha, KMS Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 77-91},\n  year = {2024},\n  citations = {1}\n}",
+    "apa": "JF Tithi, MF Tamim, FA Nidha, KMS Kamal, AW Reza (2024). Resource scheduling algorithm based on greedy strategy in green cloud. International Conference on Innovations in Data Analytics, 77-91.",
+    "ieee": "JF Tithi, MF Tamim, FA Nidha, KMS Kamal, AW Reza, \"Resource scheduling algorithm based on greedy strategy in green cloud,\" in International Conference on Innovations in Data Analytics, 77-91, 2024."
+  },
+  {
+    "id": "p13",
+    "title": "Automatic Bangla Digital Number Plate Detection and Recognition System Using Image Processing and Deep Learning",
+    "category": "computer-vision",
+    "citations": 1,
+    "year": 2024,
+    "authors": "N Faria, P Banik, A Saha, A Majumder, KMS Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 139-150",
+    "abstract": "Academic research contribution by N Faria, P Banik, A Saha, A Majumder, KMS Kamal, AW Reza titled \"Automatic Bangla Digital Number Plate Detection and Recognition System Using Image Processing and Deep Learning\". Published in International Conference on Innovations in Data Analytics, 139-150 (2024) with 1 verified Google Scholar citation.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:nb7KW1ujOQ8C",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:nb7KW1ujOQ8C",
+      "DOI": "https://scholar.google.com/scholar?q=Automatic+Bangla+Digital+Number+Plate+Detection+and+Recognition+System+Using+Image+Processing+and+Deep+Learning",
+      "Search": "https://scholar.google.com/scholar?q=Automatic+Bangla+Digital+Number+Plate+Detection+and+Recognition+System+Using+Image+Processing+and+Deep+Learning"
+    },
+    "bibtex": "@inproceedings{faria2024p13,\n  title = {Automatic Bangla Digital Number Plate Detection and Recognition System Using Image Processing and Deep Learning},\n  author = {N Faria, P Banik, A Saha, A Majumder, KMS Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 139-150},\n  year = {2024},\n  citations = {1}\n}",
+    "apa": "N Faria, P Banik, A Saha, A Majumder, KMS Kamal, AW Reza (2024). Automatic Bangla Digital Number Plate Detection and Recognition System Using Image Processing and Deep Learning. International Conference on Innovations in Data Analytics, 139-150.",
+    "ieee": "N Faria, P Banik, A Saha, A Majumder, KMS Kamal, AW Reza, \"Automatic Bangla Digital Number Plate Detection and Recognition System Using Image Processing and Deep Learning,\" in International Conference on Innovations in Data Analytics, 139-150, 2024."
+  },
+  {
+    "id": "p14",
+    "title": "Multi-class brain tumour classification with CNN on MRI scans",
+    "category": "biomedical",
+    "citations": 1,
+    "year": 2024,
+    "authors": "N Mridha, SN Rafa, MSI Shayon, N Sultana, KMS Kamal, AW Reza, ...",
+    "venue": "2024 IEEE International Conference on Signal Processing, Information ...",
+    "abstract": "Academic research contribution by N Mridha, SN Rafa, MSI Shayon, N Sultana, KMS Kamal, AW Reza, ... titled \"Multi-class brain tumour classification with CNN on MRI scans\". Published in 2024 IEEE International Conference on Signal Processing, Information ... (2024) with 1 verified Google Scholar citation.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:HoB7MX3m0LUC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:HoB7MX3m0LUC",
+      "DOI": "https://scholar.google.com/scholar?q=Multi+class+brain+tumour+classification+with+CNN+on+MRI+scans",
+      "Search": "https://scholar.google.com/scholar?q=Multi+class+brain+tumour+classification+with+CNN+on+MRI+scans"
+    },
+    "bibtex": "@inproceedings{mridha2024p14,\n  title = {Multi-class brain tumour classification with CNN on MRI scans},\n  author = {N Mridha, SN Rafa, MSI Shayon, N Sultana, KMS Kamal, AW Reza, ...},\n  booktitle = {2024 IEEE International Conference on Signal Processing, Information ...},\n  year = {2024},\n  citations = {1}\n}",
+    "apa": "N Mridha, SN Rafa, MSI Shayon, N Sultana, KMS Kamal, AW Reza, ... (2024). Multi-class brain tumour classification with CNN on MRI scans. 2024 IEEE International Conference on Signal Processing, Information ....",
+    "ieee": "N Mridha, SN Rafa, MSI Shayon, N Sultana, KMS Kamal, AW Reza, ..., \"Multi-class brain tumour classification with CNN on MRI scans,\" in 2024 IEEE International Conference on Signal Processing, Information ..., 2024."
+  },
+  {
+    "id": "p15",
+    "title": "SwiftCNN: a deep learning model for B-ALL diagnosis and subtype classification from blood smear images",
+    "category": "biomedical",
+    "citations": 1,
+    "year": 2024,
+    "authors": "FI Chowdhury, S Dey, TA Mila, KMS Kamal, AW Reza, MS Arefin",
+    "venue": "2024 IEEE International Conference on Signal Processing, Information ...",
+    "abstract": "Academic research contribution by FI Chowdhury, S Dey, TA Mila, KMS Kamal, AW Reza, MS Arefin titled \"SwiftCNN: a deep learning model for B-ALL diagnosis and subtype classification from blood smear images\". Published in 2024 IEEE International Conference on Signal Processing, Information ... (2024) with 1 verified Google Scholar citation.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:pqnbT2bcN3wC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:pqnbT2bcN3wC",
+      "DOI": "https://scholar.google.com/scholar?q=SwiftCNN++a+deep+learning+model+for+B+ALL+diagnosis+and+subtype+classification+from+blood+smear+images",
+      "Search": "https://scholar.google.com/scholar?q=SwiftCNN++a+deep+learning+model+for+B+ALL+diagnosis+and+subtype+classification+from+blood+smear+images"
+    },
+    "bibtex": "@inproceedings{chowdhury2024p15,\n  title = {SwiftCNN: a deep learning model for B-ALL diagnosis and subtype classification from blood smear images},\n  author = {FI Chowdhury, S Dey, TA Mila, KMS Kamal, AW Reza, MS Arefin},\n  booktitle = {2024 IEEE International Conference on Signal Processing, Information ...},\n  year = {2024},\n  citations = {1}\n}",
+    "apa": "FI Chowdhury, S Dey, TA Mila, KMS Kamal, AW Reza, MS Arefin (2024). SwiftCNN: a deep learning model for B-ALL diagnosis and subtype classification from blood smear images. 2024 IEEE International Conference on Signal Processing, Information ....",
+    "ieee": "FI Chowdhury, S Dey, TA Mila, KMS Kamal, AW Reza, MS Arefin, \"SwiftCNN: a deep learning model for B-ALL diagnosis and subtype classification from blood smear images,\" in 2024 IEEE International Conference on Signal Processing, Information ..., 2024."
+  },
+  {
+    "id": "p16",
+    "title": "Bone Abnormality Detection Using Deep Learning Models",
+    "category": "computer-vision",
+    "citations": 1,
+    "year": 2024,
+    "authors": "P Barua, MBA Mannan, Z Islam, AMA Rahim, NS Mim, KMS Kamal, ...",
+    "venue": "International Conference On Data Mining And Information Security, 493-508",
+    "abstract": "Academic research contribution by P Barua, MBA Mannan, Z Islam, AMA Rahim, NS Mim, KMS Kamal, ... titled \"Bone Abnormality Detection Using Deep Learning Models\". Published in International Conference On Data Mining And Information Security, 493-508 (2024) with 1 verified Google Scholar citation.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:B3FOqHPlNUQC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:B3FOqHPlNUQC",
+      "DOI": "https://scholar.google.com/scholar?q=Bone+Abnormality+Detection+Using+Deep+Learning+Models",
+      "Search": "https://scholar.google.com/scholar?q=Bone+Abnormality+Detection+Using+Deep+Learning+Models"
+    },
+    "bibtex": "@inproceedings{barua2024p16,\n  title = {Bone Abnormality Detection Using Deep Learning Models},\n  author = {P Barua, MBA Mannan, Z Islam, AMA Rahim, NS Mim, KMS Kamal, ...},\n  booktitle = {International Conference On Data Mining And Information Security, 493-508},\n  year = {2024},\n  citations = {1}\n}",
+    "apa": "P Barua, MBA Mannan, Z Islam, AMA Rahim, NS Mim, KMS Kamal, ... (2024). Bone Abnormality Detection Using Deep Learning Models. International Conference On Data Mining And Information Security, 493-508.",
+    "ieee": "P Barua, MBA Mannan, Z Islam, AMA Rahim, NS Mim, KMS Kamal, ..., \"Bone Abnormality Detection Using Deep Learning Models,\" in International Conference On Data Mining And Information Security, 493-508, 2024."
+  },
+  {
+    "id": "p17",
+    "title": "Optimizing Image Classification and Segmentation: A Comparative Study of Deep Learning and Machine Learning Model",
+    "category": "computer-vision",
+    "citations": 1,
+    "year": 2024,
+    "authors": "MA Zafor, I Jahan, WR Parsub, F Hossain, KM Safin Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 543-558",
+    "abstract": "Academic research contribution by MA Zafor, I Jahan, WR Parsub, F Hossain, KM Safin Kamal, AW Reza titled \"Optimizing Image Classification and Segmentation: A Comparative Study of Deep Learning and Machine Learning Model\". Published in International Conference On Data Mining And Information Security, 543-558 (2024) with 1 verified Google Scholar citation.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:SP6oXDckpogC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:SP6oXDckpogC",
+      "DOI": "https://scholar.google.com/scholar?q=Optimizing+Image+Classification+and+Segmentation++A+Comparative+Study+of+Deep+Learning+and+Machine+Learning+Model",
+      "Search": "https://scholar.google.com/scholar?q=Optimizing+Image+Classification+and+Segmentation++A+Comparative+Study+of+Deep+Learning+and+Machine+Learning+Model"
+    },
+    "bibtex": "@inproceedings{zafor2024p17,\n  title = {Optimizing Image Classification and Segmentation: A Comparative Study of Deep Learning and Machine Learning Model},\n  author = {MA Zafor, I Jahan, WR Parsub, F Hossain, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 543-558},\n  year = {2024},\n  citations = {1}\n}",
+    "apa": "MA Zafor, I Jahan, WR Parsub, F Hossain, KM Safin Kamal, AW Reza (2024). Optimizing Image Classification and Segmentation: A Comparative Study of Deep Learning and Machine Learning Model. International Conference On Data Mining And Information Security, 543-558.",
+    "ieee": "MA Zafor, I Jahan, WR Parsub, F Hossain, KM Safin Kamal, AW Reza, \"Optimizing Image Classification and Segmentation: A Comparative Study of Deep Learning and Machine Learning Model,\" in International Conference On Data Mining And Information Security, 543-558, 2024."
+  },
+  {
+    "id": "p18",
+    "title": "Development of a deep learning model for accurate classification of peptic ulcer and digestive tract disorders using endoscopic images",
+    "category": "computer-vision",
+    "citations": 1,
+    "year": 2024,
+    "authors": "P Islam, M Asif Hasan, IH Farabi, SMS Sobhani, KM Safin Kamal, ...",
+    "venue": "International Conference On Data Mining And Information Security, 449-461",
+    "abstract": "Academic research contribution by P Islam, M Asif Hasan, IH Farabi, SMS Sobhani, KM Safin Kamal, ... titled \"Development of a deep learning model for accurate classification of peptic ulcer and digestive tract disorders using endoscopic images\". Published in International Conference On Data Mining And Information Security, 449-461 (2024) with 1 verified Google Scholar citation.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:D03iK_w7-QYC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:D03iK_w7-QYC",
+      "DOI": "https://scholar.google.com/scholar?q=Development+of+a+deep+learning+model+for+accurate+classification+of+peptic+ulcer+and+digestive+tract+disorders+using+endoscopic+images",
+      "Search": "https://scholar.google.com/scholar?q=Development+of+a+deep+learning+model+for+accurate+classification+of+peptic+ulcer+and+digestive+tract+disorders+using+endoscopic+images"
+    },
+    "bibtex": "@inproceedings{islam2024p18,\n  title = {Development of a deep learning model for accurate classification of peptic ulcer and digestive tract disorders using endoscopic images},\n  author = {P Islam, M Asif Hasan, IH Farabi, SMS Sobhani, KM Safin Kamal, ...},\n  booktitle = {International Conference On Data Mining And Information Security, 449-461},\n  year = {2024},\n  citations = {1}\n}",
+    "apa": "P Islam, M Asif Hasan, IH Farabi, SMS Sobhani, KM Safin Kamal, ... (2024). Development of a deep learning model for accurate classification of peptic ulcer and digestive tract disorders using endoscopic images. International Conference On Data Mining And Information Security, 449-461.",
+    "ieee": "P Islam, M Asif Hasan, IH Farabi, SMS Sobhani, KM Safin Kamal, ..., \"Development of a deep learning model for accurate classification of peptic ulcer and digestive tract disorders using endoscopic images,\" in International Conference On Data Mining And Information Security, 449-461, 2024."
+  },
+  {
+    "id": "p19",
+    "title": "Region of confidence measurement for the purpose of localization in wireless sensor networks",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2026,
+    "authors": "A Rahman, KMS Kamal",
+    "venue": "Indonesian Journal of Electrical Engineering and Computer Science 42 (2 ...",
+    "abstract": "Academic research contribution by A Rahman, KMS Kamal titled \"Region of confidence measurement for the purpose of localization in wireless sensor networks\". Published in Indonesian Journal of Electrical Engineering and Computer Science 42 (2 ... (2026) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:BrmTIyaxlBUC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:BrmTIyaxlBUC",
+      "DOI": "https://scholar.google.com/scholar?q=Region+of+confidence+measurement+for+the+purpose+of+localization+in+wireless+sensor+networks",
+      "Search": "https://scholar.google.com/scholar?q=Region+of+confidence+measurement+for+the+purpose+of+localization+in+wireless+sensor+networks"
+    },
+    "bibtex": "@inproceedings{rahman2026p19,\n  title = {Region of confidence measurement for the purpose of localization in wireless sensor networks},\n  author = {A Rahman, KMS Kamal},\n  booktitle = {Indonesian Journal of Electrical Engineering and Computer Science 42 (2 ...},\n  year = {2026},\n  citations = {0}\n}",
+    "apa": "A Rahman, KMS Kamal (2026). Region of confidence measurement for the purpose of localization in wireless sensor networks. Indonesian Journal of Electrical Engineering and Computer Science 42 (2 ....",
+    "ieee": "A Rahman, KMS Kamal, \"Region of confidence measurement for the purpose of localization in wireless sensor networks,\" in Indonesian Journal of Electrical Engineering and Computer Science 42 (2 ..., 2026."
+  },
+  {
+    "id": "p20",
+    "title": "Eyes Wide Open: A Deep Learning Comparison of CNN Models for Retinal Disease Detection from Fundus Images",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2026,
+    "authors": "Z Rafa, AM Pathan, A Islam, KO Ahammed, MS Hossain, KMS Kamal, ...",
+    "venue": "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial ...",
+    "abstract": "Academic research contribution by Z Rafa, AM Pathan, A Islam, KO Ahammed, MS Hossain, KMS Kamal, ... titled \"Eyes Wide Open: A Deep Learning Comparison of CNN Models for Retinal Disease Detection from Fundus Images\". Published in 2026 IEEE 2nd International Conference on Quantum Photonics, Artificial ... (2026) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:eJXPG6dFmWUC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:eJXPG6dFmWUC",
+      "DOI": "https://scholar.google.com/scholar?q=Eyes+Wide+Open++A+Deep+Learning+Comparison+of+CNN+Models+for+Retinal+Disease+Detection+from+Fundus+Images",
+      "Search": "https://scholar.google.com/scholar?q=Eyes+Wide+Open++A+Deep+Learning+Comparison+of+CNN+Models+for+Retinal+Disease+Detection+from+Fundus+Images"
+    },
+    "bibtex": "@inproceedings{rafa2026p20,\n  title = {Eyes Wide Open: A Deep Learning Comparison of CNN Models for Retinal Disease Detection from Fundus Images},\n  author = {Z Rafa, AM Pathan, A Islam, KO Ahammed, MS Hossain, KMS Kamal, ...},\n  booktitle = {2026 IEEE 2nd International Conference on Quantum Photonics, Artificial ...},\n  year = {2026},\n  citations = {0}\n}",
+    "apa": "Z Rafa, AM Pathan, A Islam, KO Ahammed, MS Hossain, KMS Kamal, ... (2026). Eyes Wide Open: A Deep Learning Comparison of CNN Models for Retinal Disease Detection from Fundus Images. 2026 IEEE 2nd International Conference on Quantum Photonics, Artificial ....",
+    "ieee": "Z Rafa, AM Pathan, A Islam, KO Ahammed, MS Hossain, KMS Kamal, ..., \"Eyes Wide Open: A Deep Learning Comparison of CNN Models for Retinal Disease Detection from Fundus Images,\" in 2026 IEEE 2nd International Conference on Quantum Photonics, Artificial ..., 2026."
+  },
+  {
+    "id": "p21",
+    "title": "Enhanced Deep Learning Based Classification of Pathohistological Images for OSCC Diagnosis",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2025,
+    "authors": "S Saha, S Afrin, J Biswas, MPR Mahin, KM Safin Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 545-557",
+    "abstract": "Academic research contribution by S Saha, S Afrin, J Biswas, MPR Mahin, KM Safin Kamal, AW Reza titled \"Enhanced Deep Learning Based Classification of Pathohistological Images for OSCC Diagnosis\". Published in International Conference On Data Mining And Information Security, 545-557 (2025) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:eflP2zaiRacC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:eflP2zaiRacC",
+      "DOI": "https://scholar.google.com/scholar?q=Enhanced+Deep+Learning+Based+Classification+of+Pathohistological+Images+for+OSCC+Diagnosis",
+      "Search": "https://scholar.google.com/scholar?q=Enhanced+Deep+Learning+Based+Classification+of+Pathohistological+Images+for+OSCC+Diagnosis"
+    },
+    "bibtex": "@inproceedings{saha2025p21,\n  title = {Enhanced Deep Learning Based Classification of Pathohistological Images for OSCC Diagnosis},\n  author = {S Saha, S Afrin, J Biswas, MPR Mahin, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 545-557},\n  year = {2025},\n  citations = {0}\n}",
+    "apa": "S Saha, S Afrin, J Biswas, MPR Mahin, KM Safin Kamal, AW Reza (2025). Enhanced Deep Learning Based Classification of Pathohistological Images for OSCC Diagnosis. International Conference On Data Mining And Information Security, 545-557.",
+    "ieee": "S Saha, S Afrin, J Biswas, MPR Mahin, KM Safin Kamal, AW Reza, \"Enhanced Deep Learning Based Classification of Pathohistological Images for OSCC Diagnosis,\" in International Conference On Data Mining And Information Security, 545-557, 2025."
+  },
+  {
+    "id": "p22",
+    "title": "Advances in Breast Cancer Detection and Diagnosis",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2025,
+    "authors": "G Deb, MF Tonoy, A Rahman, RH Robin, SA Lamia, M Mahi, MPR Mahin, ...",
+    "venue": "International Conference On Data Mining And Information Security, 441-455",
+    "abstract": "Academic research contribution by G Deb, MF Tonoy, A Rahman, RH Robin, SA Lamia, M Mahi, MPR Mahin, ... titled \"Advances in Breast Cancer Detection and Diagnosis\". Published in International Conference On Data Mining And Information Security, 441-455 (2025) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:D_sINldO8mEC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:D_sINldO8mEC",
+      "DOI": "https://scholar.google.com/scholar?q=Advances+in+Breast+Cancer+Detection+and+Diagnosis",
+      "Search": "https://scholar.google.com/scholar?q=Advances+in+Breast+Cancer+Detection+and+Diagnosis"
+    },
+    "bibtex": "@inproceedings{deb2025p22,\n  title = {Advances in Breast Cancer Detection and Diagnosis},\n  author = {G Deb, MF Tonoy, A Rahman, RH Robin, SA Lamia, M Mahi, MPR Mahin, ...},\n  booktitle = {International Conference On Data Mining And Information Security, 441-455},\n  year = {2025},\n  citations = {0}\n}",
+    "apa": "G Deb, MF Tonoy, A Rahman, RH Robin, SA Lamia, M Mahi, MPR Mahin, ... (2025). Advances in Breast Cancer Detection and Diagnosis. International Conference On Data Mining And Information Security, 441-455.",
+    "ieee": "G Deb, MF Tonoy, A Rahman, RH Robin, SA Lamia, M Mahi, MPR Mahin, ..., \"Advances in Breast Cancer Detection and Diagnosis,\" in International Conference On Data Mining And Information Security, 441-455, 2025."
+  },
+  {
+    "id": "p23",
+    "title": "The Prediction of Cotton Percentage from Fabric Image Using Deep Learning",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2025,
+    "authors": "S Sur, S Nath, AB Antu, S Singha, AL Dey, MA Shuddho, KM Safin Kamal, ...",
+    "venue": "International Conference on Computational Intelligence and Information ...",
+    "abstract": "Academic research contribution by S Sur, S Nath, AB Antu, S Singha, AL Dey, MA Shuddho, KM Safin Kamal, ... titled \"The Prediction of Cotton Percentage from Fabric Image Using Deep Learning\". Published in International Conference on Computational Intelligence and Information ... (2025) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:5Ul4iDaHHb8C",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:5Ul4iDaHHb8C",
+      "DOI": "https://scholar.google.com/scholar?q=The+Prediction+of+Cotton+Percentage+from+Fabric+Image+Using+Deep+Learning",
+      "Search": "https://scholar.google.com/scholar?q=The+Prediction+of+Cotton+Percentage+from+Fabric+Image+Using+Deep+Learning"
+    },
+    "bibtex": "@inproceedings{sur2025p23,\n  title = {The Prediction of Cotton Percentage from Fabric Image Using Deep Learning},\n  author = {S Sur, S Nath, AB Antu, S Singha, AL Dey, MA Shuddho, KM Safin Kamal, ...},\n  booktitle = {International Conference on Computational Intelligence and Information ...},\n  year = {2025},\n  citations = {0}\n}",
+    "apa": "S Sur, S Nath, AB Antu, S Singha, AL Dey, MA Shuddho, KM Safin Kamal, ... (2025). The Prediction of Cotton Percentage from Fabric Image Using Deep Learning. International Conference on Computational Intelligence and Information ....",
+    "ieee": "S Sur, S Nath, AB Antu, S Singha, AL Dey, MA Shuddho, KM Safin Kamal, ..., \"The Prediction of Cotton Percentage from Fabric Image Using Deep Learning,\" in International Conference on Computational Intelligence and Information ..., 2025."
+  },
+  {
+    "id": "p24",
+    "title": "An Energy-Efficient Virtual Machine Scheduling Algorithm in Cloud Data Center",
+    "category": "green-cloud",
+    "citations": 0,
+    "year": 2025,
+    "authors": "MA Morshed, A Sarker, M Meem, F Ahammed, KMS Kamal, AW Reza",
+    "venue": "2025 International Conference on Electrical, Computer and Communication ...",
+    "abstract": "Academic research contribution by MA Morshed, A Sarker, M Meem, F Ahammed, KMS Kamal, AW Reza titled \"An Energy-Efficient Virtual Machine Scheduling Algorithm in Cloud Data Center\". Published in 2025 International Conference on Electrical, Computer and Communication ... (2025) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:SeFeTyx0c_EC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:SeFeTyx0c_EC",
+      "DOI": "https://scholar.google.com/scholar?q=An+Energy+Efficient+Virtual+Machine+Scheduling+Algorithm+in+Cloud+Data+Center",
+      "Search": "https://scholar.google.com/scholar?q=An+Energy+Efficient+Virtual+Machine+Scheduling+Algorithm+in+Cloud+Data+Center"
+    },
+    "bibtex": "@inproceedings{morshed2025p24,\n  title = {An Energy-Efficient Virtual Machine Scheduling Algorithm in Cloud Data Center},\n  author = {MA Morshed, A Sarker, M Meem, F Ahammed, KMS Kamal, AW Reza},\n  booktitle = {2025 International Conference on Electrical, Computer and Communication ...},\n  year = {2025},\n  citations = {0}\n}",
+    "apa": "MA Morshed, A Sarker, M Meem, F Ahammed, KMS Kamal, AW Reza (2025). An Energy-Efficient Virtual Machine Scheduling Algorithm in Cloud Data Center. 2025 International Conference on Electrical, Computer and Communication ....",
+    "ieee": "MA Morshed, A Sarker, M Meem, F Ahammed, KMS Kamal, AW Reza, \"An Energy-Efficient Virtual Machine Scheduling Algorithm in Cloud Data Center,\" in 2025 International Conference on Electrical, Computer and Communication ..., 2025."
+  },
+  {
+    "id": "p25",
+    "title": "Strategic Process Optimization in Energy-Efficient Cloud Computing: Harnessing Heuristic-Based Greedy Algorithms for Resource Allocation and Process Transformation in ...",
+    "category": "green-cloud",
+    "citations": 0,
+    "year": 2024,
+    "authors": "MA Rahaman, M Hasan, J Datta, B Banik, KMS Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 145-156",
+    "abstract": "Academic research contribution by MA Rahaman, M Hasan, J Datta, B Banik, KMS Kamal, AW Reza titled \"Strategic Process Optimization in Energy-Efficient Cloud Computing: Harnessing Heuristic-Based Greedy Algorithms for Resource Allocation and Process Transformation in ...\". Published in International Conference on Innovations in Data Analytics, 145-156 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:XiSMed-E-HIC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:XiSMed-E-HIC",
+      "DOI": "https://scholar.google.com/scholar?q=Strategic+Process+Optimization+in+Energy+Efficient+Cloud+Computing++Harnessing+Heuristic+Based+Greedy+Algorithms+for+Resource+Allocation+and+Process+Transformation+in++++",
+      "Search": "https://scholar.google.com/scholar?q=Strategic+Process+Optimization+in+Energy+Efficient+Cloud+Computing++Harnessing+Heuristic+Based+Greedy+Algorithms+for+Resource+Allocation+and+Process+Transformation+in++++"
+    },
+    "bibtex": "@inproceedings{rahaman2024p25,\n  title = {Strategic Process Optimization in Energy-Efficient Cloud Computing: Harnessing Heuristic-Based Greedy Algorithms for Resource Allocation and Process Transformation in ...},\n  author = {MA Rahaman, M Hasan, J Datta, B Banik, KMS Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 145-156},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "MA Rahaman, M Hasan, J Datta, B Banik, KMS Kamal, AW Reza (2024). Strategic Process Optimization in Energy-Efficient Cloud Computing: Harnessing Heuristic-Based Greedy Algorithms for Resource Allocation and Process Transformation in .... International Conference on Innovations in Data Analytics, 145-156.",
+    "ieee": "MA Rahaman, M Hasan, J Datta, B Banik, KMS Kamal, AW Reza, \"Strategic Process Optimization in Energy-Efficient Cloud Computing: Harnessing Heuristic-Based Greedy Algorithms for Resource Allocation and Process Transformation in ...,\" in International Conference on Innovations in Data Analytics, 145-156, 2024."
+  },
+  {
+    "id": "p26",
+    "title": "Heart Disease Classification from ECG Images Using Convolutional Neural Networks and Transformer-Based Models",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2024,
+    "authors": "SR Ani, S Nath, F Arefin, JF Tithi, UKD Nath, KMS Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 285-304",
+    "abstract": "Academic research contribution by SR Ani, S Nath, F Arefin, JF Tithi, UKD Nath, KMS Kamal, AW Reza titled \"Heart Disease Classification from ECG Images Using Convolutional Neural Networks and Transformer-Based Models\". Published in International Conference on Innovations in Data Analytics, 285-304 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:u9iWguZQMMsC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:u9iWguZQMMsC",
+      "DOI": "https://scholar.google.com/scholar?q=Heart+Disease+Classification+from+ECG+Images+Using+Convolutional+Neural+Networks+and+Transformer+Based+Models",
+      "Search": "https://scholar.google.com/scholar?q=Heart+Disease+Classification+from+ECG+Images+Using+Convolutional+Neural+Networks+and+Transformer+Based+Models"
+    },
+    "bibtex": "@inproceedings{ani2024p26,\n  title = {Heart Disease Classification from ECG Images Using Convolutional Neural Networks and Transformer-Based Models},\n  author = {SR Ani, S Nath, F Arefin, JF Tithi, UKD Nath, KMS Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 285-304},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "SR Ani, S Nath, F Arefin, JF Tithi, UKD Nath, KMS Kamal, AW Reza (2024). Heart Disease Classification from ECG Images Using Convolutional Neural Networks and Transformer-Based Models. International Conference on Innovations in Data Analytics, 285-304.",
+    "ieee": "SR Ani, S Nath, F Arefin, JF Tithi, UKD Nath, KMS Kamal, AW Reza, \"Heart Disease Classification from ECG Images Using Convolutional Neural Networks and Transformer-Based Models,\" in International Conference on Innovations in Data Analytics, 285-304, 2024."
+  },
+  {
+    "id": "p27",
+    "title": "Deep Learning and Non-Contrast CT for Widespread Pancreatic Cancer Detection",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2024,
+    "authors": "DM Rafiun Bin Masud, SF Al Labib, A Bhattacharjee, MM Rahat, ...",
+    "venue": "International Conference on Innovations in Data Analytics, 521-530",
+    "abstract": "Academic research contribution by DM Rafiun Bin Masud, SF Al Labib, A Bhattacharjee, MM Rahat, ... titled \"Deep Learning and Non-Contrast CT for Widespread Pancreatic Cancer Detection\". Published in International Conference on Innovations in Data Analytics, 521-530 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:p2g8aNsByqUC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:p2g8aNsByqUC",
+      "DOI": "https://scholar.google.com/scholar?q=Deep+Learning+and+Non+Contrast+CT+for+Widespread+Pancreatic+Cancer+Detection",
+      "Search": "https://scholar.google.com/scholar?q=Deep+Learning+and+Non+Contrast+CT+for+Widespread+Pancreatic+Cancer+Detection"
+    },
+    "bibtex": "@inproceedings{masud2024p27,\n  title = {Deep Learning and Non-Contrast CT for Widespread Pancreatic Cancer Detection},\n  author = {DM Rafiun Bin Masud, SF Al Labib, A Bhattacharjee, MM Rahat, ...},\n  booktitle = {International Conference on Innovations in Data Analytics, 521-530},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "DM Rafiun Bin Masud, SF Al Labib, A Bhattacharjee, MM Rahat, ... (2024). Deep Learning and Non-Contrast CT for Widespread Pancreatic Cancer Detection. International Conference on Innovations in Data Analytics, 521-530.",
+    "ieee": "DM Rafiun Bin Masud, SF Al Labib, A Bhattacharjee, MM Rahat, ..., \"Deep Learning and Non-Contrast CT for Widespread Pancreatic Cancer Detection,\" in International Conference on Innovations in Data Analytics, 521-530, 2024."
+  },
+  {
+    "id": "p28",
+    "title": "Predicting Recurrence Expectancy in Patients with Non-small Cell Lung Cancer Using Advanced Machine Learning and Deep Learning Approaches with Multimodal Integration",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2024,
+    "authors": "AR Bhuiyan, TH Tonny, NAM Tanjir, AR Nafis, KM Safin Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 319-332",
+    "abstract": "Academic research contribution by AR Bhuiyan, TH Tonny, NAM Tanjir, AR Nafis, KM Safin Kamal, AW Reza titled \"Predicting Recurrence Expectancy in Patients with Non-small Cell Lung Cancer Using Advanced Machine Learning and Deep Learning Approaches with Multimodal Integration\". Published in International Conference on Innovations in Data Analytics, 319-332 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:OU6Ihb5iCvQC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:OU6Ihb5iCvQC",
+      "DOI": "https://scholar.google.com/scholar?q=Predicting+Recurrence+Expectancy+in+Patients+with+Non+small+Cell+Lung+Cancer+Using+Advanced+Machine+Learning+and+Deep+Learning+Approaches+with+Multimodal+Integration",
+      "Search": "https://scholar.google.com/scholar?q=Predicting+Recurrence+Expectancy+in+Patients+with+Non+small+Cell+Lung+Cancer+Using+Advanced+Machine+Learning+and+Deep+Learning+Approaches+with+Multimodal+Integration"
+    },
+    "bibtex": "@inproceedings{bhuiyan2024p28,\n  title = {Predicting Recurrence Expectancy in Patients with Non-small Cell Lung Cancer Using Advanced Machine Learning and Deep Learning Approaches with Multimodal Integration},\n  author = {AR Bhuiyan, TH Tonny, NAM Tanjir, AR Nafis, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 319-332},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "AR Bhuiyan, TH Tonny, NAM Tanjir, AR Nafis, KM Safin Kamal, AW Reza (2024). Predicting Recurrence Expectancy in Patients with Non-small Cell Lung Cancer Using Advanced Machine Learning and Deep Learning Approaches with Multimodal Integration. International Conference on Innovations in Data Analytics, 319-332.",
+    "ieee": "AR Bhuiyan, TH Tonny, NAM Tanjir, AR Nafis, KM Safin Kamal, AW Reza, \"Predicting Recurrence Expectancy in Patients with Non-small Cell Lung Cancer Using Advanced Machine Learning and Deep Learning Approaches with Multimodal Integration,\" in International Conference on Innovations in Data Analytics, 319-332, 2024."
+  },
+  {
+    "id": "p29",
+    "title": "Intelligent CT Scan Liver Image-Based Hepatocellular Carcinoma Detection Using Modified Learning Principle",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2024,
+    "authors": "ZT Nuzhat, S Akter, AN Kanta, IA Shohan, KM Safin Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 547-558",
+    "abstract": "Academic research contribution by ZT Nuzhat, S Akter, AN Kanta, IA Shohan, KM Safin Kamal, AW Reza titled \"Intelligent CT Scan Liver Image-Based Hepatocellular Carcinoma Detection Using Modified Learning Principle\". Published in International Conference on Innovations in Data Analytics, 547-558 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:uWQEDVKXjbEC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:uWQEDVKXjbEC",
+      "DOI": "https://scholar.google.com/scholar?q=Intelligent+CT+Scan+Liver+Image+Based+Hepatocellular+Carcinoma+Detection+Using+Modified+Learning+Principle",
+      "Search": "https://scholar.google.com/scholar?q=Intelligent+CT+Scan+Liver+Image+Based+Hepatocellular+Carcinoma+Detection+Using+Modified+Learning+Principle"
+    },
+    "bibtex": "@inproceedings{nuzhat2024p29,\n  title = {Intelligent CT Scan Liver Image-Based Hepatocellular Carcinoma Detection Using Modified Learning Principle},\n  author = {ZT Nuzhat, S Akter, AN Kanta, IA Shohan, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 547-558},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "ZT Nuzhat, S Akter, AN Kanta, IA Shohan, KM Safin Kamal, AW Reza (2024). Intelligent CT Scan Liver Image-Based Hepatocellular Carcinoma Detection Using Modified Learning Principle. International Conference on Innovations in Data Analytics, 547-558.",
+    "ieee": "ZT Nuzhat, S Akter, AN Kanta, IA Shohan, KM Safin Kamal, AW Reza, \"Intelligent CT Scan Liver Image-Based Hepatocellular Carcinoma Detection Using Modified Learning Principle,\" in International Conference on Innovations in Data Analytics, 547-558, 2024."
+  },
+  {
+    "id": "p30",
+    "title": "Deep Neural Network Approach for Lithium-Ion Battery Health State Prediction and Remaining Useful Life Estimation",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2024,
+    "authors": "MAA Rifat, N Ahmed, MB Hassan, S Podder, MSK Rabby, ...",
+    "venue": "International Conference on Innovations in Data Analytics, 265-276",
+    "abstract": "Academic research contribution by MAA Rifat, N Ahmed, MB Hassan, S Podder, MSK Rabby, ... titled \"Deep Neural Network Approach for Lithium-Ion Battery Health State Prediction and Remaining Useful Life Estimation\". Published in International Conference on Innovations in Data Analytics, 265-276 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:KxtntwgDAa4C",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:KxtntwgDAa4C",
+      "DOI": "https://scholar.google.com/scholar?q=Deep+Neural+Network+Approach+for+Lithium+Ion+Battery+Health+State+Prediction+and+Remaining+Useful+Life+Estimation",
+      "Search": "https://scholar.google.com/scholar?q=Deep+Neural+Network+Approach+for+Lithium+Ion+Battery+Health+State+Prediction+and+Remaining+Useful+Life+Estimation"
+    },
+    "bibtex": "@inproceedings{rifat2024p30,\n  title = {Deep Neural Network Approach for Lithium-Ion Battery Health State Prediction and Remaining Useful Life Estimation},\n  author = {MAA Rifat, N Ahmed, MB Hassan, S Podder, MSK Rabby, ...},\n  booktitle = {International Conference on Innovations in Data Analytics, 265-276},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "MAA Rifat, N Ahmed, MB Hassan, S Podder, MSK Rabby, ... (2024). Deep Neural Network Approach for Lithium-Ion Battery Health State Prediction and Remaining Useful Life Estimation. International Conference on Innovations in Data Analytics, 265-276.",
+    "ieee": "MAA Rifat, N Ahmed, MB Hassan, S Podder, MSK Rabby, ..., \"Deep Neural Network Approach for Lithium-Ion Battery Health State Prediction and Remaining Useful Life Estimation,\" in International Conference on Innovations in Data Analytics, 265-276, 2024."
+  },
+  {
+    "id": "p31",
+    "title": "Portable IoT-Based Prediction of Solar Energy Generation Using Deep Learning",
+    "category": "green-cloud",
+    "citations": 0,
+    "year": 2024,
+    "authors": "MA Baroi, SSUH Sami, MM Hossain, KMS Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 215-227",
+    "abstract": "Academic research contribution by MA Baroi, SSUH Sami, MM Hossain, KMS Kamal, AW Reza titled \"Portable IoT-Based Prediction of Solar Energy Generation Using Deep Learning\". Published in International Conference on Innovations in Data Analytics, 215-227 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:NhqRSupF_l8C",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:NhqRSupF_l8C",
+      "DOI": "https://scholar.google.com/scholar?q=Portable+IoT+Based+Prediction+of+Solar+Energy+Generation+Using+Deep+Learning",
+      "Search": "https://scholar.google.com/scholar?q=Portable+IoT+Based+Prediction+of+Solar+Energy+Generation+Using+Deep+Learning"
+    },
+    "bibtex": "@inproceedings{baroi2024p31,\n  title = {Portable IoT-Based Prediction of Solar Energy Generation Using Deep Learning},\n  author = {MA Baroi, SSUH Sami, MM Hossain, KMS Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 215-227},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "MA Baroi, SSUH Sami, MM Hossain, KMS Kamal, AW Reza (2024). Portable IoT-Based Prediction of Solar Energy Generation Using Deep Learning. International Conference on Innovations in Data Analytics, 215-227.",
+    "ieee": "MA Baroi, SSUH Sami, MM Hossain, KMS Kamal, AW Reza, \"Portable IoT-Based Prediction of Solar Energy Generation Using Deep Learning,\" in International Conference on Innovations in Data Analytics, 215-227, 2024."
+  },
+  {
+    "id": "p32",
+    "title": "A Machine Learning Approach for Drug Sensitivity Detection Using Genome Classification",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2024,
+    "authors": "S Akter, ST Shifa, MK Jannat, KM Safin Kamal, AW Reza",
+    "venue": "International Conference on Innovations in Data Analytics, 289-304",
+    "abstract": "Academic research contribution by S Akter, ST Shifa, MK Jannat, KM Safin Kamal, AW Reza titled \"A Machine Learning Approach for Drug Sensitivity Detection Using Genome Classification\". Published in International Conference on Innovations in Data Analytics, 289-304 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:bFI3QPDXJZMC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:bFI3QPDXJZMC",
+      "DOI": "https://scholar.google.com/scholar?q=A+Machine+Learning+Approach+for+Drug+Sensitivity+Detection+Using+Genome+Classification",
+      "Search": "https://scholar.google.com/scholar?q=A+Machine+Learning+Approach+for+Drug+Sensitivity+Detection+Using+Genome+Classification"
+    },
+    "bibtex": "@inproceedings{akter2024p32,\n  title = {A Machine Learning Approach for Drug Sensitivity Detection Using Genome Classification},\n  author = {S Akter, ST Shifa, MK Jannat, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference on Innovations in Data Analytics, 289-304},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "S Akter, ST Shifa, MK Jannat, KM Safin Kamal, AW Reza (2024). A Machine Learning Approach for Drug Sensitivity Detection Using Genome Classification. International Conference on Innovations in Data Analytics, 289-304.",
+    "ieee": "S Akter, ST Shifa, MK Jannat, KM Safin Kamal, AW Reza, \"A Machine Learning Approach for Drug Sensitivity Detection Using Genome Classification,\" in International Conference on Innovations in Data Analytics, 289-304, 2024."
+  },
+  {
+    "id": "p33",
+    "title": "COVID-19 Detection Using VGG16: Enhancing Robustness and Interpretability with Adversarial Attack Analysis and Explainable AI",
+    "category": "security",
+    "citations": 0,
+    "year": 2024,
+    "authors": "S Saha, MF Haque, S Nahar, KMS Kamal, AW Reza",
+    "venue": "International Conference on Machine Intelligence and Emerging Technologies ...",
+    "abstract": "Academic research contribution by S Saha, MF Haque, S Nahar, KMS Kamal, AW Reza titled \"COVID-19 Detection Using VGG16: Enhancing Robustness and Interpretability with Adversarial Attack Analysis and Explainable AI\". Published in International Conference on Machine Intelligence and Emerging Technologies ... (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:yD5IFk8b50cC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:yD5IFk8b50cC",
+      "DOI": "https://scholar.google.com/scholar?q=COVID+19+Detection+Using+VGG16++Enhancing+Robustness+and+Interpretability+with+Adversarial+Attack+Analysis+and+Explainable+AI",
+      "Search": "https://scholar.google.com/scholar?q=COVID+19+Detection+Using+VGG16++Enhancing+Robustness+and+Interpretability+with+Adversarial+Attack+Analysis+and+Explainable+AI"
+    },
+    "bibtex": "@inproceedings{saha2024p33,\n  title = {COVID-19 Detection Using VGG16: Enhancing Robustness and Interpretability with Adversarial Attack Analysis and Explainable AI},\n  author = {S Saha, MF Haque, S Nahar, KMS Kamal, AW Reza},\n  booktitle = {International Conference on Machine Intelligence and Emerging Technologies ...},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "S Saha, MF Haque, S Nahar, KMS Kamal, AW Reza (2024). COVID-19 Detection Using VGG16: Enhancing Robustness and Interpretability with Adversarial Attack Analysis and Explainable AI. International Conference on Machine Intelligence and Emerging Technologies ....",
+    "ieee": "S Saha, MF Haque, S Nahar, KMS Kamal, AW Reza, \"COVID-19 Detection Using VGG16: Enhancing Robustness and Interpretability with Adversarial Attack Analysis and Explainable AI,\" in International Conference on Machine Intelligence and Emerging Technologies ..., 2024."
+  },
+  {
+    "id": "p34",
+    "title": "Learning for Automatic Sub-Classification of Gastric Carcinoma Using Whole Slide Histopathology Images",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2024,
+    "authors": "H Rahman, M Tajwar, MT Chowdhury, M Islam Sumon, KM Safin Kamal, ...",
+    "venue": "International Conference on Machine Intelligence and Emerging Technologies ...",
+    "abstract": "Academic research contribution by H Rahman, M Tajwar, MT Chowdhury, M Islam Sumon, KM Safin Kamal, ... titled \"Learning for Automatic Sub-Classification of Gastric Carcinoma Using Whole Slide Histopathology Images\". Published in International Conference on Machine Intelligence and Emerging Technologies ... (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:dfsIfKJdRG4C",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:dfsIfKJdRG4C",
+      "DOI": "https://scholar.google.com/scholar?q=Learning+for+Automatic+Sub+Classification+of+Gastric+Carcinoma+Using+Whole+Slide+Histopathology+Images",
+      "Search": "https://scholar.google.com/scholar?q=Learning+for+Automatic+Sub+Classification+of+Gastric+Carcinoma+Using+Whole+Slide+Histopathology+Images"
+    },
+    "bibtex": "@inproceedings{rahman2024p34,\n  title = {Learning for Automatic Sub-Classification of Gastric Carcinoma Using Whole Slide Histopathology Images},\n  author = {H Rahman, M Tajwar, MT Chowdhury, M Islam Sumon, KM Safin Kamal, ...},\n  booktitle = {International Conference on Machine Intelligence and Emerging Technologies ...},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "H Rahman, M Tajwar, MT Chowdhury, M Islam Sumon, KM Safin Kamal, ... (2024). Learning for Automatic Sub-Classification of Gastric Carcinoma Using Whole Slide Histopathology Images. International Conference on Machine Intelligence and Emerging Technologies ....",
+    "ieee": "H Rahman, M Tajwar, MT Chowdhury, M Islam Sumon, KM Safin Kamal, ..., \"Learning for Automatic Sub-Classification of Gastric Carcinoma Using Whole Slide Histopathology Images,\" in International Conference on Machine Intelligence and Emerging Technologies ..., 2024."
+  },
+  {
+    "id": "p35",
+    "title": "Advancing Environmental Monitoring: Deep Learning Techniques for Tailings Pond Detection and Categorization",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2024,
+    "authors": "ZD Ziden, P Islam, Z Ahmed, IH Farabi, SA Karim, KMS Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 521-537",
+    "abstract": "Academic research contribution by ZD Ziden, P Islam, Z Ahmed, IH Farabi, SA Karim, KMS Kamal, AW Reza titled \"Advancing Environmental Monitoring: Deep Learning Techniques for Tailings Pond Detection and Categorization\". Published in International Conference On Data Mining And Information Security, 521-537 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:geHnlv5EZngC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:geHnlv5EZngC",
+      "DOI": "https://scholar.google.com/scholar?q=Advancing+Environmental+Monitoring++Deep+Learning+Techniques+for+Tailings+Pond+Detection+and+Categorization",
+      "Search": "https://scholar.google.com/scholar?q=Advancing+Environmental+Monitoring++Deep+Learning+Techniques+for+Tailings+Pond+Detection+and+Categorization"
+    },
+    "bibtex": "@inproceedings{ziden2024p35,\n  title = {Advancing Environmental Monitoring: Deep Learning Techniques for Tailings Pond Detection and Categorization},\n  author = {ZD Ziden, P Islam, Z Ahmed, IH Farabi, SA Karim, KMS Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 521-537},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "ZD Ziden, P Islam, Z Ahmed, IH Farabi, SA Karim, KMS Kamal, AW Reza (2024). Advancing Environmental Monitoring: Deep Learning Techniques for Tailings Pond Detection and Categorization. International Conference On Data Mining And Information Security, 521-537.",
+    "ieee": "ZD Ziden, P Islam, Z Ahmed, IH Farabi, SA Karim, KMS Kamal, AW Reza, \"Advancing Environmental Monitoring: Deep Learning Techniques for Tailings Pond Detection and Categorization,\" in International Conference On Data Mining And Information Security, 521-537, 2024."
+  },
+  {
+    "id": "p36",
+    "title": "SafeMediChain: Enhancing Blockchain Healthcare Networks with Machine Learning-Based Fraud Detection Mechanisms",
+    "category": "green-cloud",
+    "citations": 0,
+    "year": 2024,
+    "authors": "M Adib Khan, S Karmoker, KE Haque, NAC Anik, KMS Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 479-492",
+    "abstract": "Academic research contribution by M Adib Khan, S Karmoker, KE Haque, NAC Anik, KMS Kamal, AW Reza titled \"SafeMediChain: Enhancing Blockchain Healthcare Networks with Machine Learning-Based Fraud Detection Mechanisms\". Published in International Conference On Data Mining And Information Security, 479-492 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:sSrBHYA8nusC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:sSrBHYA8nusC",
+      "DOI": "https://scholar.google.com/scholar?q=SafeMediChain++Enhancing+Blockchain+Healthcare+Networks+with+Machine+Learning+Based+Fraud+Detection+Mechanisms",
+      "Search": "https://scholar.google.com/scholar?q=SafeMediChain++Enhancing+Blockchain+Healthcare+Networks+with+Machine+Learning+Based+Fraud+Detection+Mechanisms"
+    },
+    "bibtex": "@inproceedings{khan2024p36,\n  title = {SafeMediChain: Enhancing Blockchain Healthcare Networks with Machine Learning-Based Fraud Detection Mechanisms},\n  author = {M Adib Khan, S Karmoker, KE Haque, NAC Anik, KMS Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 479-492},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "M Adib Khan, S Karmoker, KE Haque, NAC Anik, KMS Kamal, AW Reza (2024). SafeMediChain: Enhancing Blockchain Healthcare Networks with Machine Learning-Based Fraud Detection Mechanisms. International Conference On Data Mining And Information Security, 479-492.",
+    "ieee": "M Adib Khan, S Karmoker, KE Haque, NAC Anik, KMS Kamal, AW Reza, \"SafeMediChain: Enhancing Blockchain Healthcare Networks with Machine Learning-Based Fraud Detection Mechanisms,\" in International Conference On Data Mining And Information Security, 479-492, 2024."
+  },
+  {
+    "id": "p37",
+    "title": "Enhanced Detection of Pancreatic Cancer Using Convolutional Neural Networks",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2024,
+    "authors": "MAI Anik, A Tahsin, S Akter, S Sikder, KMS Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 261-273",
+    "abstract": "Academic research contribution by MAI Anik, A Tahsin, S Akter, S Sikder, KMS Kamal, AW Reza titled \"Enhanced Detection of Pancreatic Cancer Using Convolutional Neural Networks\". Published in International Conference On Data Mining And Information Security, 261-273 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:4fKUyHm3Qg0C",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:4fKUyHm3Qg0C",
+      "DOI": "https://scholar.google.com/scholar?q=Enhanced+Detection+of+Pancreatic+Cancer+Using+Convolutional+Neural+Networks",
+      "Search": "https://scholar.google.com/scholar?q=Enhanced+Detection+of+Pancreatic+Cancer+Using+Convolutional+Neural+Networks"
+    },
+    "bibtex": "@inproceedings{anik2024p37,\n  title = {Enhanced Detection of Pancreatic Cancer Using Convolutional Neural Networks},\n  author = {MAI Anik, A Tahsin, S Akter, S Sikder, KMS Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 261-273},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "MAI Anik, A Tahsin, S Akter, S Sikder, KMS Kamal, AW Reza (2024). Enhanced Detection of Pancreatic Cancer Using Convolutional Neural Networks. International Conference On Data Mining And Information Security, 261-273.",
+    "ieee": "MAI Anik, A Tahsin, S Akter, S Sikder, KMS Kamal, AW Reza, \"Enhanced Detection of Pancreatic Cancer Using Convolutional Neural Networks,\" in International Conference On Data Mining And Information Security, 261-273, 2024."
+  },
+  {
+    "id": "p38",
+    "title": "A Comparative Study of Machine Learning Algorithms for DNA Sequence",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2024,
+    "authors": "I Tasnim, NA Munni, RI Joy, YS Urmy, KMS Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 241-254",
+    "abstract": "Academic research contribution by I Tasnim, NA Munni, RI Joy, YS Urmy, KMS Kamal, AW Reza titled \"A Comparative Study of Machine Learning Algorithms for DNA Sequence\". Published in International Conference On Data Mining And Information Security, 241-254 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:K3LRdlH-MEoC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:K3LRdlH-MEoC",
+      "DOI": "https://scholar.google.com/scholar?q=A+Comparative+Study+of+Machine+Learning+Algorithms+for+DNA+Sequence",
+      "Search": "https://scholar.google.com/scholar?q=A+Comparative+Study+of+Machine+Learning+Algorithms+for+DNA+Sequence"
+    },
+    "bibtex": "@inproceedings{tasnim2024p38,\n  title = {A Comparative Study of Machine Learning Algorithms for DNA Sequence},\n  author = {I Tasnim, NA Munni, RI Joy, YS Urmy, KMS Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 241-254},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "I Tasnim, NA Munni, RI Joy, YS Urmy, KMS Kamal, AW Reza (2024). A Comparative Study of Machine Learning Algorithms for DNA Sequence. International Conference On Data Mining And Information Security, 241-254.",
+    "ieee": "I Tasnim, NA Munni, RI Joy, YS Urmy, KMS Kamal, AW Reza, \"A Comparative Study of Machine Learning Algorithms for DNA Sequence,\" in International Conference On Data Mining And Information Security, 241-254, 2024."
+  },
+  {
+    "id": "p39",
+    "title": "Classification of Acute Lymphoblastic Leukemia Based on White Blood Cell Segmentation",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2024,
+    "authors": "N Pervez, AB Antu, AI Fardin, MAI Khan, KMS Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 267-285",
+    "abstract": "Academic research contribution by N Pervez, AB Antu, AI Fardin, MAI Khan, KMS Kamal, AW Reza titled \"Classification of Acute Lymphoblastic Leukemia Based on White Blood Cell Segmentation\". Published in International Conference On Data Mining And Information Security, 267-285 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:738O_yMBCRsC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:738O_yMBCRsC",
+      "DOI": "https://scholar.google.com/scholar?q=Classification+of+Acute+Lymphoblastic+Leukemia+Based+on+White+Blood+Cell+Segmentation",
+      "Search": "https://scholar.google.com/scholar?q=Classification+of+Acute+Lymphoblastic+Leukemia+Based+on+White+Blood+Cell+Segmentation"
+    },
+    "bibtex": "@inproceedings{pervez2024p39,\n  title = {Classification of Acute Lymphoblastic Leukemia Based on White Blood Cell Segmentation},\n  author = {N Pervez, AB Antu, AI Fardin, MAI Khan, KMS Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 267-285},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "N Pervez, AB Antu, AI Fardin, MAI Khan, KMS Kamal, AW Reza (2024). Classification of Acute Lymphoblastic Leukemia Based on White Blood Cell Segmentation. International Conference On Data Mining And Information Security, 267-285.",
+    "ieee": "N Pervez, AB Antu, AI Fardin, MAI Khan, KMS Kamal, AW Reza, \"Classification of Acute Lymphoblastic Leukemia Based on White Blood Cell Segmentation,\" in International Conference On Data Mining And Information Security, 267-285, 2024."
+  },
+  {
+    "id": "p40",
+    "title": "Advanced Deep Learning Models for Classification of DNA Methylation States: A Comparative Study",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2024,
+    "authors": "A Haque, M Khan, KMS Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 225-238",
+    "abstract": "Academic research contribution by A Haque, M Khan, KMS Kamal, AW Reza titled \"Advanced Deep Learning Models for Classification of DNA Methylation States: A Comparative Study\". Published in International Conference On Data Mining And Information Security, 225-238 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:WbkHhVStYXYC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:WbkHhVStYXYC",
+      "DOI": "https://scholar.google.com/scholar?q=Advanced+Deep+Learning+Models+for+Classification+of+DNA+Methylation+States++A+Comparative+Study",
+      "Search": "https://scholar.google.com/scholar?q=Advanced+Deep+Learning+Models+for+Classification+of+DNA+Methylation+States++A+Comparative+Study"
+    },
+    "bibtex": "@inproceedings{haque2024p40,\n  title = {Advanced Deep Learning Models for Classification of DNA Methylation States: A Comparative Study},\n  author = {A Haque, M Khan, KMS Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 225-238},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "A Haque, M Khan, KMS Kamal, AW Reza (2024). Advanced Deep Learning Models for Classification of DNA Methylation States: A Comparative Study. International Conference On Data Mining And Information Security, 225-238.",
+    "ieee": "A Haque, M Khan, KMS Kamal, AW Reza, \"Advanced Deep Learning Models for Classification of DNA Methylation States: A Comparative Study,\" in International Conference On Data Mining And Information Security, 225-238, 2024."
+  },
+  {
+    "id": "p41",
+    "title": "Deep Learning-Based Classification of Liver Cells Using Mask R-CNN on Whole Slide Images",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2024,
+    "authors": "KH Zisan, SM Raduan, MM Shahriar, RT Orin, KMS Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 537-549",
+    "abstract": "Academic research contribution by KH Zisan, SM Raduan, MM Shahriar, RT Orin, KMS Kamal, AW Reza titled \"Deep Learning-Based Classification of Liver Cells Using Mask R-CNN on Whole Slide Images\". Published in International Conference On Data Mining And Information Security, 537-549 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:Tiz5es2fbqcC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:Tiz5es2fbqcC",
+      "DOI": "https://scholar.google.com/scholar?q=Deep+Learning+Based+Classification+of+Liver+Cells+Using+Mask+R+CNN+on+Whole+Slide+Images",
+      "Search": "https://scholar.google.com/scholar?q=Deep+Learning+Based+Classification+of+Liver+Cells+Using+Mask+R+CNN+on+Whole+Slide+Images"
+    },
+    "bibtex": "@inproceedings{zisan2024p41,\n  title = {Deep Learning-Based Classification of Liver Cells Using Mask R-CNN on Whole Slide Images},\n  author = {KH Zisan, SM Raduan, MM Shahriar, RT Orin, KMS Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 537-549},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "KH Zisan, SM Raduan, MM Shahriar, RT Orin, KMS Kamal, AW Reza (2024). Deep Learning-Based Classification of Liver Cells Using Mask R-CNN on Whole Slide Images. International Conference On Data Mining And Information Security, 537-549.",
+    "ieee": "KH Zisan, SM Raduan, MM Shahriar, RT Orin, KMS Kamal, AW Reza, \"Deep Learning-Based Classification of Liver Cells Using Mask R-CNN on Whole Slide Images,\" in International Conference On Data Mining And Information Security, 537-549, 2024."
+  },
+  {
+    "id": "p42",
+    "title": "Revolutionizing Dental Diagnosis: Detection of Periodontal Bone Loss in Panoramic Radiographs via Convolutional Neural Network",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2024,
+    "authors": "AS Mim, F Ahmed, S Akter, SP Tisha, KM Safin Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 519-531",
+    "abstract": "Academic research contribution by AS Mim, F Ahmed, S Akter, SP Tisha, KM Safin Kamal, AW Reza titled \"Revolutionizing Dental Diagnosis: Detection of Periodontal Bone Loss in Panoramic Radiographs via Convolutional Neural Network\". Published in International Conference On Data Mining And Information Security, 519-531 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:UxriW0iASnsC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:UxriW0iASnsC",
+      "DOI": "https://scholar.google.com/scholar?q=Revolutionizing+Dental+Diagnosis++Detection+of+Periodontal+Bone+Loss+in+Panoramic+Radiographs+via+Convolutional+Neural+Network",
+      "Search": "https://scholar.google.com/scholar?q=Revolutionizing+Dental+Diagnosis++Detection+of+Periodontal+Bone+Loss+in+Panoramic+Radiographs+via+Convolutional+Neural+Network"
+    },
+    "bibtex": "@inproceedings{mim2024p42,\n  title = {Revolutionizing Dental Diagnosis: Detection of Periodontal Bone Loss in Panoramic Radiographs via Convolutional Neural Network},\n  author = {AS Mim, F Ahmed, S Akter, SP Tisha, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 519-531},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "AS Mim, F Ahmed, S Akter, SP Tisha, KM Safin Kamal, AW Reza (2024). Revolutionizing Dental Diagnosis: Detection of Periodontal Bone Loss in Panoramic Radiographs via Convolutional Neural Network. International Conference On Data Mining And Information Security, 519-531.",
+    "ieee": "AS Mim, F Ahmed, S Akter, SP Tisha, KM Safin Kamal, AW Reza, \"Revolutionizing Dental Diagnosis: Detection of Periodontal Bone Loss in Panoramic Radiographs via Convolutional Neural Network,\" in International Conference On Data Mining And Information Security, 519-531, 2024."
+  },
+  {
+    "id": "p43",
+    "title": "Prediction of Retinal Disease Using Deep Learning-Based Blood Vessel Segmentation and Classification",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2024,
+    "authors": "FM Mim, M Ishrat, MT Chowdhury, H Rahman, MI Sumon, KMS Kamal, ...",
+    "venue": "International Conference On Data Mining And Information Security, 319-328",
+    "abstract": "Academic research contribution by FM Mim, M Ishrat, MT Chowdhury, H Rahman, MI Sumon, KMS Kamal, ... titled \"Prediction of Retinal Disease Using Deep Learning-Based Blood Vessel Segmentation and Classification\". Published in International Conference On Data Mining And Information Security, 319-328 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:abG-DnoFyZgC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:abG-DnoFyZgC",
+      "DOI": "https://scholar.google.com/scholar?q=Prediction+of+Retinal+Disease+Using+Deep+Learning+Based+Blood+Vessel+Segmentation+and+Classification",
+      "Search": "https://scholar.google.com/scholar?q=Prediction+of+Retinal+Disease+Using+Deep+Learning+Based+Blood+Vessel+Segmentation+and+Classification"
+    },
+    "bibtex": "@inproceedings{mim2024p43,\n  title = {Prediction of Retinal Disease Using Deep Learning-Based Blood Vessel Segmentation and Classification},\n  author = {FM Mim, M Ishrat, MT Chowdhury, H Rahman, MI Sumon, KMS Kamal, ...},\n  booktitle = {International Conference On Data Mining And Information Security, 319-328},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "FM Mim, M Ishrat, MT Chowdhury, H Rahman, MI Sumon, KMS Kamal, ... (2024). Prediction of Retinal Disease Using Deep Learning-Based Blood Vessel Segmentation and Classification. International Conference On Data Mining And Information Security, 319-328.",
+    "ieee": "FM Mim, M Ishrat, MT Chowdhury, H Rahman, MI Sumon, KMS Kamal, ..., \"Prediction of Retinal Disease Using Deep Learning-Based Blood Vessel Segmentation and Classification,\" in International Conference On Data Mining And Information Security, 319-328, 2024."
+  },
+  {
+    "id": "p44",
+    "title": "Cervical Cancer Classification: Deep Learning Techniques Using FixMatch Semi-supervised Approach",
+    "category": "biomedical",
+    "citations": 0,
+    "year": 2024,
+    "authors": "M Anikur Rahaman, Z Ahmed, KM Safin Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 501-511",
+    "abstract": "Academic research contribution by M Anikur Rahaman, Z Ahmed, KM Safin Kamal, AW Reza titled \"Cervical Cancer Classification: Deep Learning Techniques Using FixMatch Semi-supervised Approach\". Published in International Conference On Data Mining And Information Security, 501-511 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:f2IySw72cVMC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:f2IySw72cVMC",
+      "DOI": "https://scholar.google.com/scholar?q=Cervical+Cancer+Classification++Deep+Learning+Techniques+Using+FixMatch+Semi+supervised+Approach",
+      "Search": "https://scholar.google.com/scholar?q=Cervical+Cancer+Classification++Deep+Learning+Techniques+Using+FixMatch+Semi+supervised+Approach"
+    },
+    "bibtex": "@inproceedings{rahaman2024p44,\n  title = {Cervical Cancer Classification: Deep Learning Techniques Using FixMatch Semi-supervised Approach},\n  author = {M Anikur Rahaman, Z Ahmed, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 501-511},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "M Anikur Rahaman, Z Ahmed, KM Safin Kamal, AW Reza (2024). Cervical Cancer Classification: Deep Learning Techniques Using FixMatch Semi-supervised Approach. International Conference On Data Mining And Information Security, 501-511.",
+    "ieee": "M Anikur Rahaman, Z Ahmed, KM Safin Kamal, AW Reza, \"Cervical Cancer Classification: Deep Learning Techniques Using FixMatch Semi-supervised Approach,\" in International Conference On Data Mining And Information Security, 501-511, 2024."
+  },
+  {
+    "id": "p45",
+    "title": "A Comparative Analysis of Machine-Learning Models for Discriminating Bacterial and Viral-Targeted Human Proteins",
+    "category": "computer-vision",
+    "citations": 0,
+    "year": 2024,
+    "authors": "S Akter, NT Ushna, ST Shifa, S Akter, KM Safin Kamal, AW Reza",
+    "venue": "International Conference On Data Mining And Information Security, 405-419",
+    "abstract": "Academic research contribution by S Akter, NT Ushna, ST Shifa, S Akter, KM Safin Kamal, AW Reza titled \"A Comparative Analysis of Machine-Learning Models for Discriminating Bacterial and Viral-Targeted Human Proteins\". Published in International Conference On Data Mining And Information Security, 405-419 (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:pyW8ca7W8N0C",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:pyW8ca7W8N0C",
+      "DOI": "https://scholar.google.com/scholar?q=A+Comparative+Analysis+of+Machine+Learning+Models+for+Discriminating+Bacterial+and+Viral+Targeted+Human+Proteins",
+      "Search": "https://scholar.google.com/scholar?q=A+Comparative+Analysis+of+Machine+Learning+Models+for+Discriminating+Bacterial+and+Viral+Targeted+Human+Proteins"
+    },
+    "bibtex": "@inproceedings{akter2024p45,\n  title = {A Comparative Analysis of Machine-Learning Models for Discriminating Bacterial and Viral-Targeted Human Proteins},\n  author = {S Akter, NT Ushna, ST Shifa, S Akter, KM Safin Kamal, AW Reza},\n  booktitle = {International Conference On Data Mining And Information Security, 405-419},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "S Akter, NT Ushna, ST Shifa, S Akter, KM Safin Kamal, AW Reza (2024). A Comparative Analysis of Machine-Learning Models for Discriminating Bacterial and Viral-Targeted Human Proteins. International Conference On Data Mining And Information Security, 405-419.",
+    "ieee": "S Akter, NT Ushna, ST Shifa, S Akter, KM Safin Kamal, AW Reza, \"A Comparative Analysis of Machine-Learning Models for Discriminating Bacterial and Viral-Targeted Human Proteins,\" in International Conference On Data Mining And Information Security, 405-419, 2024."
+  },
+  {
+    "id": "p46",
+    "title": "COVID-19 Detection Using VGG16: T Enhancing Robustness mkkS and Interpretability with Adversarial Attack Analysis and Explainable AI",
+    "category": "security",
+    "citations": 0,
+    "year": 2024,
+    "authors": "S Saha, MF Haque, S Nahar, KMS Kamal",
+    "venue": "Peer-Reviewed Academic Conference / Journal",
+    "abstract": "Academic research contribution by S Saha, MF Haque, S Nahar, KMS Kamal titled \"COVID-19 Detection Using VGG16: T Enhancing Robustness mkkS and Interpretability with Adversarial Attack Analysis and Explainable AI\". Published in  (2024) with 0 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:l7t_Zn2s7bgC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:l7t_Zn2s7bgC",
+      "DOI": "https://scholar.google.com/scholar?q=COVID+19+Detection+Using+VGG16++T+Enhancing+Robustness+mkkS+and+Interpretability+with+Adversarial+Attack+Analysis+and+Explainable+AI",
+      "Search": "https://scholar.google.com/scholar?q=COVID+19+Detection+Using+VGG16++T+Enhancing+Robustness+mkkS+and+Interpretability+with+Adversarial+Attack+Analysis+and+Explainable+AI"
+    },
+    "bibtex": "@inproceedings{saha2024p46,\n  title = {COVID-19 Detection Using VGG16: T Enhancing Robustness mkkS and Interpretability with Adversarial Attack Analysis and Explainable AI},\n  author = {S Saha, MF Haque, S Nahar, KMS Kamal},\n  booktitle = {},\n  year = {2024},\n  citations = {0}\n}",
+    "apa": "S Saha, MF Haque, S Nahar, KMS Kamal (2024). COVID-19 Detection Using VGG16: T Enhancing Robustness mkkS and Interpretability with Adversarial Attack Analysis and Explainable AI. .",
+    "ieee": "S Saha, MF Haque, S Nahar, KMS Kamal, \"COVID-19 Detection Using VGG16: T Enhancing Robustness mkkS and Interpretability with Adversarial Attack Analysis and Explainable AI,\" in , 2024."
+  }
+]

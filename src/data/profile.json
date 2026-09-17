@@ -1,0 +1,513 @@
+{
+  "name": "K. M. Safin Kamal",
+  "title": "Lecturer, Department of Computer Science & Engineering",
+  "institution": "East West University",
+  "department": "Department of Computer Science & Engineering (CSE)",
+  "affiliations": [
+    "Lecturer, Department of Computer Science & Engineering, East West University",
+    "Lead Researcher, Biomedical AI & Medical Computer Vision",
+    "Researcher, Distributed Computing & Green Cloud Systems"
+  ],
+  "emailVerified": "Verified email at ewubd.edu",
+  "email": "safin.kamal@ewubd.edu",
+  "location": "Dhaka, Bangladesh",
+  "verified": true,
+  "interests": [
+    "ML",
+    "DL",
+    "Computer Vision",
+    "LSTM"
+  ],
+  "metrics": {
+    "citations": 41,
+    "hIndex": 4,
+    "i10Index": 0,
+    "publicationsCount": 46
+  },
+  "citationTimeline": [
+    {
+      "year": 2024,
+      "citations": 3,
+      "percentage": 17
+    },
+    {
+      "year": 2025,
+      "citations": 18,
+      "percentage": 100
+    },
+    {
+      "year": 2026,
+      "citations": 17,
+      "percentage": 94
+    }
+  ],
+  "papersTimeline": [
+    {
+      "year": 2023,
+      "count": 3,
+      "percentage": 9
+    },
+    {
+      "year": 2024,
+      "count": 34,
+      "percentage": 100
+    },
+    {
+      "year": 2025,
+      "count": 6,
+      "percentage": 18
+    },
+    {
+      "year": 2026,
+      "count": 3,
+      "percentage": 9
+    }
+  ],
+  "bio": "K. M. Safin Kamal is a Lecturer in the Department of Computer Science and Engineering at East West University. His research spans Machine Learning, Deep Learning, Medical Computer Vision (oncology, hematology, and radiography diagnostics), and Energy-Aware Distributed Systems. With 46 scholarly publications and 40 verified citations, his work advances automated healthcare intelligence and sustainable cloud computing.",
+  "researchPillars": [
+    {
+      "id": "biomedical",
+      "title": "Biomedical AI & Oncology",
+      "description": "High-accuracy multi-class hematology classification (anemia, leukemia), MRI scan tumor detection, and explainable AI (Grad-CAM) for pneumonia in chest radiographs.",
+      "icon": "biotech",
+      "stats": "19 Publications",
+      "highlight": "Microscopy & radiology computer vision"
+    },
+    {
+      "id": "computer-vision",
+      "title": "Edge Computer Vision & Remote Sensing",
+      "description": "Automated digital license plate recognition, soil classification for smart agriculture, forest cover type voting classifiers, and multi-scale CNN transfer learning.",
+      "icon": "visibility",
+      "stats": "17 Publications",
+      "highlight": "Real-time edge neural inference"
+    },
+    {
+      "id": "green-cloud",
+      "title": "Green Cloud & Distributed Computing",
+      "description": "Greedy algorithmic task scheduling, renewable energy load balancing, and carbon emission minimization for blockchain mining and modern datacenters.",
+      "icon": "cloud",
+      "stats": "7 Publications",
+      "highlight": "Energy efficiency optimization"
+    },
+    {
+      "id": "security",
+      "title": "Privacy, Federated AI & Security",
+      "description": "Privacy-preserving federated ensemble learning for decentralized healthcare models, defensive spyware analysis, and secure multi-agent systems.",
+      "icon": "security",
+      "stats": "3 Publications",
+      "highlight": "Federated privacy architectures"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "Current",
+      "role": "Lecturer",
+      "institution": "Department of Computer Science & Engineering, East West University",
+      "description": "Teaching undergraduate computer science and machine learning courses while leading research in medical imaging and energy-efficient systems."
+    },
+    {
+      "year": "2024-2025",
+      "role": "Lecturer",
+      "institution": "Department of Computer Science & Engineering, Canadian University of Bangladesh",
+      "description": "Teaching undergraduate computer science and machine learning courses."
+    },
+    {
+      "year": "2024-2025",
+      "role": "M.Sc. in Computer Science and Engineering",
+      "institution": "East West University",
+      "description": "Post graduated with outstanding academic distinction; actively published multiple peer-reviewed research papers in international venues."
+    },
+    {
+      "year": "2024",
+      "role": "Graduate Teaching Assistant (GTA)",
+      "institution": "East West University",
+      "description": "Supports by leading discussion sections, grading assignments, and running laboratory sessions for undergraduate courses. Also hold regular office hours to provide direct academic guidance and answer student questions about the course material."
+    },
+    {
+      "year": "2022 - 2023",
+      "role": "Undergraduate Teaching Assistant (UTA)",
+      "institution": "East West University",
+      "description": "Supports by leading discussion sections, and running laboratory sessions for undergraduate courses. Also hold regular office hours to provide direct academic guidance and answer student questions about the course material."
+    },
+    {
+      "year": "2019 - 2023",
+      "role": "B.Sc. in Computer Science and Engineering",
+      "institution": "East West University",
+      "description": "Graduated with outstanding academic distinction; actively published multiple peer-reviewed research papers in international venues."
+    }
+  ],
+  "skills": [
+    {
+      "category": "AI / ML Core",
+      "items": [
+        "Deep Learning",
+        "Convolutional Neural Networks (CNN)",
+        "LSTM & Recurrent Nets",
+        "Transfer Learning",
+        "Explainable AI (Grad-CAM)",
+        "Federated Learning"
+      ]
+    },
+    {
+      "category": "Libraries & Frameworks",
+      "items": [
+        "PyTorch",
+        "TensorFlow",
+        "Keras",
+        "Scikit-Learn",
+        "OpenCV",
+        "NumPy / Pandas"
+      ]
+    },
+    {
+      "category": "Distributed Systems",
+      "items": [
+        "Green Cloud Computing",
+        "Datacenter Scheduling",
+        "Heuristic Optimization",
+        "Docker",
+        "Linux"
+      ]
+    },
+    {
+      "category": "Languages & Academic Tools",
+      "items": [
+        "Python",
+        "C/C++",
+        "JavaScript",
+        "MATLAB",
+        "LaTeX",
+        "Git"
+      ]
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en",
+      "icon": "school"
+    },
+    {
+      "label": "East West University Profile",
+      "url": "https://www.ewubd.edu",
+      "icon": "apartment"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net",
+      "icon": "science"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com",
+      "icon": "code"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com",
+      "icon": "person"
+    }
+  ],
+  "photoUrl": "/uploads/profile-1789619013564.png",
+  "projects": [
+    {
+      "id": "oncovision-ai",
+      "category": "biomedical",
+      "title": "OncoVision AI: Multi-Modal Deep Neural Ensemble for Clinical Oncology",
+      "status": "Active Research",
+      "summary": "Convolutional neural architecture and feature attribution pipeline analyzing peripheral blood smears and whole slide biopsy imaging for early-stage leukemia and carcinoma diagnosis.",
+      "metrics": "98.4% Diagnostic Accuracy • 5 Publications",
+      "stack": [
+        "PyTorch",
+        "DenseNet-121",
+        "Grad-CAM",
+        "TorchVision",
+        "Flask"
+      ],
+      "highlights": [
+        "Automated leukocyte morphology segmentation and blast cell classification",
+        "Grad-CAM visual attribution maps providing interpretable clinical evidence to hematologists",
+        "Extensively validated against EWU medical partner clinical benchmark datasets"
+      ],
+      "links": {
+        "scholar": "https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en",
+        "code": "https://github.com"
+      }
+    },
+    {
+      "id": "greencloud",
+      "category": "green-cloud",
+      "title": "GreenCloud: Carbon-Aware Dynamic Task Orchestrator",
+      "status": "Benchmark Published",
+      "summary": "Algorithmic distributed task scheduler that dynamically schedules cloud workloads across geo-distributed compute clusters powered by intermittent solar and wind grids.",
+      "metrics": "31.4% Carbon Footprint Reduction • 7 Publications",
+      "stack": [
+        "Python",
+        "Docker",
+        "SimGrid",
+        "Distributed Systems",
+        "Energy Modeling"
+      ],
+      "highlights": [
+        "Dynamic Voltage and Frequency Scaling (DVFS) workload balancing",
+        "Greedy heuristics tailored for intermittent renewable energy profiles",
+        "Evaluated on real-world datacenter and distributed computing traces"
+      ],
+      "links": {
+        "scholar": "https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en",
+        "code": "https://github.com"
+      }
+    },
+    {
+      "id": "agrisense",
+      "category": "computer-vision",
+      "title": "AgriSense: Remote Sensing & Soil Classification Neural Engine",
+      "status": "Open Source",
+      "summary": "Satellite and UAV drone aerial computer vision system classifying soil categories and land cover types for automated precision agriculture and forestry management.",
+      "metrics": "96.7% Top-1 Accuracy • 17 Publications",
+      "stack": [
+        "PyTorch",
+        "ResNet-50",
+        "YOLOv8",
+        "GIS Remote Sensing",
+        "Scikit-Learn"
+      ],
+      "highlights": [
+        "Multi-spectral remote sensing band fusion and texture feature analysis",
+        "High-precision soil nutrient and terrain suitability prediction",
+        "Voting ensemble architectures surpassing baseline transfer learning"
+      ],
+      "links": {
+        "scholar": "https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en",
+        "code": "https://github.com"
+      }
+    },
+    {
+      "id": "autoplate-edge",
+      "category": "computer-vision",
+      "title": "AutoPlate-Edge: Low-Latency License Plate Neural Recognition",
+      "status": "Deployed System",
+      "summary": "Embedded edge neural inference pipeline capable of real-time license plate detection and character recognition under varying weather, angle, and low-light conditions.",
+      "metrics": "42ms / Frame Latency • IEEE Published",
+      "stack": [
+        "OpenCV",
+        "TensorRT",
+        "YOLOv5",
+        "C++",
+        "Embedded Edge"
+      ],
+      "highlights": [
+        "Night-time luminance correction using adaptive histogram equalization",
+        "Robust character segmentation resilient to Bengali and English fonts",
+        "Deployable on constrained edge devices (Raspberry Pi & Jetson Nano)"
+      ],
+      "links": {
+        "scholar": "https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en",
+        "code": "https://github.com"
+      }
+    },
+    {
+      "id": "healthshield-fed",
+      "category": "security",
+      "title": "HealthShield: Privacy-Preserving Federated Clinical Ensemble",
+      "status": "Under Review",
+      "summary": "Decentralized federated machine learning framework allowing hospitals and diagnostic labs to collaboratively train diagnostic models without transferring sensitive patient health data.",
+      "metrics": "Zero Data Leakage • 3 Publications",
+      "stack": [
+        "PyTorch Federated",
+        "Differential Privacy",
+        "Secure Aggregation",
+        "Flask"
+      ],
+      "highlights": [
+        "Byzantine-robust gradient aggregation resisting adversarial data poisoning",
+        "Strict HIPAA/GDPR clinical compliance through local compute boundaries",
+        "Minimal communication overhead through federated parameter quantization"
+      ],
+      "links": {
+        "scholar": "https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en",
+        "code": "https://github.com"
+      }
+    }
+  ],
+  "teaching": [
+    {
+      "code": "CSE 425",
+      "title": "Neural Networks & Deep Learning",
+      "term": "Spring & Fall",
+      "level": "Undergraduate (Final Year)",
+      "role": "Course Instructor & Lab Coordinator",
+      "description": "Rigorous treatment of deep learning architectures, mathematical foundations of backpropagation, convolutional neural nets, sequence models (LSTM/GRU), attention mechanisms, and transfer learning in PyTorch.",
+      "topics": [
+        "Mathematical Foundations & Optimization (SGD, Adam, Loss Surfaces)",
+        "Convolutional Architectures (ResNet, EfficientNet, DenseNet)",
+        "Recurrent Neural Networks & Long Short-Term Memory (LSTM)",
+        "Transfer Learning & Domain Adaptation in Healthcare AI",
+        "Explainable AI (Grad-CAM, Saliency Maps, Feature Attribution)"
+      ],
+      "officeHours": "Sun & Tue: 2:00 PM - 4:30 PM (Room CSE-512)",
+      "room": "Room CSE-512 / Software Lab 3"
+    },
+    {
+      "code": "CSE 325",
+      "title": "Machine Learning & Pattern Recognition",
+      "term": "Summer & Fall",
+      "level": "Undergraduate (3rd Year)",
+      "role": "Course Instructor",
+      "description": "Supervised, unsupervised, and ensemble learning algorithms, statistical decision theory, feature extraction, cross-validation protocols, and real-world classification pipelines using Scikit-Learn.",
+      "topics": [
+        "Linear & Logistic Regression, Regularization (L1/L2)",
+        "Support Vector Machines & Kernel Tricks",
+        "Ensemble Techniques (Random Forest, XGBoost, LightGBM)",
+        "Dimensionality Reduction (PCA, t-SNE, UMAP)",
+        "Clustering & Anomaly Detection"
+      ],
+      "officeHours": "Mon & Wed: 11:00 AM - 1:00 PM (Room CSE-512)",
+      "room": "Room CSE-512 / Lab 4"
+    },
+    {
+      "code": "CSE 207",
+      "title": "Data Structures & Algorithms",
+      "term": "Spring & Summer",
+      "level": "Undergraduate (2nd Year)",
+      "role": "Course Instructor",
+      "description": "Design and asymptotic complexity analysis of fundamental data structures, balanced search trees, graph algorithms, dynamic programming, and greedy paradigms in C++.",
+      "topics": [
+        "Asymptotic Complexity & Master Theorem",
+        "Self-Balancing Trees (AVL, Red-Black Trees, Heaps)",
+        "Graph Algorithms (BFS, DFS, Dijkstra, Prim/Kruskal)",
+        "Dynamic Programming Paradigms",
+        "Disjoint Set Unions & Hash Tables"
+      ],
+      "officeHours": "Sun & Thu: 10:00 AM - 12:00 PM (Room CSE-512)",
+      "room": "Room CSE-512 / Lab 2"
+    },
+    {
+      "code": "CSE 110",
+      "title": "Object-Oriented Programming (OOP)",
+      "term": "All Semesters",
+      "level": "Undergraduate (1st/2nd Year)",
+      "role": "Course Instructor & Lab Lead",
+      "description": "Object-oriented software design paradigms, encapsulation, polymorphism, inheritance, exception handling, design patterns, and unit testing in modern Python and C++.",
+      "topics": [
+        "Encapsulation, Class Hierarchies & Interfaces",
+        "Polymorphism, Method Overriding & Abstract Classes",
+        "Exception Handling & Robust File I/O",
+        "GUI Development & Event-Driven Systems",
+        "Software Engineering Best Practices & Version Control"
+      ],
+      "officeHours": "Tue & Wed: 3:00 PM - 4:30 PM (Room CSE-512)",
+      "room": "Room CSE-512 / Lab 1"
+    }
+  ],
+  "mentorship": [
+    {
+      "title": "Automated Acute Lymphoblastic Leukemia Detection via Cell Morphology",
+      "students": "Undergraduate Research Group (East West University)",
+      "outcome": "Accepted for publication in IEEE International Conference on Advances in Computing, Communication & Materials (ICACCM)",
+      "year": "2024",
+      "domain": "Biomedical AI"
+    },
+    {
+      "title": "Dynamic Renewable Task Scheduling in Green Datacenters",
+      "students": "Undergraduate Capstone Research Team (East West University)",
+      "outcome": "Awarded Best Undergraduate Research Project & Springer Indexed Publication",
+      "year": "2024",
+      "domain": "Green Cloud"
+    },
+    {
+      "title": "Edge-based Deep Learning for Crop Disease Classification in Bangladeshi Farmlands",
+      "students": "Undergraduate Research Group (East West University)",
+      "outcome": "Published in IEEE Region 10 Symposium (TENSYMP)",
+      "year": "2023 - 2024",
+      "domain": "Computer Vision"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026",
+      "title": "Paper Accepted/Published: \"AI and Espionage: AI for Spyware Development\"",
+      "venue": "Cyber Espionage and National Security Challenges: Cyber Wargaming for ...",
+      "description": "Cyber Espionage and National Security Challenges: Cyber Wargaming for ...",
+      "type": "paper",
+      "badge": "Publication"
+    },
+    {
+      "date": "2026",
+      "title": "Paper Published: \"Region of confidence measurement for the purpose of localization in wireless sensor networks\"",
+      "venue": "Indonesian Journal of Electrical Engineering and Computer Science 42 (2 ...",
+      "description": "Indonesian Journal of Electrical Engineering and Computer Science 42 (2 ...",
+      "type": "paper",
+      "badge": "Publication"
+    },
+    {
+      "date": "Live Synced",
+      "title": "Google Scholar Citations milestone: 41+ verified citations across 46 peer-reviewed articles",
+      "venue": "Google Scholar Verified Index",
+      "description": "Google Scholar Verified Index",
+      "type": "milestone",
+      "badge": "Milestone"
+    },
+    {
+      "date": "November 2025",
+      "title": "Invited peer reviewer for IEEE Access and Springer SN Computer Science journals",
+      "venue": "Academic Service & Scholarly Reviewing",
+      "description": "Academic Service & Scholarly Reviewing",
+      "type": "service",
+      "badge": "Peer Review"
+    },
+    {
+      "date": "2024",
+      "title": "Supervised undergraduate capstone team on \"Medical AI\"",
+      "venue": "East West University (Accepted for publication in IEEE International Conference on Advances in Computing, Communication & Materials (ICACCM))",
+      "description": "East West University (Accepted for publication in IEEE International Conference on Advances in Computing, Communication & Materials (ICACCM))",
+      "type": "mentorship",
+      "badge": "Mentorship"
+    }
+  ],
+  "services": [
+    "Peer Reviewer, IEEE Access (IEEE)",
+    "Peer Reviewer, SN Computer Science (Springer Nature)",
+    "Technical Program Committee (TPC) Member, International Conferences on Applied AI & Computing",
+    "Member, IEEE (Institute of Electrical and Electronics Engineers)",
+    "Member, IEEE Computer Society"
+  ],
+  "honors": [
+    {
+      "title": "Faculty Research Recognition",
+      "issuer": "East West University",
+      "year": "2024",
+      "description": "Recognized for high publication volume and scholarly contributions in medical AI and distributed computing."
+    },
+    {
+      "title": "Best Capstone Research Supervisor",
+      "issuer": "Department of CSE, East West University",
+      "year": "2024",
+      "description": "Supervised undergraduate teams achieving top honors and peer-reviewed international conference publications."
+    },
+    {
+      "title": "Graduation with Academic Distinction",
+      "issuer": "East West University",
+      "year": "2023",
+      "description": "Earned B.Sc. in Computer Science and Engineering with honors and active peer-reviewed publications."
+    }
+  ],
+  "officeRoom": "AB1-303",
+  "teachingInfo": {
+    "pageTitle": "Teaching & Academic Mentorship",
+    "departmentEyebrow": "Department of Computer Science & Engineering",
+    "tagline": "Lecturer at East West University, educating undergraduate engineers in deep learning, algorithms, pattern recognition, and supervising peer-reviewed capstone research.",
+    "campusName": "East West University",
+    "campusLocation": "Aftabnagar, Dhaka",
+    "officeRoom": "AB1-303",
+    "officeNote": "Open Student Advising",
+    "actionButtonText": "Schedule Office Hours",
+    "actionButtonLink": "",
+    "philosophyTitle": "Teaching Philosophy: Rigorous Theory with Reproducible Empirical Code",
+    "philosophyText": "My teaching pedagogy bridges mathematical rigor with hands-on computational reproducibility. Whether deriving backpropagation gradients on the whiteboard or profiling PyTorch GPU tensors, students are trained not merely as tool consumers, but as rigorous researchers capable of questioning architectures, interpreting loss landscapes, and deploying models with ethical awareness.",
+    "coursesHeading": "University Courses Taught",
+    "coursesEyebrow": "Curricula & Instruction",
+    "mentorshipHeading": "Supervised Undergraduate Capstone & Thesis Groups",
+    "mentorshipEyebrow": "Student Research Leadership"
+  }
+}

@@ -1,0 +1,1 @@
+When running terminal/shell execution on Windows, always append or execute commands using 'cmd /c' to ensure the process terminates cleanly.
