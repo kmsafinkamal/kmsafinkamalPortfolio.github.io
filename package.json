@@ -7,6 +7,8 @@
     "dev": "concurrently \"node server/index.js\" \"vite\" --names \"API,WEB\" -c \"blue,green\"",
     "server": "node server/index.js",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "sync:scholar": "python scripts/sync_scholar.py"
   },
@@ -23,6 +25,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "concurrently": "^10.0.5",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "vite": "^6.0.7"
