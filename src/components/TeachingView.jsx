@@ -26,15 +26,36 @@ export default function TeachingView({ profile = {}, onNavigate = () => {} }) {
   const mentorshipHeading = teachingInfo.mentorshipHeading || 'Supervised Undergraduate Capstone & Thesis Groups';
   const mentorshipEyebrow = teachingInfo.mentorshipEyebrow || 'Student Research Leadership';
 
+  const normalizeBookingLink = (link) => {
+    if (!link) return '';
+    const trimmed = link.trim();
+    if (!trimmed) return '';
+    // Internal app routes
+    if (/^(overview|research|publications|projects|teaching|cv|about|contact|admin)$/i.test(trimmed)) {
+      return trimmed.toLowerCase();
+    }
+    // Explicit protocols
+    if (/^(https?:\/\/|mailto:|tel:)/i.test(trimmed)) {
+      return trimmed;
+    }
+    // Web address without protocol (e.g., calendly.com/user, calendar.app.google/...)
+    return `https://${trimmed}`;
+  };
+
+  const isExternalTarget = (target) => {
+    return target && (target.startsWith('http://') || target.startsWith('https://') || target.startsWith('mailto:') || target.startsWith('tel:'));
+  };
+
   const handleActionButtonClick = () => {
-    if (actionButtonLink && actionButtonLink.trim()) {
-      if (actionButtonLink.startsWith('http://') || actionButtonLink.startsWith('https://') || actionButtonLink.startsWith('mailto:')) {
-        window.open(actionButtonLink, '_blank', 'noopener,noreferrer');
-      } else {
-        onNavigate(actionButtonLink);
-      }
-    } else {
+    const target = normalizeBookingLink(actionButtonLink);
+    if (!target) {
       onNavigate('contact');
+      return;
+    }
+    if (isExternalTarget(target)) {
+      window.open(target, '_blank', 'noopener,noreferrer');
+    } else {
+      onNavigate(target);
     }
   };
 
@@ -64,7 +85,7 @@ export default function TeachingView({ profile = {}, onNavigate = () => {} }) {
               className="px-4 py-2.5 rounded-xl bg-secondary text-white hover:bg-secondary-dark font-semibold text-label-md transition-all shadow-sm flex items-center gap-1.5 active:scale-[0.98]"
             >
               <span className="material-symbols-outlined text-[18px]">
-                {actionButtonLink && actionButtonLink.startsWith('http') ? 'open_in_new' : 'schedule'}
+                {isExternalTarget(normalizeBookingLink(actionButtonLink)) ? 'open_in_new' : 'schedule'}
               </span>
               <span>{actionButtonText}</span>
             </button>
@@ -175,10 +196,23 @@ export default function TeachingView({ profile = {}, onNavigate = () => {} }) {
               {/* Course Footer / Office Hours & Room */}
               <div className="pt-3 border-t border-outline/50 flex flex-col gap-2 text-label-sm text-on-surface-variant">
                 <div className="flex items-center justify-between gap-2 flex-wrap text-[12px]">
-                  <span className="flex items-center gap-1 text-secondary font-medium">
-                    <span className="material-symbols-outlined text-[15px]">timer</span>
-                    <span>{course.officeHours}</span>
-                  </span>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="flex items-center gap-1 text-secondary font-medium">
+                      <span className="material-symbols-outlined text-[15px]">timer</span>
+                      <span>{course.officeHours}</span>
+                    </span>
+                    {course.officeHoursLink && (
+                      <a
+                        href={course.officeHoursLink.startsWith('http') ? course.officeHoursLink : `https://${course.officeHoursLink}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-[11px] font-semibold text-secondary hover:underline px-2 py-0.5 rounded-md bg-secondary/10 hover:bg-secondary/20 transition-colors"
+                      >
+                        <span className="material-symbols-outlined text-[13px]">calendar_month</span>
+                        <span>Book Slot</span>
+                      </a>
+                    )}
+                  </div>
                   <span className="font-mono text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
                     {course.room}
                   </span>

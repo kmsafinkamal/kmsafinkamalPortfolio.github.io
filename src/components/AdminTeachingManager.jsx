@@ -9,6 +9,7 @@ export default function AdminTeachingManager({
   onUpdateMentorship,
   onUpdateTeachingInfo,
   onUpdateOfficeRoom,
+  onSyncTeachingInfo,
   onSaveAll,
   isSaving
 }) {
@@ -40,6 +41,7 @@ export default function AdminTeachingManager({
   });
 
   const [isSavedInfo, setIsSavedInfo] = useState(false);
+  const [isSavedOfficeHoursLink, setIsSavedOfficeHoursLink] = useState(false);
 
   useEffect(() => {
     setInfoForm({
@@ -48,6 +50,15 @@ export default function AdminTeachingManager({
       officeRoom: teachingInfo?.officeRoom || officeRoom || 'Room CSE-512'
     });
   }, [teachingInfo, officeRoom]);
+
+  // Synchronize field change with local state and parent formData
+  const updateField = (field, value) => {
+    const updated = { ...infoForm, [field]: value };
+    setInfoForm(updated);
+    if (onSyncTeachingInfo) {
+      onSyncTeachingInfo(updated);
+    }
+  };
 
   const handleSaveInfoForm = (e) => {
     if (e) e.preventDefault();
@@ -58,6 +69,15 @@ export default function AdminTeachingManager({
       }
       setIsSavedInfo(true);
       setTimeout(() => setIsSavedInfo(false), 2500);
+    }
+  };
+
+  const handleSaveOfficeHoursLink = (e) => {
+    if (e) e.preventDefault();
+    if (onUpdateTeachingInfo) {
+      onUpdateTeachingInfo(infoForm);
+      setIsSavedOfficeHoursLink(true);
+      setTimeout(() => setIsSavedOfficeHoursLink(false), 2500);
     }
   };
 
@@ -73,6 +93,7 @@ export default function AdminTeachingManager({
     description: '',
     room: infoForm.officeRoom || 'Room CSE-512 / Software Lab 3',
     officeHours: `Sun & Tue: 2:00 PM - 4:30 PM (${infoForm.officeRoom || 'Room CSE-512'})`,
+    officeHoursLink: '',
     topics: [],
     topicsInput: '',
     link: ''
@@ -102,6 +123,7 @@ export default function AdminTeachingManager({
   const openEditCourse = (course, idx) => {
     setCourseForm({
       ...course,
+      officeHoursLink: course.officeHoursLink || '',
       topicsInput: (course.topics || []).join('\n'),
       link: course.link || ''
     });
@@ -126,6 +148,7 @@ export default function AdminTeachingManager({
       description: courseForm.description.trim(),
       room: courseForm.room.trim(),
       officeHours: courseForm.officeHours.trim(),
+      officeHoursLink: courseForm.officeHoursLink ? courseForm.officeHoursLink.trim() : '',
       topics: parsedTopics,
       link: courseForm.link ? courseForm.link.trim() : ''
     };
@@ -263,6 +286,137 @@ export default function AdminTeachingManager({
         </div>
       </div>
 
+      {/* Permanent Dedicated Card: Schedule Office Hours Button & Advising Link */}
+      <div className="bg-surface-container-lowest border-2 border-secondary/30 rounded-2xl p-5 sm:p-6 shadow-card flex flex-col gap-5 relative overflow-hidden">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-outline gap-3">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center shrink-0">
+              <span className="material-symbols-outlined text-[24px]">calendar_add_on</span>
+            </div>
+            <div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <h4 className="text-title-md font-bold text-on-surface">
+                  Schedule Office Hours Button & Booking Link
+                </h4>
+                <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-secondary/10 text-secondary uppercase tracking-wider">
+                  Public Masthead Action
+                </span>
+              </div>
+              <p className="text-[12px] text-on-surface-variant mt-0.5">
+                Configure the primary action button appearing at the top-right of your public Teaching page.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 self-end sm:self-center shrink-0">
+            <button
+              type="button"
+              onClick={handleSaveOfficeHoursLink}
+              className="px-4 py-2 rounded-xl bg-secondary hover:bg-secondary-dark text-white font-semibold text-label-md flex items-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"
+            >
+              <span className="material-symbols-outlined text-[18px]">
+                {isSavedOfficeHoursLink ? 'check_circle' : 'save'}
+              </span>
+              <span>{isSavedOfficeHoursLink ? 'Saved Link!' : 'Save Office Hours Link'}</span>
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="flex flex-col gap-1.5">
+            <label className="text-label-sm font-semibold text-on-surface">Button Label Text</label>
+            <input
+              type="text"
+              value={infoForm.actionButtonText}
+              onChange={(e) => updateField('actionButtonText', e.target.value)}
+              placeholder="e.g., Schedule Office Hours"
+              className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
+            />
+            <span className="text-[11px] text-on-surface-variant">
+              The text displayed inside the button (e.g., "Schedule Office Hours", "Book Advising").
+            </span>
+          </div>
+
+          <div className="sm:col-span-2 flex flex-col gap-1.5">
+            <div className="flex items-center justify-between">
+              <label className="text-label-sm font-semibold text-on-surface flex items-center gap-1.5">
+                <span>Target Booking Link / URL *</span>
+                {infoForm.actionButtonLink ? (
+                  <span className="text-[10px] px-2 py-0.5 rounded font-mono bg-secondary/10 text-secondary font-semibold">
+                    {infoForm.actionButtonLink.startsWith('http')
+                      ? 'External Web Link'
+                      : infoForm.actionButtonLink.startsWith('mailto:')
+                      ? 'Email Link'
+                      : 'Internal Tab'}
+                  </span>
+                ) : (
+                  <span className="text-[10px] px-2 py-0.5 rounded font-mono bg-surface-container text-on-surface-variant font-semibold">
+                    Defaults to Contact Page
+                  </span>
+                )}
+              </label>
+              {infoForm.actionButtonLink && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    const l = infoForm.actionButtonLink.trim();
+                    if (/^(https?:\/\/|mailto:|tel:)/i.test(l)) {
+                      window.open(l, '_blank', 'noopener,noreferrer');
+                    } else if (l) {
+                      window.open(`https://${l}`, '_blank', 'noopener,noreferrer');
+                    }
+                  }}
+                  className="text-[12px] text-secondary font-semibold hover:underline flex items-center gap-1"
+                >
+                  <span className="material-symbols-outlined text-[14px]">open_in_new</span>
+                  <span>Test Link</span>
+                </button>
+              )}
+            </div>
+            <input
+              type="text"
+              value={infoForm.actionButtonLink}
+              onChange={(e) => updateField('actionButtonLink', e.target.value)}
+              placeholder="e.g., https://calendly.com/your-url or calendar.app.google/... or mailto:you@ewubd.edu"
+              className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface font-mono focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
+            />
+            
+            {/* Quick Presets */}
+            <div className="flex items-center gap-1.5 flex-wrap pt-1">
+              <span className="text-[11px] text-on-surface-variant font-medium mr-1">Quick Presets:</span>
+              <button
+                type="button"
+                onClick={() => updateField('actionButtonLink', '')}
+                className="px-2.5 py-1 rounded-lg bg-surface-container text-[11px] font-medium text-on-surface hover:bg-secondary/15 hover:text-secondary transition-colors"
+              >
+                Default (Contact Page)
+              </button>
+              <button
+                type="button"
+                onClick={() => updateField('actionButtonLink', 'https://calendly.com/')}
+                className="px-2.5 py-1 rounded-lg bg-surface-container text-[11px] font-medium text-on-surface hover:bg-secondary/15 hover:text-secondary transition-colors"
+              >
+                + Calendly URL
+              </button>
+              <button
+                type="button"
+                onClick={() => updateField('actionButtonLink', 'https://calendar.app.google/')}
+                className="px-2.5 py-1 rounded-lg bg-surface-container text-[11px] font-medium text-on-surface hover:bg-secondary/15 hover:text-secondary transition-colors"
+              >
+                + Google Calendar
+              </button>
+              <button
+                type="button"
+                onClick={() => updateField('actionButtonLink', 'mailto:safinkamal@ewubd.edu')}
+                className="px-2.5 py-1 rounded-lg bg-surface-container text-[11px] font-medium text-on-surface hover:bg-secondary/15 hover:text-secondary transition-colors"
+              >
+                + Email (mailto:)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Sub-Section Switcher Tabs */}
       <div className="flex items-center gap-2 border-b border-outline pb-2 flex-wrap">
         <button
@@ -329,7 +483,7 @@ export default function AdminTeachingManager({
                   type="text"
                   required
                   value={infoForm.pageTitle}
-                  onChange={(e) => setInfoForm({ ...infoForm, pageTitle: e.target.value })}
+                  onChange={(e) => updateField('pageTitle', e.target.value)}
                   placeholder="e.g., Teaching & Academic Mentorship"
                   className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-md text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
                 />
@@ -340,7 +494,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.departmentEyebrow}
-                  onChange={(e) => setInfoForm({ ...infoForm, departmentEyebrow: e.target.value })}
+                  onChange={(e) => updateField('departmentEyebrow', e.target.value)}
                   placeholder="e.g., Department of Computer Science & Engineering"
                   className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
                 />
@@ -352,7 +506,7 @@ export default function AdminTeachingManager({
               <textarea
                 rows={3}
                 value={infoForm.tagline}
-                onChange={(e) => setInfoForm({ ...infoForm, tagline: e.target.value })}
+                onChange={(e) => updateField('tagline', e.target.value)}
                 placeholder="Overview of your faculty instruction role and student supervision..."
                 className="p-3.5 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface leading-relaxed focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
               />
@@ -364,7 +518,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.actionButtonText}
-                  onChange={(e) => setInfoForm({ ...infoForm, actionButtonText: e.target.value })}
+                  onChange={(e) => updateField('actionButtonText', e.target.value)}
                   placeholder="e.g., Schedule Office Hours"
                   className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
                 />
@@ -375,7 +529,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.actionButtonLink}
-                  onChange={(e) => setInfoForm({ ...infoForm, actionButtonLink: e.target.value })}
+                  onChange={(e) => updateField('actionButtonLink', e.target.value)}
                   placeholder="Leave empty for Contact page, or add Calendly / booking URL"
                   className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
                 />
@@ -403,7 +557,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.campusName}
-                  onChange={(e) => setInfoForm({ ...infoForm, campusName: e.target.value })}
+                  onChange={(e) => updateField('campusName', e.target.value)}
                   placeholder="e.g., East West Univ"
                   className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
                 />
@@ -414,7 +568,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.campusLocation}
-                  onChange={(e) => setInfoForm({ ...infoForm, campusLocation: e.target.value })}
+                  onChange={(e) => updateField('campusLocation', e.target.value)}
                   placeholder="e.g., Aftabnagar, Dhaka"
                   className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
                 />
@@ -430,7 +584,7 @@ export default function AdminTeachingManager({
                   type="text"
                   required
                   value={infoForm.officeRoom}
-                  onChange={(e) => setInfoForm({ ...infoForm, officeRoom: e.target.value })}
+                  onChange={(e) => updateField('officeRoom', e.target.value)}
                   placeholder="e.g., Room CSE-512"
                   className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-md text-on-surface font-bold focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
                 />
@@ -446,7 +600,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.officeNote}
-                  onChange={(e) => setInfoForm({ ...infoForm, officeNote: e.target.value })}
+                  onChange={(e) => updateField('officeNote', e.target.value)}
                   placeholder="e.g., Open Student Advising"
                   className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
                 />
@@ -470,7 +624,7 @@ export default function AdminTeachingManager({
               <input
                 type="text"
                 value={infoForm.philosophyTitle}
-                onChange={(e) => setInfoForm({ ...infoForm, philosophyTitle: e.target.value })}
+                onChange={(e) => updateField('philosophyTitle', e.target.value)}
                 placeholder="e.g., Teaching Philosophy: Rigorous Theory with Reproducible Empirical Code"
                 className="h-11 px-3.5 bg-surface-container-low border border-outline rounded-xl text-body-md text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
               />
@@ -483,7 +637,7 @@ export default function AdminTeachingManager({
               <textarea
                 rows={5}
                 value={infoForm.philosophyText}
-                onChange={(e) => setInfoForm({ ...infoForm, philosophyText: e.target.value })}
+                onChange={(e) => updateField('philosophyText', e.target.value)}
                 placeholder="Detail your pedagogical principles, active classroom strategies, and hands-on laboratory expectations..."
                 className="p-3.5 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface leading-relaxed focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
               />
@@ -507,7 +661,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.coursesEyebrow}
-                  onChange={(e) => setInfoForm({ ...infoForm, coursesEyebrow: e.target.value })}
+                  onChange={(e) => updateField('coursesEyebrow', e.target.value)}
                   placeholder="e.g., Curricula & Instruction"
                   className="h-10 px-3 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface"
                 />
@@ -518,7 +672,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.coursesHeading}
-                  onChange={(e) => setInfoForm({ ...infoForm, coursesHeading: e.target.value })}
+                  onChange={(e) => updateField('coursesHeading', e.target.value)}
                   placeholder="e.g., University Courses Taught"
                   className="h-10 px-3 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface font-semibold"
                 />
@@ -531,7 +685,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.mentorshipEyebrow}
-                  onChange={(e) => setInfoForm({ ...infoForm, mentorshipEyebrow: e.target.value })}
+                  onChange={(e) => updateField('mentorshipEyebrow', e.target.value)}
                   placeholder="e.g., Student Research Leadership"
                   className="h-10 px-3 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface"
                 />
@@ -542,7 +696,7 @@ export default function AdminTeachingManager({
                 <input
                   type="text"
                   value={infoForm.mentorshipHeading}
-                  onChange={(e) => setInfoForm({ ...infoForm, mentorshipHeading: e.target.value })}
+                  onChange={(e) => updateField('mentorshipHeading', e.target.value)}
                   placeholder="e.g., Supervised Undergraduate Capstone & Thesis Groups"
                   className="h-10 px-3 bg-surface-container-low border border-outline rounded-xl text-body-sm text-on-surface font-semibold"
                 />
@@ -854,15 +1008,28 @@ export default function AdminTeachingManager({
                 </div>
               </div>
 
-              <div className="flex flex-col gap-1.5">
-                <label className="text-label-sm font-semibold text-on-surface">Course Portal / Syllabus Link (Optional)</label>
-                <input
-                  type="text"
-                  value={courseForm.link}
-                  onChange={(e) => setCourseForm({ ...courseForm, link: e.target.value })}
-                  placeholder="e.g., https://ewubd.edu/cse425 or link to syllabus PDF"
-                  className="h-11 px-3 bg-surface-container-lowest border border-outline rounded-xl text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
-                />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-label-sm font-semibold text-on-surface">Course Office Hours Booking Link (Optional)</label>
+                  <input
+                    type="text"
+                    value={courseForm.officeHoursLink}
+                    onChange={(e) => setCourseForm({ ...courseForm, officeHoursLink: e.target.value })}
+                    placeholder="e.g., https://calendly.com/... or Google Meet URL"
+                    className="h-11 px-3 bg-surface-container-lowest border border-outline rounded-xl text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-label-sm font-semibold text-on-surface">Course Portal / Syllabus Link (Optional)</label>
+                  <input
+                    type="text"
+                    value={courseForm.link}
+                    onChange={(e) => setCourseForm({ ...courseForm, link: e.target.value })}
+                    placeholder="e.g., https://ewubd.edu/cse425 or link to syllabus PDF"
+                    className="h-11 px-3 bg-surface-container-lowest border border-outline rounded-xl text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
+                  />
+                </div>
               </div>
 
               <div className="flex flex-col gap-1.5">

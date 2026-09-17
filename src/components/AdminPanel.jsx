@@ -43,7 +43,18 @@ export default function AdminPanel({
     honors: JSON.parse(JSON.stringify(profile?.honors || [])),
     news: JSON.parse(JSON.stringify(profile?.news || [])),
     officeRoom: profile?.officeRoom || profile?.room || 'Room CSE-512',
-    teachingInfo: profile?.teachingInfo || {}
+    teachingInfo: {
+      pageTitle: 'Teaching & Academic Mentorship',
+      departmentEyebrow: 'Department of Computer Science & Engineering',
+      tagline: 'Lecturer at East West University, educating undergraduate engineers in deep learning, algorithms, pattern recognition, and supervising peer-reviewed capstone research.',
+      campusName: 'East West Univ',
+      campusLocation: 'Aftabnagar, Dhaka',
+      officeRoom: profile?.officeRoom || profile?.room || 'Room CSE-512',
+      officeNote: 'Open Student Advising',
+      actionButtonText: 'Schedule Office Hours',
+      actionButtonLink: '',
+      ...(profile?.teachingInfo || {})
+    }
   });
 
   // Photo Upload State
@@ -903,6 +914,12 @@ export default function AdminPanel({
           teaching={formData.teaching}
           mentorship={formData.mentorship}
           teachingInfo={formData.teachingInfo || profile?.teachingInfo || {}}
+          onSyncTeachingInfo={(updatedInfo) => {
+            const nextRoom = updatedInfo.officeRoom || formData.officeRoom;
+            const nextForm = { ...formData, teachingInfo: updatedInfo, officeRoom: nextRoom };
+            setFormData(nextForm);
+            onProfileUpdate({ ...profile, ...nextForm });
+          }}
           onUpdateTeachingInfo={async (updatedInfo) => {
             const nextRoom = updatedInfo.officeRoom || formData.officeRoom;
             const nextForm = { ...formData, teachingInfo: updatedInfo, officeRoom: nextRoom };

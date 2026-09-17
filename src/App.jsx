@@ -42,16 +42,41 @@ export default function App() {
 
   const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
-  // Live State backed by SQLite DB with static fallback
-  const [profile, setProfile] = useState(initialProfileData);
+  // Live State backed by SQLite DB with localStorage cache & static fallback
+  const [profile, setProfile] = useState(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const cached = localStorage.getItem('portfolio_profile');
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          return { ...initialProfileData, ...parsed };
+        }
+      } catch (e) {}
+    }
+    return initialProfileData;
+  });
   const [publications, setPublications] = useState(initialPublicationsData);
+
+  const handleProfileUpdate = (updatedProfile) => {
+    setProfile(updatedProfile);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('portfolio_profile', JSON.stringify(updatedProfile));
+      } catch (e) {}
+    }
+  };
 
   // Fetch live from SQLite API on mount
   useEffect(() => {
     fetch('/api/profile')
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (data) setProfile(data);
+        if (data) {
+          setProfile(data);
+          try {
+            localStorage.setItem('portfolio_profile', JSON.stringify(data));
+          } catch (e) {}
+        }
       })
       .catch((err) => console.log('Serving from bundled profile cache:', err.message));
 
@@ -144,7 +169,7 @@ export default function App() {
         {activeTab === 'admin' && (
           <AdminPanel
             profile={profile}
-            onProfileUpdate={setProfile}
+            onProfileUpdate={handleProfileUpdate}
             publications={publications}
             onPublicationsUpdate={setPublications}
             onClose={() => setActiveTab('research')}
