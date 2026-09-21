@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function CiteModal({ paper, onClose }) {
+export default function CiteModal({ paper, onClose, onNotify }) {
   const [format, setFormat] = useState('bibtex');
   const [copied, setCopied] = useState(false);
 
@@ -35,9 +35,34 @@ export default function CiteModal({ paper, onClose }) {
     try {
       await navigator.clipboard.writeText(getFormattedContent());
       setCopied(true);
+      if (onNotify) {
+        onNotify(`Copied ${format.toUpperCase()} citation to clipboard!`, 'success');
+      }
       setTimeout(() => setCopied(false), 2200);
     } catch (err) {
       console.error('Failed to copy: ', err);
+    }
+  };
+
+  const handleDownloadBib = () => {
+    const bibContent = paper.bibtex || `@inproceedings{kamal${paper.year}${paper.id},
+  title={${paper.title}},
+  author={${paper.authors}},
+  booktitle={${paper.venue}},
+  year={${paper.year}}
+}
+`;
+    const blob = new Blob([bibContent], { type: 'application/x-bibtex' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `citation-${paper.id}.bib`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    if (onNotify) {
+      onNotify(`Downloaded citation-${paper.id}.bib`, 'success');
     }
   };
 
@@ -58,6 +83,9 @@ ER  -
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+    if (onNotify) {
+      onNotify(`Downloaded citation-${paper.id}.ris`, 'success');
+    }
   };
 
   return (
@@ -134,8 +162,16 @@ ER  -
               <span>{copied ? 'Copied to Clipboard!' : `Copy ${format.toUpperCase()}`}</span>
             </button>
             <button
+              onClick={handleDownloadBib}
+              className="h-11 px-3.5 bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline rounded-xl flex items-center justify-center gap-1.5 text-label-md font-medium transition-colors"
+              title="Download BibTeX (.bib) file for LaTeX / Overleaf"
+            >
+              <span className="material-symbols-outlined text-[18px] text-secondary">download</span>
+              <span>.BIB</span>
+            </button>
+            <button
               onClick={handleDownloadRis}
-              className="h-11 px-4 bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline rounded-xl flex items-center justify-center gap-1.5 text-label-md font-medium transition-colors"
+              className="h-11 px-3.5 bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline rounded-xl flex items-center justify-center gap-1.5 text-label-md font-medium transition-colors"
               title="Download EndNote / Zotero / Mendeley RIS file"
             >
               <span className="material-symbols-outlined text-[18px]">download</span>

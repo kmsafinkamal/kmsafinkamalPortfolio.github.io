@@ -6,7 +6,8 @@ export default function Navbar({
   publicationsCount,
   profile,
   darkMode,
-  onToggleDarkMode
+  onToggleDarkMode,
+  onOpenSearch
 }) {
   const projectsCount = profile?.projects?.length || 0;
 
@@ -121,6 +122,23 @@ export default function Navbar({
 
         {/* Header Right Actions */}
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          {/* Quick Omnisearch / Command Palette Trigger */}
+          <button
+            type="button"
+            onClick={onOpenSearch}
+            className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 h-9 sm:h-10 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline/60 text-label-md font-medium transition-all group shrink-0"
+            title="Search papers, projects, courses, news (Ctrl+K or Cmd+K)"
+            aria-label="Search site"
+          >
+            <span className="material-symbols-outlined text-[18px] text-secondary group-hover:scale-110 transition-transform">
+              search
+            </span>
+            <span className="hidden md:inline text-on-surface-variant text-[12px]">Search</span>
+            <kbd className="hidden lg:inline-flex items-center text-[10px] font-mono px-1.5 py-0.5 rounded bg-surface-container border border-outline text-on-surface-variant ml-0.5">
+              ⌘K
+            </kbd>
+          </button>
+
           {/* Dark Mode Toggle Button */}
           <button
             type="button"

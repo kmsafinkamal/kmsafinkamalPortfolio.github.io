@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Navbar from './components/Navbar';
 import BottomNav from './components/BottomNav';
 import ResearchHubView from './components/ResearchHubView';
@@ -10,6 +10,8 @@ import AboutView from './components/AboutView';
 import ContactView from './components/ContactView';
 import AdminPanel from './components/AdminPanel';
 import CiteModal from './components/CiteModal';
+import CommandPalette from './components/CommandPalette';
+import Toast from './components/Toast';
 
 import initialPublicationsData from './data/publications.json';
 import initialProfileData from './data/profile.json';
@@ -17,6 +19,27 @@ import initialProfileData from './data/profile.json';
 export default function App() {
   const [activeTab, setActiveTab] = useState('research');
   const [citePaper, setCitePaper] = useState(null);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [toast, setToast] = useState(null);
+
+  const showToast = useCallback((message, type = 'info', icon = null) => {
+    setToast({ message, type, icon });
+    setTimeout(() => {
+      setToast((prev) => (prev?.message === message ? null : prev));
+    }, 3500);
+  }, []);
+
+  // Global Ctrl+K / Cmd+K Search Palette Shortcut
+  useEffect(() => {
+    const handleGlobalKeyDown = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        setIsSearchOpen((prev) => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleGlobalKeyDown);
+    return () => window.removeEventListener('keydown', handleGlobalKeyDown);
+  }, []);
 
   // Dark Mode Theme State with system & localStorage persistence
   const [darkMode, setDarkMode] = useState(() => {
@@ -108,6 +131,7 @@ export default function App() {
         profile={profile}
         darkMode={darkMode}
         onToggleDarkMode={toggleDarkMode}
+        onOpenSearch={() => setIsSearchOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -126,6 +150,7 @@ export default function App() {
             publications={publications}
             profile={profile}
             onCiteClick={handleCiteClick}
+            onNotify={showToast}
           />
         )}
 
@@ -163,6 +188,7 @@ export default function App() {
         {activeTab === 'contact' && (
           <ContactView
             profile={profile}
+            onNotify={showToast}
           />
         )}
 
@@ -355,6 +381,7 @@ export default function App() {
         onSelectTab={setActiveTab}
         darkMode={darkMode}
         onToggleDarkMode={toggleDarkMode}
+        onOpenSearch={() => setIsSearchOpen(true)}
       />
 
       {/* Citation Export Modal */}
@@ -362,8 +389,22 @@ export default function App() {
         <CiteModal
           paper={citePaper}
           onClose={handleCloseCiteModal}
+          onNotify={showToast}
         />
       )}
+
+      {/* Global Academic Omnibar / Command Palette */}
+      <CommandPalette
+        isOpen={isSearchOpen}
+        onClose={() => setIsSearchOpen(false)}
+        onNavigate={setActiveTab}
+        publications={publications}
+        profile={profile}
+        onCiteClick={handleCiteClick}
+      />
+
+      {/* Floating Micro-interaction Toast */}
+      <Toast toast={toast} onClose={() => setToast(null)} />
     </div>
   );
 }

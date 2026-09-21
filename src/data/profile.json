@@ -502,7 +502,7 @@
     "officeRoom": "AB1-303",
     "officeNote": "Open Student Advising",
     "actionButtonText": "Schedule Office Hours",
-    "actionButtonLink": "",
+    "actionButtonLink": "https://drive.google.com/file/d/1_CfLxHhQKAaIaW0mqK47AqaUzThoQt5x/view?usp=drive_link",
     "philosophyTitle": "Teaching Philosophy: Rigorous Theory with Reproducible Empirical Code",
     "philosophyText": "My teaching pedagogy bridges mathematical rigor with hands-on computational reproducibility. Whether deriving backpropagation gradients on the whiteboard or profiling PyTorch GPU tensors, students are trained not merely as tool consumers, but as rigorous researchers capable of questioning architectures, interpreting loss landscapes, and deploying models with ethical awareness.",
     "coursesHeading": "University Courses Taught",

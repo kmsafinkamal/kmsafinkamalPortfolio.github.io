@@ -1,7 +1,21 @@
 import React, { useState } from 'react';
 
-export default function PublicationCard({ paper, onCiteClick }) {
+export default function PublicationCard({ paper, onCiteClick, onNotify }) {
   const [showAbstract, setShowAbstract] = useState(false);
+
+  const handleShareClick = async () => {
+    const textToShare = `"${paper.title}" - ${paper.authors} (${paper.venue}, ${paper.year})`;
+    try {
+      if (navigator.clipboard) {
+        await navigator.clipboard.writeText(textToShare);
+        if (onNotify) {
+          onNotify('Paper reference copied to clipboard!', 'success');
+        }
+      }
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  };
 
   // Helper to highlight any variation of "K. M. Safin Kamal" in authors string
   const renderAuthors = (authorsText) => {
@@ -131,16 +145,27 @@ export default function PublicationCard({ paper, onCiteClick }) {
           )}
         </div>
 
-        {/* Scholar Citation Link */}
-        <a
-          href={paper.scholarLink || "https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-on-surface-variant hover:text-secondary p-1 rounded-md transition-colors"
-          title="View citation on Google Scholar"
-        >
-          <span className="material-symbols-outlined text-[18px]">open_in_new</span>
-        </a>
+        {/* Right side: Share & Scholar Link */}
+        <div className="flex items-center gap-1">
+          <button
+            onClick={handleShareClick}
+            className="p-1.5 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container-low transition-colors"
+            title="Copy paper reference and citation"
+            aria-label="Share paper reference"
+          >
+            <span className="material-symbols-outlined text-[18px]">share</span>
+          </button>
+          <a
+            href={paper.scholarLink || "https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-1.5 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container-low transition-colors"
+            title="View citation on Google Scholar"
+            aria-label="View on Google Scholar"
+          >
+            <span className="material-symbols-outlined text-[18px]">open_in_new</span>
+          </a>
+        </div>
       </div>
     </article>
   );

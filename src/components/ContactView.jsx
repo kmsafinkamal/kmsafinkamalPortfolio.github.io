@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function ContactView({ profile }) {
+export default function ContactView({ profile, onNotify }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -10,10 +10,38 @@ export default function ContactView({ profile }) {
   });
   const [submitted, setSubmitted] = useState(false);
 
+  const handleCopyEmail = async () => {
+    try {
+      if (navigator.clipboard && profile.email) {
+        await navigator.clipboard.writeText(profile.email);
+        if (onNotify) {
+          onNotify(`Copied ${profile.email} to clipboard!`, 'success');
+        }
+      }
+    } catch (err) {
+      console.error('Failed to copy email:', err);
+    }
+  };
+
+  const handleSendViaEmailClient = (e) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(`[Academic Inquiry] ${formData.topic || 'Research Collaboration'}`);
+    const body = encodeURIComponent(
+      `Dear K. M. Safin Kamal,\n\nName: ${formData.name || 'N/A'}\nInstitution: ${formData.institution || 'N/A'}\nEmail: ${formData.email || 'N/A'}\n\nMessage:\n${formData.message || ''}\n`
+    );
+    window.location.href = `mailto:${profile.email || 'safin.kamal.bd@gmail.com'}?subject=${subject}&body=${body}`;
+    if (onNotify) {
+      onNotify('Opening inquiry in default email client...', 'info');
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
     setSubmitted(true);
+    if (onNotify) {
+      onNotify('Inquiry submitted successfully!', 'success');
+    }
     setTimeout(() => {
       setSubmitted(false);
       setFormData({
@@ -79,17 +107,28 @@ export default function ContactView({ profile }) {
           </div>
 
           {/* Direct Email Card */}
-          <div className="bg-surface-container-low border border-outline rounded-2xl p-5 flex flex-col gap-2">
+          <div className="bg-surface-container-low border border-outline rounded-2xl p-5 flex flex-col gap-2.5">
             <span className="text-label-sm font-bold uppercase tracking-wider text-secondary">
               Direct Academic Email
             </span>
-            <a
-              href={`mailto:${profile.email}`}
-              className="text-title-md font-bold text-on-surface hover:text-secondary transition-colors break-all"
-            >
-              {profile.email}
-            </a>
-            <p className="text-body-sm text-on-surface-variant mt-1">
+            <div className="flex items-center justify-between gap-2 flex-wrap">
+              <a
+                href={`mailto:${profile.email}`}
+                className="text-title-md font-bold text-on-surface hover:text-secondary transition-colors break-all"
+              >
+                {profile.email}
+              </a>
+              <button
+                type="button"
+                onClick={handleCopyEmail}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-sm font-semibold border border-outline transition-all active:scale-[0.98]"
+                title="Copy email to clipboard"
+              >
+                <span className="material-symbols-outlined text-[16px] text-secondary">content_copy</span>
+                <span>Copy</span>
+              </button>
+            </div>
+            <p className="text-body-sm text-on-surface-variant mt-0.5">
               Response window typically within 48–72 hours for scholarly and academic inquiries.
             </p>
           </div>
@@ -200,14 +239,26 @@ export default function ContactView({ profile }) {
                   />
                 </div>
 
-                {/* Submit button */}
-                <button
-                  type="submit"
-                  className="h-11 px-6 rounded-xl bg-primary hover:bg-primary-dark text-on-primary font-semibold text-label-md flex items-center justify-center gap-2 transition-all shadow-sm self-start mt-1 active:scale-[0.98]"
-                >
-                  <span className="material-symbols-outlined text-[18px]">send</span>
-                  <span>Transmit Inquiry</span>
-                </button>
+                {/* Submit button group */}
+                <div className="flex items-center gap-3 flex-wrap mt-1">
+                  <button
+                    type="submit"
+                    className="h-11 px-6 rounded-xl bg-primary hover:bg-primary-dark text-on-primary font-semibold text-label-md flex items-center justify-center gap-2 transition-all shadow-sm active:scale-[0.98]"
+                  >
+                    <span className="material-symbols-outlined text-[18px]">send</span>
+                    <span>Transmit Inquiry</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={handleSendViaEmailClient}
+                    className="h-11 px-5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline font-semibold text-label-md flex items-center justify-center gap-2 transition-all shadow-xs active:scale-[0.98]"
+                    title="Pre-fill and launch this message in your desktop or mobile email application"
+                  >
+                    <span className="material-symbols-outlined text-secondary text-[18px]">forward_to_inbox</span>
+                    <span>Open in Email App</span>
+                  </button>
+                </div>
               </form>
             )}
           </div>

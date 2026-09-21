@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function BottomNav({ activeTab, onSelectTab, darkMode, onToggleDarkMode }) {
+export default function BottomNav({ activeTab, onSelectTab, darkMode, onToggleDarkMode, onOpenSearch }) {
   const [showDrawer, setShowDrawer] = useState(false);
 
   const primaryItems = [
@@ -93,13 +93,25 @@ export default function BottomNav({ activeTab, onSelectTab, darkMode, onToggleDa
             })}
 
             {/* Quick Actions in Drawer */}
-            <div className="pt-3 mt-1 border-t border-outline/50 flex items-center justify-between gap-3">
+            <div className="pt-3 mt-1 border-t border-outline/50 flex items-center justify-between gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setShowDrawer(false);
+                  if (onOpenSearch) onOpenSearch();
+                }}
+                className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-surface-container-low text-on-surface border border-outline text-label-md font-semibold"
+              >
+                <span className="material-symbols-outlined text-[18px] text-secondary">search</span>
+                <span>Search</span>
+              </button>
+
               <button
                 type="button"
                 onClick={() => {
                   onToggleDarkMode();
                 }}
-                className="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-surface-container-low text-on-surface border border-outline text-label-md font-semibold"
+                className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-surface-container-low text-on-surface border border-outline text-label-md font-semibold"
               >
                 <span className="material-symbols-outlined text-[18px] text-secondary">
                   {darkMode ? 'light_mode' : 'dark_mode'}
@@ -111,13 +123,10 @@ export default function BottomNav({ activeTab, onSelectTab, darkMode, onToggleDa
                 href="https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-surface-container-low text-on-surface border border-outline text-label-md font-semibold"
+                className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-surface-container-low text-on-surface border border-outline text-label-md font-semibold"
               >
                 <span className="material-symbols-outlined text-[18px] text-secondary">school</span>
                 <span>Scholar</span>
-                <span className="material-symbols-outlined text-[14px] text-on-surface-variant">
-                  open_in_new
-                </span>
               </a>
             </div>
           </div>

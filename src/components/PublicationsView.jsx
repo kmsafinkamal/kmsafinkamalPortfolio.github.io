@@ -1,12 +1,40 @@
 import React, { useState, useMemo } from 'react';
 import PublicationCard from './PublicationCard';
 
-export default function PublicationsView({ publications, profile, onCiteClick }) {
+export default function PublicationsView({ publications, profile, onCiteClick, onNotify }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedYear, setSelectedYear] = useState(null);
   const [sortBy, setSortBy] = useState('citations'); // 'citations', 'year', 'title'
   const [timelineMode, setTimelineMode] = useState('citations'); // 'citations' or 'papers'
+
+  const handleExportAllBibtex = () => {
+    if (!publications || publications.length === 0) return;
+    const allBib = publications
+      .map((p) => {
+        if (p.bibtex && p.bibtex.trim()) return p.bibtex.trim();
+        return `@inproceedings{kamal${p.year || '2024'}${p.id},
+  title={${p.title}},
+  author={${p.authors}},
+  booktitle={${p.venue}},
+  year={${p.year}}
+}`;
+      })
+      .join('\n\n');
+
+    const blob = new Blob([allBib], { type: 'application/x-bibtex' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'safinkamal_publications.bib';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    if (onNotify) {
+      onNotify(`Exported all ${publications.length} publications to safinkamal_publications.bib!`, 'success');
+    }
+  };
 
   // Dynamic Scholar URL
   const scholarUrl =
@@ -426,27 +454,39 @@ export default function PublicationsView({ publications, profile, onCiteClick })
       </div>
 
       {/* Results Header / Active Filters Summary */}
-      <div className="flex items-center justify-between text-body-sm text-on-surface-variant px-1">
-        <span>
-          Showing <strong className="text-on-surface">{filteredAndSorted.length}</strong> of{' '}
-          {publications.length} publications
-          {selectedCategory !== 'all' && (
-            <span> in <span className="text-secondary font-medium">"{categories.find(c => c.id === selectedCategory)?.label}"</span></span>
-          )}
-          {searchQuery && (
-            <span> matching <span className="text-secondary font-medium">"{searchQuery}"</span></span>
-          )}
-        </span>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-body-sm text-on-surface-variant px-1">
+        <div className="flex items-center gap-2 flex-wrap">
+          <span>
+            Showing <strong className="text-on-surface">{filteredAndSorted.length}</strong> of{' '}
+            {publications.length} publications
+            {selectedCategory !== 'all' && (
+              <span> in <span className="text-secondary font-medium">"{categories.find(c => c.id === selectedCategory)?.label}"</span></span>
+            )}
+            {searchQuery && (
+              <span> matching <span className="text-secondary font-medium">"{searchQuery}"</span></span>
+            )}
+          </span>
 
-        {(selectedCategory !== 'all' || searchQuery || sortBy !== 'citations') && (
-          <button
-            onClick={handleResetFilters}
-            className="text-label-sm font-semibold text-secondary hover:underline flex items-center gap-1"
-          >
-            <span className="material-symbols-outlined text-[16px]">restart_alt</span>
-            <span>Reset filters</span>
-          </button>
-        )}
+          {(selectedCategory !== 'all' || searchQuery || sortBy !== 'citations' || selectedYear !== null) && (
+            <button
+              onClick={handleResetFilters}
+              className="text-label-sm font-semibold text-secondary hover:underline flex items-center gap-1 ml-1"
+            >
+              <span className="material-symbols-outlined text-[16px]">restart_alt</span>
+              <span>Reset</span>
+            </button>
+          )}
+        </div>
+
+        {/* Bulk BibTeX Export Button */}
+        <button
+          onClick={handleExportAllBibtex}
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface border border-outline text-label-sm font-semibold transition-all shadow-xs self-start sm:self-auto shrink-0"
+          title="Download complete 46-paper bibliography as BibTeX (.bib) file"
+        >
+          <span className="material-symbols-outlined text-secondary text-[16px]">download</span>
+          <span>Download All Citations (.bib)</span>
+        </button>
       </div>
 
       {/* Publications List Grid */}
@@ -457,12 +497,13 @@ export default function PublicationsView({ publications, profile, onCiteClick })
               key={paper.id}
               paper={paper}
               onCiteClick={onCiteClick}
+              onNotify={onNotify}
             />
           ))}
         </div>
       ) : (
         /* Empty State */
-        <div className="bg-surface-container-lowest border border-outline rounded-2xl p-12 text-center flex flex-col items-center gap-3">
+        <div className="bg-surface-container-lowest border border-outline rounded-2xl p-10 sm:p-12 text-center flex flex-col items-center gap-3">
           <div className="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
             <span className="material-symbols-outlined text-[30px]">search_off</span>
           </div>
@@ -470,9 +511,28 @@ export default function PublicationsView({ publications, profile, onCiteClick })
           <p className="text-body-md text-on-surface-variant max-w-md">
             No papers matched your search query or selected topic filter. Try broadening your keywords or clearing the active filters.
           </p>
+
+          {/* Quick Suggestions */}
+          <div className="flex items-center gap-2 flex-wrap justify-center pt-2">
+            <span className="text-[12px] text-on-surface-variant font-medium">Try searching:</span>
+            {['Anemia', 'Cloud', 'Vision', 'Transformer', 'Security'].map((term) => (
+              <button
+                key={term}
+                onClick={() => {
+                  setSelectedCategory('all');
+                  setSelectedYear(null);
+                  setSearchQuery(term);
+                }}
+                className="px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container border border-outline text-[12px] font-semibold text-secondary transition-colors"
+              >
+                {term}
+              </button>
+            ))}
+          </div>
+
           <button
             onClick={handleResetFilters}
-            className="mt-2 px-4 py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-dark font-medium text-label-md transition-colors"
+            className="mt-3 px-4 py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-dark font-medium text-label-md transition-colors"
           >
             Clear All Filters
           </button>
