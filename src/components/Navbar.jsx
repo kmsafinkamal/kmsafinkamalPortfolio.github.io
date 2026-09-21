@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Navbar({
   activeTab,
@@ -10,6 +10,7 @@ export default function Navbar({
   onOpenSearch,
   unreadInquiriesCount = 0
 }) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const projectsCount = profile?.projects?.length || 0;
 
   const navItems = [
@@ -27,12 +28,17 @@ export default function Navbar({
     profile?.socialLinks?.find((l) => l.label?.toLowerCase().includes('scholar'))?.url ||
     'https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en';
 
+  const handleSelect = (id) => {
+    onSelectTab(id);
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="sticky top-0 sm:top-3 z-40 w-full px-2 sm:px-4 md:px-6 pointer-events-none transition-all duration-300 no-print">
-      <div className="max-w-6xl mx-auto bg-surface/85 dark:bg-surface/80 backdrop-blur-2xl border border-black/[0.08] dark:border-white/[0.12] rounded-2xl sm:rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] px-3.5 sm:px-5 h-14 sm:h-16 flex items-center justify-between gap-2 sm:gap-4 pointer-events-auto transition-all">
+      <div className="max-w-6xl mx-auto bg-surface/85 dark:bg-surface/80 backdrop-blur-2xl border border-black/[0.08] dark:border-white/[0.12] rounded-2xl sm:rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] px-3 sm:px-4 h-14 sm:h-16 flex items-center justify-between gap-2 sm:gap-3 pointer-events-auto transition-all relative">
         {/* Apple-style Brand & Faculty Identity */}
         <div
-          onClick={() => onSelectTab('research')}
+          onClick={() => handleSelect('research')}
           className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group select-none shrink min-w-0"
         >
           {/* Squircle Avatar / Monogram */}
@@ -67,22 +73,26 @@ export default function Navbar({
           </div>
         </div>
 
-        {/* Desktop Navigation Capsule Dock (XL+: All 7 items with icons & labels) */}
-        <nav className="hidden xl:flex items-center gap-0.5 bg-black/[0.04] dark:bg-white/[0.06] p-1 rounded-full border border-black/[0.04] dark:border-white/[0.06] backdrop-blur-md shadow-xs">
+        {/* Unified Capsule Dock (Contains ALL 7 options on tablet & desktop without exception) */}
+        <nav className="hidden md:flex items-center gap-0.5 bg-black/[0.04] dark:bg-white/[0.06] p-1 rounded-full border border-black/[0.04] dark:border-white/[0.06] backdrop-blur-md">
           {navItems.map((item) => {
             const isActive = activeTab === item.id;
             return (
               <button
                 key={item.id}
-                onClick={() => onSelectTab(item.id)}
-                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[12.5px] transition-all duration-200 ${
+                onClick={() => handleSelect(item.id)}
+                className={`inline-flex items-center gap-1 sm:gap-1.5 px-2.5 lg:px-3 xl:px-3.5 py-1.5 rounded-full text-[11.5px] lg:text-[12px] xl:text-[12.5px] transition-all duration-200 ${
                   isActive
                     ? 'bg-surface-container-lowest text-on-surface font-semibold shadow-[0_2px_8px_rgba(0,0,0,0.06),0_1px_2px_rgba(0,0,0,0.04)] ring-1 ring-black/5 dark:ring-white/10'
-                    : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/50 font-medium'
+                    : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/40 font-medium'
                 }`}
+                title={item.label}
               >
-                <span className={`material-symbols-outlined text-[16px] ${isActive ? 'text-secondary' : ''}`}>{item.icon}</span>
-                <span>{item.label}</span>
+                <span className={`material-symbols-outlined text-[15px] lg:text-[16px] ${isActive ? 'text-secondary' : ''}`}>
+                  {item.icon}
+                </span>
+                <span className="hidden lg:inline">{item.label}</span>
+                <span className="inline lg:hidden">{item.shortLabel}</span>
                 {item.count !== undefined && item.count > 0 && (
                   <span
                     className={`text-[9.5px] px-1.5 py-0.2 rounded-full font-bold transition-colors ${
@@ -94,50 +104,6 @@ export default function Navbar({
                     {item.count}
                   </span>
                 )}
-              </button>
-            );
-          })}
-        </nav>
-
-        {/* Medium-to-Large Navigation Dock (LG only: 1024px - 1279px) */}
-        <nav className="hidden lg:flex xl:hidden items-center gap-0.5 bg-black/[0.04] dark:bg-white/[0.06] p-1 rounded-full border border-black/[0.04] dark:border-white/[0.06] backdrop-blur-md">
-          {navItems.map((item) => {
-            const isActive = activeTab === item.id;
-            return (
-              <button
-                key={item.id}
-                onClick={() => onSelectTab(item.id)}
-                className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[11.5px] transition-all duration-200 ${
-                  isActive
-                    ? 'bg-surface-container-lowest text-on-surface font-semibold shadow-[0_2px_8px_rgba(0,0,0,0.06)] ring-1 ring-black/5 dark:ring-white/10'
-                    : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/40 font-medium'
-                }`}
-                title={item.label}
-              >
-                <span className={`material-symbols-outlined text-[15px] ${isActive ? 'text-secondary' : ''}`}>{item.icon}</span>
-                <span>{item.shortLabel}</span>
-              </button>
-            );
-          })}
-        </nav>
-
-        {/* Tablet Navigation Dock (MD only: 768px - 1023px) */}
-        <nav className="hidden md:flex lg:hidden items-center gap-0.5 bg-black/[0.04] dark:bg-white/[0.06] p-1 rounded-full border border-black/[0.04] dark:border-white/[0.06] backdrop-blur-md">
-          {navItems.slice(0, 4).map((item) => {
-            const isActive = activeTab === item.id;
-            return (
-              <button
-                key={item.id}
-                onClick={() => onSelectTab(item.id)}
-                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11.5px] transition-all duration-200 ${
-                  isActive
-                    ? 'bg-surface-container-lowest text-on-surface font-semibold shadow-xs'
-                    : 'text-on-surface-variant hover:text-on-surface font-medium'
-                }`}
-                title={item.label}
-              >
-                <span className={`material-symbols-outlined text-[15px] ${isActive ? 'text-secondary' : ''}`}>{item.icon}</span>
-                <span>{item.shortLabel}</span>
               </button>
             );
           })}
@@ -191,7 +157,7 @@ export default function Navbar({
 
           {/* Faculty Portal Toggle Button */}
           <button
-            onClick={() => onSelectTab(activeTab === 'admin' ? 'research' : 'admin')}
+            onClick={() => handleSelect(activeTab === 'admin' ? 'research' : 'admin')}
             className={`relative inline-flex items-center gap-1.5 px-3 sm:px-3.5 h-9 rounded-full border text-[12.5px] font-semibold transition-all shrink-0 ${
               activeTab === 'admin'
                 ? 'bg-primary text-white border-primary shadow-[0_2px_8px_rgba(0,0,0,0.15)] ring-2 ring-primary/20'
@@ -211,7 +177,73 @@ export default function Navbar({
               </span>
             )}
           </button>
+
+          {/* Mobile Menu Toggle Button (Visible only on mobile < md) */}
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden w-9 h-9 rounded-full bg-black/[0.03] dark:bg-white/[0.06] hover:bg-black/[0.06] dark:hover:bg-white/[0.1] text-on-surface border border-black/[0.04] dark:border-white/[0.06] flex items-center justify-center transition-all group shrink-0"
+            title="Toggle Menu"
+            aria-label="Toggle navigation menu"
+          >
+            <span className="material-symbols-outlined text-[19px] text-secondary">
+              {mobileMenuOpen ? 'close' : 'menu'}
+            </span>
+          </button>
         </div>
+
+        {/* Mobile Dropdown Capsule Menu (When mobileMenuOpen is true) */}
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-surface/95 dark:bg-surface/95 backdrop-blur-2xl border border-black/[0.08] dark:border-white/[0.12] rounded-3xl shadow-[0_16px_40px_rgba(0,0,0,0.12)] p-4 flex flex-col gap-1.5 animate-fadeIn z-50">
+            <div className="text-[10.5px] font-bold uppercase tracking-wider text-secondary px-3 pb-1 border-b border-black/[0.05] dark:border-white/[0.08] mb-1 flex items-center justify-between">
+              <span>All Portfolio Options</span>
+              <span className="text-on-surface-variant font-normal">7 Sections</span>
+            </div>
+            {navItems.map((item) => {
+              const isActive = activeTab === item.id;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => handleSelect(item.id)}
+                  className={`flex items-center justify-between px-3.5 py-2.5 rounded-2xl text-[13px] font-medium transition-all ${
+                    isActive
+                      ? 'bg-secondary/15 text-secondary font-semibold'
+                      : 'text-on-surface hover:bg-black/[0.03] dark:hover:bg-white/[0.06]'
+                  }`}
+                >
+                  <div className="flex items-center gap-2.5">
+                    <span className="material-symbols-outlined text-[18px] text-secondary">{item.icon}</span>
+                    <span>{item.label}</span>
+                  </div>
+                  {item.count !== undefined && item.count > 0 && (
+                    <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-secondary/20 text-secondary">
+                      {item.count}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+
+            <div className="pt-2 border-t border-black/[0.05] dark:border-white/[0.08] flex items-center justify-between gap-2">
+              <a
+                href={scholarLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-xl bg-black/[0.03] dark:bg-white/[0.06] text-[12px] font-semibold text-on-surface hover:text-secondary"
+              >
+                <span className="material-symbols-outlined text-[16px] text-secondary">school</span>
+                <span>Google Scholar</span>
+              </a>
+              <button
+                onClick={() => handleSelect('admin')}
+                className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-xl bg-primary text-white text-[12px] font-semibold"
+              >
+                <span className="material-symbols-outlined text-[16px]">tune</span>
+                <span>Faculty Portal</span>
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );
