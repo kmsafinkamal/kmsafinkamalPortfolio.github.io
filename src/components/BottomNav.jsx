@@ -5,8 +5,7 @@ export default function BottomNav({
   onSelectTab,
   darkMode,
   onToggleDarkMode,
-  onOpenSearch,
-  unreadInquiriesCount = 0
+  onOpenSearch
 }) {
   const [showDrawer, setShowDrawer] = useState(false);
 
@@ -21,7 +20,6 @@ export default function BottomNav({
     { id: 'cv', label: 'Curriculum Vitae', icon: 'description', desc: 'Interactive CV & printable PDF' },
     { id: 'about', label: 'About & Biography', icon: 'badge', desc: 'Background, education & research philosophy' },
     { id: 'contact', label: 'Contact & Collab', icon: 'mail', desc: 'Institutional office & direct email' },
-    { id: 'admin', label: 'Faculty Portal', icon: 'tune', desc: 'Manage dossier, proposals, & Scholar sync' },
   ];
 
   const handleSelect = (id) => {
@@ -29,7 +27,7 @@ export default function BottomNav({
     setShowDrawer(false);
   };
 
-  const isSecondaryActive = ['cv', 'about', 'contact', 'admin'].includes(activeTab);
+  const isSecondaryActive = ['cv', 'about', 'contact'].includes(activeTab);
 
   return (
     <>
@@ -85,11 +83,6 @@ export default function BottomNav({
                       {item.id === 'cv' && (
                         <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200 font-bold">
                           PDF
-                        </span>
-                      )}
-                      {item.id === 'admin' && unreadInquiriesCount > 0 && (
-                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">
-                          {unreadInquiriesCount} new
                         </span>
                       )}
                     </div>
@@ -190,9 +183,6 @@ export default function BottomNav({
               >
                 {showDrawer ? 'expand_more' : 'more_horiz'}
               </span>
-              {unreadInquiriesCount > 0 && (
-                <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full animate-pulse ring-2 ring-surface" />
-              )}
             </div>
             <span className="text-[11px] mt-0.5 tracking-tight font-medium">More</span>
           </button>

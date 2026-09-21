@@ -224,7 +224,6 @@ export default function App() {
         darkMode={darkMode}
         onToggleDarkMode={toggleDarkMode}
         onOpenSearch={() => setIsSearchOpen(true)}
-        unreadInquiriesCount={unreadInquiriesCount}
       />
 
       {/* Main Content Area */}
@@ -434,13 +433,24 @@ export default function App() {
                 </button>
 
                 <button
-                  onClick={() => setActiveTab('admin')}
-                  className="inline-flex items-center justify-start gap-2 px-3 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline text-on-surface text-label-md font-medium transition-colors"
+                  type="button"
+                  onClick={() => {
+                    setActiveTab('admin');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  className="inline-flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline text-on-surface text-label-md font-medium transition-colors group"
                 >
-                  <span className="material-symbols-outlined text-[17px] text-secondary">
-                    tune
-                  </span>
-                  <span>Faculty Portal & Scholar Sync</span>
+                  <div className="inline-flex items-center gap-2">
+                    <span className="material-symbols-outlined text-[17px] text-secondary group-hover:rotate-45 transition-transform">
+                      tune
+                    </span>
+                    <span>Faculty Portal & Scholar Sync</span>
+                  </div>
+                  {unreadInquiriesCount > 0 && (
+                    <span className="px-2 py-0.5 text-[10px] font-bold rounded-full bg-red-500 text-white animate-pulse">
+                      {unreadInquiriesCount} new
+                    </span>
+                  )}
                 </button>
 
                 <button
@@ -479,7 +489,6 @@ export default function App() {
         darkMode={darkMode}
         onToggleDarkMode={toggleDarkMode}
         onOpenSearch={() => setIsSearchOpen(true)}
-        unreadInquiriesCount={unreadInquiriesCount}
       />
 
       {/* Citation Export Modal */}
