@@ -435,9 +435,9 @@ export default function App() {
                   className="inline-flex items-center justify-start gap-2 px-3 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container border border-outline text-on-surface text-label-md font-medium transition-colors"
                 >
                   <span className="material-symbols-outlined text-[17px] text-secondary">
-                    admin_panel_settings
+                    tune
                   </span>
-                  <span>Admin & Scholar Sync</span>
+                  <span>Faculty Portal & Scholar Sync</span>
                 </button>
 
                 <button

@@ -46,6 +46,7 @@ export default function CommandPalette({
       { id: 'cv', title: 'Curriculum Vitae', category: 'Navigation', icon: 'description', desc: 'Interactive CV & printable academic PDF' },
       { id: 'about', title: 'About & Academic Journey', category: 'Navigation', icon: 'badge', desc: 'Biography, appointments & degrees' },
       { id: 'contact', title: 'Contact & Collaboration', category: 'Navigation', icon: 'mail', desc: 'Direct email & academic inquiries' },
+      { id: 'admin', title: 'Faculty Portal & Scholar Sync', category: 'Navigation', icon: 'tune', desc: 'Manage dossier, proposals, & Scholar synchronization' },
     ];
 
     const matchedPages = !q

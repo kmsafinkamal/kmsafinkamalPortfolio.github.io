@@ -28,20 +28,20 @@ export default function Navbar({
     'https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en';
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-surface/90 backdrop-blur-xl border-b border-outline/60 shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all no-print">
+    <header className="sticky top-0 z-40 w-full bg-surface/90 backdrop-blur-xl border-b border-outline/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)] transition-all no-print">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-2 sm:gap-4">
-        {/* Brand & Researcher Identity */}
+        {/* Brand & Faculty Identity */}
         <div
           onClick={() => onSelectTab('research')}
           className="flex items-center gap-3 cursor-pointer group select-none shrink-0"
         >
-          {/* Avatar / Monogram */}
-          <div className="w-10 h-10 rounded-xl bg-primary-container text-white overflow-hidden flex items-center justify-center font-bold text-sm tracking-wider group-hover:shadow-md transition-all border border-slate-700/20 shrink-0">
+          {/* Avatar / Monogram Squircle */}
+          <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary-container to-primary text-white overflow-hidden flex items-center justify-center font-bold text-sm tracking-wider group-hover:shadow-md transition-all ring-1 ring-black/5 dark:ring-white/10 shrink-0">
             {profile?.photoUrl ? (
               <img
                 src={profile.photoUrl}
                 alt={profile.name || 'Safin Kamal'}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
             ) : (
               <span className="text-on-primary font-bold tracking-wider">SK</span>
@@ -51,12 +51,12 @@ export default function Navbar({
           {/* Brand Titles */}
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">
-              <span className="font-bold text-on-surface text-title-sm sm:text-title-md group-hover:text-secondary transition-colors leading-tight truncate max-w-[150px] sm:max-w-none">
+              <span className="font-bold text-on-surface text-[15px] sm:text-[16px] group-hover:text-secondary transition-colors leading-tight truncate max-w-[150px] sm:max-w-none">
                 {profile?.name || 'K. M. Safin Kamal'}
               </span>
               <span
                 className="material-symbols-outlined text-secondary text-[16px] leading-none shrink-0"
-                title="Google Scholar & Institutional Verified Researcher"
+                title="Verified Faculty Researcher • East West University"
               >
                 verified
               </span>
@@ -68,16 +68,16 @@ export default function Navbar({
         </div>
 
         {/* Desktop Navigation Tabs (LG+) */}
-        <nav className="hidden lg:flex items-center gap-1 bg-surface-container-low/70 p-1 rounded-xl border border-outline/60 backdrop-blur-sm">
+        <nav className="hidden lg:flex items-center gap-1 bg-surface-container-low/80 p-1.5 rounded-2xl border border-outline/50 backdrop-blur-md shadow-xs">
           {navItems.map((item) => {
             const isActive = activeTab === item.id;
             return (
               <button
                 key={item.id}
                 onClick={() => onSelectTab(item.id)}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[13px] font-semibold transition-all ${
+                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-[13px] font-semibold transition-all ${
                   isActive
-                    ? 'bg-surface-container-lowest text-secondary shadow-sm ring-1 ring-slate-900/5'
+                    ? 'bg-surface-container-lowest text-secondary shadow-xs ring-1 ring-black/5 dark:ring-white/10'
                     : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/50'
                 }`}
               >
@@ -85,7 +85,7 @@ export default function Navbar({
                 <span>{item.label}</span>
                 {item.count !== undefined && item.count > 0 && (
                   <span
-                    className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold transition-colors ${
+                    className={`text-[10px] px-1.5 py-0.5 rounded-full font-bold transition-colors ${
                       isActive
                         ? 'bg-secondary text-white'
                         : 'bg-surface-container text-on-surface-variant'
@@ -100,16 +100,16 @@ export default function Navbar({
         </nav>
 
         {/* Medium Screen Nav (MD only) */}
-        <nav className="hidden md:flex lg:hidden items-center gap-1 bg-surface-container-low/70 p-1 rounded-xl border border-outline/60 backdrop-blur-sm">
+        <nav className="hidden md:flex lg:hidden items-center gap-1 bg-surface-container-low/80 p-1.5 rounded-2xl border border-outline/50 backdrop-blur-md">
           {navItems.slice(0, 5).map((item) => {
             const isActive = activeTab === item.id;
             return (
               <button
                 key={item.id}
                 onClick={() => onSelectTab(item.id)}
-                className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-[12px] font-semibold transition-all ${
+                className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-[12px] font-semibold transition-all ${
                   isActive
-                    ? 'bg-surface-container-lowest text-secondary shadow-sm'
+                    ? 'bg-surface-container-lowest text-secondary shadow-xs ring-1 ring-black/5'
                     : 'text-on-surface-variant hover:text-on-surface'
                 }`}
                 title={item.label}
@@ -170,21 +170,21 @@ export default function Navbar({
             </span>
           </a>
 
-          {/* Admin Panel Toggle */}
+          {/* Faculty Portal Toggle */}
           <button
             onClick={() => onSelectTab(activeTab === 'admin' ? 'research' : 'admin')}
             className={`relative inline-flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-xl border text-label-md font-semibold transition-all ${
               activeTab === 'admin'
-                ? 'bg-primary text-white border-primary shadow-sm'
-                : 'bg-surface-container-low hover:bg-surface-container text-on-surface border-outline/60 hover:text-secondary'
+                ? 'bg-primary text-white border-primary shadow-sm ring-2 ring-primary/20'
+                : 'bg-surface-container-low hover:bg-surface-container text-on-surface border-outline/60 hover:text-secondary hover:border-secondary/30'
             }`}
-            title="Portfolio Admin Panel & DB Settings"
+            title="Faculty Management Portal & Database Controls"
           >
             <span className="material-symbols-outlined text-[18px]">
-              {activeTab === 'admin' ? 'close' : 'admin_panel_settings'}
+              {activeTab === 'admin' ? 'close' : 'tune'}
             </span>
             <span className="hidden sm:inline">
-              {activeTab === 'admin' ? 'Exit Admin' : 'Admin'}
+              {activeTab === 'admin' ? 'Exit Portal' : 'Faculty Portal'}
             </span>
             {unreadInquiriesCount > 0 && activeTab !== 'admin' && (
               <span className="inline-flex items-center justify-center min-w-[18px] h-[18px] px-1 text-[10px] font-bold rounded-full bg-red-500 text-white animate-pulse shadow-xs">

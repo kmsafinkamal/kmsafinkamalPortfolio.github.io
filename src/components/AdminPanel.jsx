@@ -21,6 +21,7 @@ export default function AdminPanel({
     return localStorage.getItem('admin_authenticated') === 'true';
   });
   const [pinInput, setPinInput] = useState('');
+  const [showPin, setShowPin] = useState(false);
   const [pinError, setPinError] = useState('');
 
   // Active Tab
@@ -503,77 +504,211 @@ export default function AdminPanel({
   };
 
   // -------------------------------------------------------------
-  // RENDER: PIN LOGIN MODAL
+  // RENDER: PIN LOGIN MODAL (EXECUTIVE FACULTY AUTHORIZATION)
   // -------------------------------------------------------------
   if (!isAuthenticated) {
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/70 backdrop-blur-sm animate-fadeIn">
-        <div className="w-full max-w-md bg-surface-container-lowest border border-outline rounded-2xl shadow-floating p-6 sm:p-8 flex flex-col gap-5">
-          <div className="flex items-center justify-between border-b border-outline pb-4">
-            <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-secondary text-[24px]">lock</span>
-              <h3 className="text-headline-sm font-bold text-on-surface">Admin Authorization</h3>
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/75 backdrop-blur-md animate-fadeIn">
+        <div className="w-full max-w-md bg-surface-container-lowest border border-outline/80 rounded-3xl shadow-2xl p-6 sm:p-8 flex flex-col gap-6">
+          <div className="flex items-center justify-between border-b border-outline/50 pb-4">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-2xl bg-secondary/10 border border-secondary/20 text-secondary flex items-center justify-center shadow-xs">
+                <span className="material-symbols-outlined text-[24px]">shield_person</span>
+              </div>
+              <div>
+                <h3 className="text-title-lg font-bold text-on-surface leading-tight">Faculty Authorization</h3>
+                <p className="text-[12px] text-on-surface-variant font-medium">East West University • Academic Portal</p>
+              </div>
             </div>
             <button
               onClick={onClose}
-              className="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface"
+              className="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"
+              title="Close"
             >
               <span className="material-symbols-outlined text-[18px]">close</span>
             </button>
           </div>
 
-          <p className="text-body-sm text-on-surface-variant">
-            Enter your secret administrator PIN to access the profile photo uploader, biography editor, and database controls.
+          <p className="text-body-sm text-on-surface-variant leading-relaxed">
+            Please enter your faculty security PIN to manage research projects, teaching syllabi, student inquiries, and Google Scholar synchronization.
           </p>
 
           <form onSubmit={handlePinSubmit} className="flex flex-col gap-4">
             <div className="flex flex-col gap-1.5">
-              <label className="text-label-sm font-semibold text-on-surface">Security PIN</label>
-              <input
-                type="password"
-                required
-                autoFocus
-                value={pinInput}
-                onChange={(e) => setPinInput(e.target.value)}
-                placeholder="Enter PIN (Default: admin123)"
-                className="h-11 px-4 bg-surface-container-lowest border border-slate-300 rounded-xl text-title-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
-              />
+              <label className="text-label-sm font-semibold text-on-surface flex items-center justify-between">
+                <span>Security PIN</span>
+                <span className="text-[11px] text-slate-400 font-normal">Default: admin123</span>
+              </label>
+              <div className="relative">
+                <input
+                  type={showPin ? "text" : "password"}
+                  required
+                  autoFocus
+                  value={pinInput}
+                  onChange={(e) => setPinInput(e.target.value)}
+                  placeholder="Enter PIN..."
+                  className="w-full h-12 px-4 pr-11 bg-surface-container-low/60 border border-slate-300 dark:border-slate-700 rounded-xl text-title-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all font-mono"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPin(!showPin)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface p-1"
+                  title={showPin ? "Hide PIN" : "Show PIN"}
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    {showPin ? 'visibility_off' : 'visibility'}
+                  </span>
+                </button>
+              </div>
               {pinError && (
-                <span className="text-label-sm text-red-600 flex items-center gap-1 mt-1">
-                  <span className="material-symbols-outlined text-[14px]">error</span>
+                <div className="p-2.5 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-900/60 text-red-600 dark:text-red-300 text-label-sm flex items-center gap-1.5 mt-1">
+                  <span className="material-symbols-outlined text-[16px]">error</span>
                   <span>{pinError}</span>
-                </span>
+                </div>
               )}
             </div>
 
-            <div className="flex items-center gap-2 pt-2">
+            <div className="flex items-center gap-2.5 pt-2">
               <button
                 type="submit"
-                className="flex-1 h-11 rounded-xl bg-primary hover:bg-primary-dark text-on-primary font-semibold text-label-md transition-all shadow-sm flex items-center justify-center gap-2"
+                className="flex-1 h-12 rounded-xl bg-primary hover:bg-primary-dark text-on-primary font-semibold text-label-md transition-all shadow-sm flex items-center justify-center gap-2 active:scale-[0.98]"
               >
-                <span className="material-symbols-outlined text-[18px]">key</span>
-                <span>Unlock Admin Panel</span>
+                <span className="material-symbols-outlined text-[18px]">lock_open</span>
+                <span>Unlock Faculty Portal</span>
               </button>
               <button
                 type="button"
                 onClick={onClose}
-                className="px-4 h-11 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline text-label-md font-medium transition-colors"
+                className="px-4 h-12 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline/70 text-label-md font-medium transition-colors"
               >
-                Cancel
+                Return
               </button>
             </div>
           </form>
 
-          <span className="text-[11px] text-slate-400 text-center">
-            Default initial PIN: <code className="bg-slate-100 px-1.5 py-0.5 rounded text-slate-600 font-mono">admin123</code>
-          </span>
+          <div className="pt-2 border-t border-outline/50 flex items-center justify-center gap-1.5 text-[11px] text-on-surface-variant">
+            <span className="material-symbols-outlined text-[14px] text-secondary">verified_user</span>
+            <span>Authorized faculty and lab administration only</span>
+          </div>
         </div>
       </div>
     );
   }
 
   // -------------------------------------------------------------
-  // RENDER: MAIN ADMIN DASHBOARD
+  // CATEGORIZED NAVIGATION STRUCTURE
+  // -------------------------------------------------------------
+  const CATEGORIES = [
+    {
+      id: 'desk',
+      label: 'Communications & Desk',
+      tabs: [
+        {
+          id: 'inquiries',
+          label: 'Inquiries & Proposals',
+          icon: 'mark_email_unread',
+          unread: (inquiries || []).filter((i) => i.status === 'unread').length,
+          count: inquiries.length,
+          desc: 'Incoming research proposals, capstone applications, and student messages.'
+        },
+        {
+          id: 'news',
+          label: 'News & Announcements',
+          icon: 'campaign',
+          count: formData.news?.length,
+          desc: 'Publish conference acceptance highlights, awards, and laboratory updates.'
+        }
+      ]
+    },
+    {
+      id: 'research',
+      label: 'Research & Instruction',
+      tabs: [
+        {
+          id: 'projects',
+          label: 'Projects & Labs',
+          icon: 'folder_special',
+          count: formData.projects?.length,
+          desc: 'Showcase biomedical AI systems, models, datasets, and repositories.'
+        },
+        {
+          id: 'teaching',
+          label: 'Teaching & Syllabi',
+          icon: 'school',
+          count: formData.teaching?.length,
+          desc: 'Course syllabi, student advising, office hours, and mentorship logs.'
+        },
+        {
+          id: 'scholar',
+          label: 'Google Scholar Sync',
+          icon: 'sync',
+          desc: 'Synchronize citations, publication metadata, and metrics from Google Scholar.'
+        }
+      ]
+    },
+    {
+      id: 'dossier',
+      label: 'Academic Dossier',
+      tabs: [
+        {
+          id: 'photo-profile',
+          label: 'Photo & Identity',
+          icon: 'account_circle',
+          desc: 'Manage profile portrait, faculty designation, and department details.'
+        },
+        {
+          id: 'bio',
+          label: 'About & Biography',
+          icon: 'badge',
+          desc: 'Faculty biography, research focus areas, and institutional affiliations.'
+        },
+        {
+          id: 'timeline',
+          label: 'Academic Journey',
+          icon: 'history_edu',
+          count: formData.timeline?.length,
+          desc: 'Chronological timeline of education, academic posts, and appointments.'
+        },
+        {
+          id: 'honors',
+          label: 'Honors & Awards',
+          icon: 'military_tech',
+          count: formData.honors?.length,
+          desc: 'Best paper awards, competitive grants, fellowships, and recognitions.'
+        },
+        {
+          id: 'skills',
+          label: 'Competencies & Skills',
+          icon: 'psychology',
+          desc: 'Core machine learning frameworks, programming languages, and domains.'
+        },
+        {
+          id: 'links',
+          label: 'Scholarly Channels',
+          icon: 'share',
+          desc: 'Curated links to Google Scholar, ORCID, GitHub, and ResearchGate.'
+        }
+      ]
+    },
+    {
+      id: 'system',
+      label: 'System & Security',
+      tabs: [
+        {
+          id: 'security',
+          label: 'Security & Admin PIN',
+          icon: 'lock_reset',
+          desc: 'Manage administrative PIN code and access security settings.'
+        }
+      ]
+    }
+  ];
+
+  const currentCategory = CATEGORIES.find((cat) => cat.tabs.some((t) => t.id === activeTab)) || CATEGORIES[0];
+  const currentTabInfo = currentCategory.tabs.find((t) => t.id === activeTab) || currentCategory.tabs[0];
+
+  // -------------------------------------------------------------
+  // RENDER: MAIN FACULTY MANAGEMENT DASHBOARD
   // -------------------------------------------------------------
   return (
     <div className="flex flex-col gap-6 animate-fadeIn pb-16">
@@ -587,23 +722,31 @@ export default function AdminPanel({
         </div>
       )}
 
-      {/* Admin Top Header Bar */}
-      <div className="bg-surface-container-lowest border border-outline rounded-2xl p-5 sm:p-6 shadow-card flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-label-sm font-bold tracking-wide flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              SQLite DB Active
+      {/* Admin Top Header Bar with Breadcrumb Navigation */}
+      <div className="bg-surface-container-lowest border border-outline/70 rounded-2xl p-5 sm:p-6 shadow-card flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div className="flex flex-col gap-1">
+          {/* Breadcrumb Navigation */}
+          <div className="flex items-center gap-1.5 text-xs text-on-surface-variant font-medium">
+            <span className="text-secondary font-semibold flex items-center gap-1">
+              <span className="material-symbols-outlined text-[15px]">tune</span>
+              Faculty Portal
             </span>
-            <span className="text-label-sm font-semibold text-secondary">
-              Admin Session Active
-            </span>
+            <span>/</span>
+            <span className="text-slate-500 dark:text-slate-400">{currentCategory.label}</span>
+            <span>/</span>
+            <span className="font-semibold text-on-surface">{currentTabInfo.label}</span>
           </div>
-          <h2 className="text-headline-md sm:text-headline-lg font-bold text-on-surface">
-            Portfolio Administration Hub
+
+          <h2 className="text-headline-sm sm:text-headline-md font-bold text-on-surface mt-1 flex items-center gap-2">
+            <span>{currentTabInfo.label}</span>
+            {currentTabInfo.unread !== undefined && currentTabInfo.unread > 0 && (
+              <span className="text-xs px-2 py-0.5 rounded-full font-bold bg-red-500 text-white animate-pulse">
+                {currentTabInfo.unread} Unread
+              </span>
+            )}
           </h2>
           <p className="text-body-sm text-on-surface-variant mt-0.5">
-            Manage your researcher identity, profile avatar, curriculum vitae, and live Google Scholar database synchronization.
+            {currentTabInfo.desc || 'Academic dossier, instruction parameters, and live database controls.'}
           </p>
         </div>
 
@@ -613,7 +756,7 @@ export default function AdminPanel({
             disabled={isSaving}
             className="px-5 py-2.5 rounded-xl bg-secondary hover:bg-secondary-dark text-white font-semibold text-label-md flex items-center gap-2 shadow-sm transition-all active:scale-[0.98] disabled:opacity-50"
           >
-            <span className="material-symbols-outlined text-[18px]">
+            <span className={`material-symbols-outlined text-[18px] ${isSaving ? 'animate-spin' : ''}`}>
               {isSaving ? 'sync' : 'save'}
             </span>
             <span>{isSaving ? 'Saving...' : 'Save All Changes'}</span>
@@ -621,61 +764,167 @@ export default function AdminPanel({
 
           <button
             onClick={onClose}
-            className="px-4 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline font-medium text-label-md transition-colors flex items-center gap-1.5"
+            className="px-4 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface border border-outline/70 font-medium text-label-md transition-colors flex items-center gap-1.5"
             title="Return to Public Portfolio"
           >
             <span className="material-symbols-outlined text-[18px]">visibility</span>
-            <span>Exit Admin</span>
+            <span>Exit Portal</span>
           </button>
         </div>
       </div>
 
-      {/* Admin Tabbed Navigation */}
-      <div className="flex items-center gap-2 border-b border-outline overflow-x-auto pb-2 scrollbar-none">
-        {[
-          { id: 'inquiries', label: 'Inquiries & Proposals', icon: 'mark_email_unread', count: inquiries.length, unread: (inquiries || []).filter((i) => i.status === 'unread').length },
-          { id: 'photo-profile', label: 'Photo & Identity', icon: 'account_circle' },
-          { id: 'projects', label: 'Projects & Labs', icon: 'folder_special', count: formData.projects?.length },
-          { id: 'teaching', label: 'Teaching & Courses', icon: 'school', count: formData.teaching?.length },
-          { id: 'honors', label: 'Honors & Awards', icon: 'military_tech', count: formData.honors?.length },
-          { id: 'news', label: 'News & Announcements', icon: 'campaign', count: formData.news?.length },
-          { id: 'links', label: 'Scholarly Channels', icon: 'share' },
-          { id: 'bio', label: 'About & Bio', icon: 'badge' },
-          { id: 'timeline', label: 'Academic Journey', icon: 'history_edu', count: formData.timeline?.length },
-          { id: 'skills', label: 'Competencies & Skills', icon: 'psychology' },
-          { id: 'scholar', label: 'Google Scholar Sync', icon: 'school' },
-          { id: 'security', label: 'Security & PIN', icon: 'lock_reset' }
-        ].map((tab) => {
-          const isActive = activeTab === tab.id;
-          return (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-label-md font-semibold transition-all whitespace-nowrap ${
-                isActive
-                  ? 'bg-primary text-on-primary shadow-sm'
-                  : 'bg-surface-container-lowest text-on-surface-variant hover:text-on-surface border border-outline'
-              }`}
-            >
-              <span className="material-symbols-outlined text-[18px]">{tab.icon}</span>
-              <span>{tab.label}</span>
-              {tab.unread !== undefined && tab.unread > 0 ? (
-                <span className="text-[10px] px-1.5 py-0.2 rounded-full font-bold bg-red-500 text-white animate-pulse">
-                  {tab.unread} new
-                </span>
-              ) : tab.count !== undefined && tab.count > 0 ? (
-                <span
-                  className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
-                    isActive ? 'bg-white/20 text-white' : 'bg-surface-container text-on-surface-variant'
-                  }`}
-                >
-                  {tab.count}
-                </span>
-              ) : null}
-            </button>
-          );
-        })}
+      {/* Mobile Category & Tab Switcher (< LG screens) */}
+      <div className="lg:hidden flex flex-col gap-2.5 bg-surface-container-lowest border border-outline/70 rounded-2xl p-3 shadow-card">
+        {/* Category Pills */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+          {CATEGORIES.map((cat) => {
+            const isCatActive = currentCategory.id === cat.id;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setActiveTab(cat.tabs[0].id)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+                  isCatActive
+                    ? 'bg-secondary text-white shadow-xs'
+                    : 'bg-surface-container-low text-on-surface-variant hover:text-on-surface'
+                }`}
+              >
+                {cat.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Tabs under active category */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none border-t border-outline/50 pt-2">
+          {currentCategory.tabs.map((tab) => {
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium whitespace-nowrap transition-all ${
+                  isActive
+                    ? 'bg-primary text-white font-semibold shadow-xs'
+                    : 'bg-surface-container-low text-on-surface-variant hover:text-on-surface'
+                }`}
+              >
+                <span className="material-symbols-outlined text-[15px]">{tab.icon}</span>
+                <span>{tab.label}</span>
+                {tab.unread !== undefined && tab.unread > 0 && (
+                  <span className="text-[9px] px-1.5 py-0.2 rounded-full font-bold bg-red-500 text-white">
+                    {tab.unread}
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
       </div>
+
+      {/* Main 2-Column Dashboard Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        {/* Left Sidebar (Desktop LG+) */}
+        <aside className="hidden lg:flex lg:col-span-3 xl:col-span-3 sticky top-24 flex-col gap-4">
+          {/* Faculty Mini-Badge Card */}
+          <div className="bg-surface-container-lowest border border-outline/70 rounded-2xl p-4 shadow-card flex flex-col gap-3">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-container to-primary text-white overflow-hidden flex items-center justify-center font-bold text-base shadow-xs ring-1 ring-black/5 dark:ring-white/10 shrink-0">
+                {formData.photoUrl ? (
+                  <img src={formData.photoUrl} alt="Avatar" className="w-full h-full object-cover" />
+                ) : (
+                  <span>SK</span>
+                )}
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-1">
+                  <span className="font-bold text-on-surface text-[14px] truncate">{formData.name || 'K. M. Safin Kamal'}</span>
+                  <span className="material-symbols-outlined text-secondary text-[14px]">verified</span>
+                </div>
+                <span className="text-[11px] text-on-surface-variant block truncate">
+                  {formData.title || 'Lecturer'}, EWU
+                </span>
+              </div>
+            </div>
+
+            <div className="pt-2 border-t border-outline/50 flex items-center justify-between text-[11px]">
+              <span className="inline-flex items-center gap-1.5 font-semibold text-emerald-600 dark:text-emerald-400">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                SQLite DB Active
+              </span>
+              <span className="text-slate-400 font-mono text-[10px]">v1.4</span>
+            </div>
+          </div>
+
+          {/* Categorized Navigation Sidebar */}
+          <nav className="bg-surface-container-lowest border border-outline/70 rounded-2xl p-2.5 shadow-card flex flex-col gap-3">
+            {CATEGORIES.map((category) => (
+              <div key={category.id} className="flex flex-col gap-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant/70 px-2.5 pt-1">
+                  {category.label}
+                </span>
+                <div className="flex flex-col gap-0.5">
+                  {category.tabs.map((tab) => {
+                    const isActive = activeTab === tab.id;
+                    return (
+                      <button
+                        key={tab.id}
+                        onClick={() => setActiveTab(tab.id)}
+                        className={`w-full flex items-center justify-between px-2.5 py-2 rounded-xl text-[12.5px] font-medium transition-all text-left ${
+                          isActive
+                            ? 'bg-primary text-white shadow-xs font-semibold'
+                            : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low'
+                        }`}
+                      >
+                        <div className="flex items-center gap-2 truncate">
+                          <span className={`material-symbols-outlined text-[17px] ${isActive ? 'text-white' : 'text-secondary'}`}>
+                            {tab.icon}
+                          </span>
+                          <span className="truncate">{tab.label}</span>
+                        </div>
+
+                        {tab.unread !== undefined && tab.unread > 0 ? (
+                          <span className="text-[10px] px-1.5 py-0.2 rounded-full font-bold bg-red-500 text-white animate-pulse shrink-0">
+                            {tab.unread} new
+                          </span>
+                        ) : tab.count !== undefined && tab.count > 0 ? (
+                          <span
+                            className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold shrink-0 ${
+                              isActive ? 'bg-white/20 text-white' : 'bg-surface-container text-on-surface-variant'
+                            }`}
+                          >
+                            {tab.count}
+                          </span>
+                        ) : null}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </nav>
+
+          {/* Quick Stats Telemetry Card */}
+          <div className="bg-surface-container-lowest border border-outline/70 rounded-2xl p-3 shadow-card flex items-center justify-around text-center">
+            <div>
+              <span className="block text-[15px] font-bold text-on-surface">{publications.length}</span>
+              <span className="text-[10px] text-on-surface-variant uppercase font-semibold">Pubs</span>
+            </div>
+            <div className="h-6 w-px bg-outline/60" />
+            <div>
+              <span className="block text-[15px] font-bold text-on-surface">{formData.projects?.length || 0}</span>
+              <span className="text-[10px] text-on-surface-variant uppercase font-semibold">Projects</span>
+            </div>
+            <div className="h-6 w-px bg-outline/60" />
+            <div>
+              <span className="block text-[15px] font-bold text-on-surface">{inquiries.length}</span>
+              <span className="text-[10px] text-on-surface-variant uppercase font-semibold">Inquiries</span>
+            </div>
+          </div>
+        </aside>
+
+        {/* Right Main Content Stage */}
+        <section className="lg:col-span-9 xl:col-span-9 flex flex-col gap-6">
 
       {/* ------------------------------------------------------------- */}
       {/* TAB: INQUIRIES & PROPOSALS INBOX                               */}
@@ -1962,6 +2211,8 @@ export default function AdminPanel({
           </div>
         </div>
       )}
+        </section>
+      </div>
     </div>
   );
 }

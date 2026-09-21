@@ -21,7 +21,7 @@ export default function BottomNav({
     { id: 'cv', label: 'Curriculum Vitae', icon: 'description', desc: 'Interactive CV & printable PDF' },
     { id: 'about', label: 'About & Biography', icon: 'badge', desc: 'Background, education & research philosophy' },
     { id: 'contact', label: 'Contact & Collab', icon: 'mail', desc: 'Institutional office & direct email' },
-    { id: 'admin', label: 'Admin Dashboard', icon: 'admin_panel_settings', desc: 'Sync Scholar & edit portfolio database' },
+    { id: 'admin', label: 'Faculty Portal', icon: 'tune', desc: 'Manage dossier, proposals, & Scholar sync' },
   ];
 
   const handleSelect = (id) => {
