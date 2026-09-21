@@ -3,6 +3,7 @@ import AdminProjectsManager from './AdminProjectsManager';
 import AdminTeachingManager from './AdminTeachingManager';
 import AdminHonorsManager from './AdminHonorsManager';
 import AdminNewsManager from './AdminNewsManager';
+import AdminInquiriesManager from './AdminInquiriesManager';
 import { sortTimeline } from '../utils/timelineSort';
 
 export default function AdminPanel({
@@ -10,7 +11,10 @@ export default function AdminPanel({
   onProfileUpdate,
   publications,
   onPublicationsUpdate,
-  onClose
+  onClose,
+  inquiries = [],
+  onUpdateInquiryStatus = () => {},
+  onDeleteInquiry = () => {}
 }) {
   // Authentication State
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -629,6 +633,7 @@ export default function AdminPanel({
       {/* Admin Tabbed Navigation */}
       <div className="flex items-center gap-2 border-b border-outline overflow-x-auto pb-2 scrollbar-none">
         {[
+          { id: 'inquiries', label: 'Inquiries & Proposals', icon: 'mark_email_unread', count: inquiries.length, unread: (inquiries || []).filter((i) => i.status === 'unread').length },
           { id: 'photo-profile', label: 'Photo & Identity', icon: 'account_circle' },
           { id: 'projects', label: 'Projects & Labs', icon: 'folder_special', count: formData.projects?.length },
           { id: 'teaching', label: 'Teaching & Courses', icon: 'school', count: formData.teaching?.length },
@@ -654,7 +659,11 @@ export default function AdminPanel({
             >
               <span className="material-symbols-outlined text-[18px]">{tab.icon}</span>
               <span>{tab.label}</span>
-              {tab.count !== undefined && tab.count > 0 && (
+              {tab.unread !== undefined && tab.unread > 0 ? (
+                <span className="text-[10px] px-1.5 py-0.2 rounded-full font-bold bg-red-500 text-white animate-pulse">
+                  {tab.unread} new
+                </span>
+              ) : tab.count !== undefined && tab.count > 0 ? (
                 <span
                   className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
                     isActive ? 'bg-white/20 text-white' : 'bg-surface-container text-on-surface-variant'
@@ -662,11 +671,23 @@ export default function AdminPanel({
                 >
                   {tab.count}
                 </span>
-              )}
+              ) : null}
             </button>
           );
         })}
       </div>
+
+      {/* ------------------------------------------------------------- */}
+      {/* TAB: INQUIRIES & PROPOSALS INBOX                               */}
+      {/* ------------------------------------------------------------- */}
+      {activeTab === 'inquiries' && (
+        <AdminInquiriesManager
+          inquiries={inquiries}
+          onUpdateStatus={onUpdateInquiryStatus}
+          onDelete={onDeleteInquiry}
+          onNotify={showToast}
+        />
+      )}
 
       {/* ------------------------------------------------------------- */}
       {/* TAB 1: PROFILE PHOTO & BASIC IDENTITY                          */}

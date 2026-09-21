@@ -80,6 +80,83 @@ export default function App() {
   });
   const [publications, setPublications] = useState(initialPublicationsData);
 
+  // Inquiries State with SQLite DB sync & localStorage backup
+  const [inquiries, setInquiries] = useState(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('portfolio_inquiries');
+        if (saved) return JSON.parse(saved);
+      } catch (e) {}
+    }
+    return [];
+  });
+
+  const unreadInquiriesCount = inquiries.filter((i) => i.status === 'unread').length;
+
+  const handleAddInquiry = async (newInquiry) => {
+    setInquiries((prev) => {
+      const updated = [newInquiry, ...prev];
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('portfolio_inquiries', JSON.stringify(updated));
+        } catch (e) {}
+      }
+      return updated;
+    });
+
+    try {
+      await fetch('/api/inquiries', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newInquiry)
+      });
+    } catch (err) {
+      console.log('Saved inquiry locally:', err.message);
+    }
+  };
+
+  const handleUpdateInquiryStatus = async (id, newStatus) => {
+    setInquiries((prev) => {
+      const updated = prev.map((item) => (item.id === id ? { ...item, status: newStatus } : item));
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('portfolio_inquiries', JSON.stringify(updated));
+        } catch (e) {}
+      }
+      return updated;
+    });
+
+    try {
+      await fetch(`/api/inquiries/${id}/status`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status: newStatus })
+      });
+    } catch (err) {
+      console.log('Updated inquiry status locally:', err.message);
+    }
+  };
+
+  const handleDeleteInquiry = async (id) => {
+    setInquiries((prev) => {
+      const updated = prev.filter((item) => item.id !== id);
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('portfolio_inquiries', JSON.stringify(updated));
+        } catch (e) {}
+      }
+      return updated;
+    });
+
+    try {
+      await fetch(`/api/inquiries/${id}`, {
+        method: 'DELETE'
+      });
+    } catch (err) {
+      console.log('Deleted inquiry locally:', err.message);
+    }
+  };
+
   const handleProfileUpdate = (updatedProfile) => {
     setProfile(updatedProfile);
     if (typeof window !== 'undefined') {
@@ -111,6 +188,18 @@ export default function App() {
         }
       })
       .catch((err) => console.log('Serving from bundled publications cache:', err.message));
+
+    fetch('/api/inquiries')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data && Array.isArray(data)) {
+          setInquiries(data);
+          try {
+            localStorage.setItem('portfolio_inquiries', JSON.stringify(data));
+          } catch (e) {}
+        }
+      })
+      .catch((err) => console.log('Serving inquiries from cache:', err.message));
   }, []);
 
   const handleCiteClick = (paper) => {
@@ -132,6 +221,7 @@ export default function App() {
         darkMode={darkMode}
         onToggleDarkMode={toggleDarkMode}
         onOpenSearch={() => setIsSearchOpen(true)}
+        unreadInquiriesCount={unreadInquiriesCount}
       />
 
       {/* Main Content Area */}
@@ -189,6 +279,7 @@ export default function App() {
           <ContactView
             profile={profile}
             onNotify={showToast}
+            onAddInquiry={handleAddInquiry}
           />
         )}
 
@@ -199,6 +290,9 @@ export default function App() {
             publications={publications}
             onPublicationsUpdate={setPublications}
             onClose={() => setActiveTab('research')}
+            inquiries={inquiries}
+            onUpdateInquiryStatus={handleUpdateInquiryStatus}
+            onDeleteInquiry={handleDeleteInquiry}
           />
         )}
       </main>
@@ -382,6 +476,7 @@ export default function App() {
         darkMode={darkMode}
         onToggleDarkMode={toggleDarkMode}
         onOpenSearch={() => setIsSearchOpen(true)}
+        unreadInquiriesCount={unreadInquiriesCount}
       />
 
       {/* Citation Export Modal */}

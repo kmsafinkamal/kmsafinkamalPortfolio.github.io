@@ -41,6 +41,17 @@ db.exec(`
     ieee TEXT,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
+
+  CREATE TABLE IF NOT EXISTS inquiries (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    institution TEXT,
+    topic TEXT,
+    message TEXT NOT NULL,
+    status TEXT DEFAULT 'unread',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  );
 `);
 
 // Set default admin PIN if not set
@@ -200,4 +211,61 @@ export function updateAdminPin(newPin) {
   return true;
 }
 
+/**
+ * Inquiries Database Functions
+ */
+export function getInquiries() {
+  const rows = db.prepare('SELECT * FROM inquiries ORDER BY datetime(created_at) DESC').all();
+  return rows.map((r) => ({
+    id: r.id,
+    name: r.name,
+    email: r.email,
+    institution: r.institution || '',
+    topic: r.topic || '',
+    message: r.message,
+    status: r.status || 'unread',
+    createdAt: r.created_at
+  }));
+}
+
+export function addInquiry(inquiry) {
+  const id = inquiry.id || `inq-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`;
+  const now = inquiry.createdAt || new Date().toISOString();
+  db.prepare(`
+    INSERT INTO inquiries (id, name, email, institution, topic, message, status, created_at)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+  `).run(
+    id,
+    inquiry.name,
+    inquiry.email,
+    inquiry.institution || '',
+    inquiry.topic || 'General Academic Inquiry',
+    inquiry.message,
+    inquiry.status || 'unread',
+    now
+  );
+
+  return {
+    id,
+    name: inquiry.name,
+    email: inquiry.email,
+    institution: inquiry.institution || '',
+    topic: inquiry.topic || 'General Academic Inquiry',
+    message: inquiry.message,
+    status: inquiry.status || 'unread',
+    createdAt: now
+  };
+}
+
+export function updateInquiryStatus(id, status) {
+  db.prepare('UPDATE inquiries SET status = ? WHERE id = ?').run(status, id);
+  return { success: true, id, status };
+}
+
+export function deleteInquiry(id) {
+  db.prepare('DELETE FROM inquiries WHERE id = ?').run(id);
+  return { success: true, id };
+}
+
 export default db;
+

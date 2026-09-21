@@ -19,7 +19,7 @@
     "LSTM"
   ],
   "metrics": {
-    "citations": 41,
+    "citations": 42,
     "hIndex": 4,
     "i10Index": 0,
     "publicationsCount": 46
@@ -28,17 +28,17 @@
     {
       "year": 2024,
       "citations": 3,
-      "percentage": 17
+      "percentage": 16
     },
     {
       "year": 2025,
-      "citations": 18,
+      "citations": 19,
       "percentage": 100
     },
     {
       "year": 2026,
       "citations": 17,
-      "percentage": 94
+      "percentage": 89
     }
   ],
   "papersTimeline": [
@@ -442,7 +442,7 @@
     },
     {
       "date": "Live Synced",
-      "title": "Google Scholar Citations milestone: 41+ verified citations across 46 peer-reviewed articles",
+      "title": "Google Scholar Citations milestone: 42+ verified citations across 46 peer-reviewed articles",
       "venue": "Google Scholar Verified Index",
       "description": "Google Scholar Verified Index",
       "type": "milestone",

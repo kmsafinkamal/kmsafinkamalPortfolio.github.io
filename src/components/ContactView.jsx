@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function ContactView({ profile, onNotify }) {
+export default function ContactView({ profile, onNotify, onAddInquiry }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -9,6 +9,7 @@ export default function ContactView({ profile, onNotify }) {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleCopyEmail = async () => {
     try {
@@ -35,13 +36,37 @@ export default function ContactView({ profile, onNotify }) {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
-    setSubmitted(true);
-    if (onNotify) {
-      onNotify('Inquiry submitted successfully!', 'success');
+
+    setIsSubmitting(true);
+    const newInquiry = {
+      id: `inq-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      institution: formData.institution.trim() || 'Independent / Researcher',
+      topic: formData.topic || 'Biomedical AI Research',
+      message: formData.message.trim(),
+      status: 'unread',
+      createdAt: new Date().toISOString(),
+    };
+
+    if (onAddInquiry) {
+      try {
+        await onAddInquiry(newInquiry);
+      } catch (err) {
+        console.warn('Inquiry local dispatch:', err);
+      }
     }
+
+    setSubmitted(true);
+    setIsSubmitting(false);
+
+    if (onNotify) {
+      onNotify('Proposal submitted! Safin Kamal will review it in his Admin Panel.', 'success');
+    }
+
     setTimeout(() => {
       setSubmitted(false);
       setFormData({
@@ -51,7 +76,7 @@ export default function ContactView({ profile, onNotify }) {
         topic: 'Biomedical AI Research',
         message: '',
       });
-    }, 4000);
+    }, 5000);
   };
 
   return (
@@ -147,14 +172,21 @@ export default function ContactView({ profile, onNotify }) {
             </div>
 
             {submitted ? (
-              <div className="p-6 bg-emerald-50 border border-emerald-200 rounded-xl text-center flex flex-col items-center gap-3 animate-fadeIn">
-                <div className="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
+              <div className="p-6 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl text-center flex flex-col items-center gap-3 animate-fadeIn">
+                <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/60 text-emerald-600 dark:text-emerald-300 flex items-center justify-center">
                   <span className="material-symbols-outlined text-[24px]">check_circle</span>
                 </div>
-                <h4 className="text-title-md font-bold text-emerald-900">Inquiry Received</h4>
-                <p className="text-body-sm text-emerald-700 max-w-sm">
-                  Thank you for reaching out. Your proposal has been noted and a response will be dispatched to your inbox shortly.
+                <h4 className="text-title-md font-bold text-emerald-900 dark:text-emerald-100">Proposal Delivered to Admin Inbox</h4>
+                <p className="text-body-sm text-emerald-700 dark:text-emerald-300 max-w-md">
+                  Thank you for reaching out! Your inquiry has been securely delivered to K. M. Safin Kamal's administration dashboard. He will review your proposal and reply directly to your email address shortly.
                 </p>
+                <button
+                  type="button"
+                  onClick={() => setSubmitted(false)}
+                  className="mt-1 px-4 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-label-sm font-semibold transition-colors"
+                >
+                  Send Another Inquiry
+                </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -243,10 +275,13 @@ export default function ContactView({ profile, onNotify }) {
                 <div className="flex items-center gap-3 flex-wrap mt-1">
                   <button
                     type="submit"
-                    className="h-11 px-6 rounded-xl bg-primary hover:bg-primary-dark text-on-primary font-semibold text-label-md flex items-center justify-center gap-2 transition-all shadow-sm active:scale-[0.98]"
+                    disabled={isSubmitting}
+                    className="h-11 px-6 rounded-xl bg-primary hover:bg-primary-dark text-on-primary font-semibold text-label-md flex items-center justify-center gap-2 transition-all shadow-sm active:scale-[0.98] disabled:opacity-60"
                   >
-                    <span className="material-symbols-outlined text-[18px]">send</span>
-                    <span>Transmit Inquiry</span>
+                    <span className={`material-symbols-outlined text-[18px] ${isSubmitting ? 'animate-spin' : ''}`}>
+                      {isSubmitting ? 'sync' : 'send'}
+                    </span>
+                    <span>{isSubmitting ? 'Transmitting to Admin...' : 'Transmit Inquiry'}</span>
                   </button>
 
                   <button

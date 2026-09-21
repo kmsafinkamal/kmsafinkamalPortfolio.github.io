@@ -115,6 +115,25 @@
   },
   {
     "id": "p7",
+    "title": "A comparative study of convolutional neural network architectures for detecting prostate cancer",
+    "category": "biomedical",
+    "citations": 3,
+    "year": 2023,
+    "authors": "KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza",
+    "venue": "International Conference on Intelligent Computing & Optimization, 3-13",
+    "abstract": "Academic research contribution by KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza titled \"A comparative study of convolutional neural network architectures for detecting prostate cancer\". Published in International Conference on Intelligent Computing & Optimization, 3-13 (2023) with 3 verified Google Scholar citations.",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:vV6vV6tmYwMC",
+    "links": {
+      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:vV6vV6tmYwMC",
+      "DOI": "https://scholar.google.com/scholar?q=A+comparative+study+of+convolutional+neural+network+architectures+for+detecting+prostate+cancer",
+      "Search": "https://scholar.google.com/scholar?q=A+comparative+study+of+convolutional+neural+network+architectures+for+detecting+prostate+cancer"
+    },
+    "bibtex": "@inproceedings{kamal2023p7,\n  title = {A comparative study of convolutional neural network architectures for detecting prostate cancer},\n  author = {KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza},\n  booktitle = {International Conference on Intelligent Computing & Optimization, 3-13},\n  year = {2023},\n  citations = {3}\n}",
+    "apa": "KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza (2023). A comparative study of convolutional neural network architectures for detecting prostate cancer. International Conference on Intelligent Computing & Optimization, 3-13.",
+    "ieee": "KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza, \"A comparative study of convolutional neural network architectures for detecting prostate cancer,\" in International Conference on Intelligent Computing & Optimization, 3-13, 2023."
+  },
+  {
+    "id": "p8",
     "title": "A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection",
     "category": "biomedical",
     "citations": 2,
@@ -128,12 +147,12 @@
       "DOI": "https://scholar.google.com/scholar?q=A+Privacy+Preserving+Federated+Ensemble+Learning+Approach+for+Malaria+Detection",
       "Search": "https://scholar.google.com/scholar?q=A+Privacy+Preserving+Federated+Ensemble+Learning+Approach+for+Malaria+Detection"
     },
-    "bibtex": "@inproceedings{rahman2024p7,\n  title = {A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection},\n  author = {MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, KMS Kamal, ...},\n  booktitle = {International Conference On Data Mining And Information Security, 421-433},\n  year = {2024},\n  citations = {2}\n}",
+    "bibtex": "@inproceedings{rahman2024p8,\n  title = {A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection},\n  author = {MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, KMS Kamal, ...},\n  booktitle = {International Conference On Data Mining And Information Security, 421-433},\n  year = {2024},\n  citations = {2}\n}",
     "apa": "MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, KMS Kamal, ... (2024). A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection. International Conference On Data Mining And Information Security, 421-433.",
     "ieee": "MH Rahman, V Dhrubo, FT Anamika, A Saha, SF Fahim, KMS Kamal, ..., \"A Privacy-Preserving Federated Ensemble Learning Approach for Malaria Detection,\" in International Conference On Data Mining And Information Security, 421-433, 2024."
   },
   {
-    "id": "p8",
+    "id": "p9",
     "title": "White blood cells to classify leukemic blood images using deep learning and image processing",
     "category": "biomedical",
     "citations": 2,
@@ -147,28 +166,9 @@
       "DOI": "https://scholar.google.com/scholar?q=White+blood+cells+to+classify+leukemic+blood+images+using+deep+learning+and+image+processing",
       "Search": "https://scholar.google.com/scholar?q=White+blood+cells+to+classify+leukemic+blood+images+using+deep+learning+and+image+processing"
     },
-    "bibtex": "@inproceedings{hasan2024p8,\n  title = {White blood cells to classify leukemic blood images using deep learning and image processing},\n  author = {I Hasan, MS Hossain, MG Muhit, M Bahauddin, KMS Kamal, MA Morshed, ...},\n  booktitle = {2024 IEEE International Conference on Computing, Applications and Systems ...},\n  year = {2024},\n  citations = {2}\n}",
+    "bibtex": "@inproceedings{hasan2024p9,\n  title = {White blood cells to classify leukemic blood images using deep learning and image processing},\n  author = {I Hasan, MS Hossain, MG Muhit, M Bahauddin, KMS Kamal, MA Morshed, ...},\n  booktitle = {2024 IEEE International Conference on Computing, Applications and Systems ...},\n  year = {2024},\n  citations = {2}\n}",
     "apa": "I Hasan, MS Hossain, MG Muhit, M Bahauddin, KMS Kamal, MA Morshed, ... (2024). White blood cells to classify leukemic blood images using deep learning and image processing. 2024 IEEE International Conference on Computing, Applications and Systems ....",
     "ieee": "I Hasan, MS Hossain, MG Muhit, M Bahauddin, KMS Kamal, MA Morshed, ..., \"White blood cells to classify leukemic blood images using deep learning and image processing,\" in 2024 IEEE International Conference on Computing, Applications and Systems ..., 2024."
-  },
-  {
-    "id": "p9",
-    "title": "A comparative study of convolutional neural network architectures for detecting prostate cancer",
-    "category": "biomedical",
-    "citations": 2,
-    "year": 2023,
-    "authors": "KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza",
-    "venue": "International Conference on Intelligent Computing & Optimization, 3-13",
-    "abstract": "Academic research contribution by KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza titled \"A comparative study of convolutional neural network architectures for detecting prostate cancer\". Published in International Conference on Intelligent Computing & Optimization, 3-13 (2023) with 2 verified Google Scholar citations.",
-    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:vV6vV6tmYwMC",
-    "links": {
-      "Scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gpR1AC8AAAAJ&pagesize=100&citation_for_view=gpR1AC8AAAAJ:vV6vV6tmYwMC",
-      "DOI": "https://scholar.google.com/scholar?q=A+comparative+study+of+convolutional+neural+network+architectures+for+detecting+prostate+cancer",
-      "Search": "https://scholar.google.com/scholar?q=A+comparative+study+of+convolutional+neural+network+architectures+for+detecting+prostate+cancer"
-    },
-    "bibtex": "@inproceedings{kamal2023p9,\n  title = {A comparative study of convolutional neural network architectures for detecting prostate cancer},\n  author = {KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza},\n  booktitle = {International Conference on Intelligent Computing & Optimization, 3-13},\n  year = {2023},\n  citations = {2}\n}",
-    "apa": "KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza (2023). A comparative study of convolutional neural network architectures for detecting prostate cancer. International Conference on Intelligent Computing & Optimization, 3-13.",
-    "ieee": "KMS Kamal, MM Priyanka, A Suny, MA Liza, SS Jennifer, AW Reza, \"A comparative study of convolutional neural network architectures for detecting prostate cancer,\" in International Conference on Intelligent Computing & Optimization, 3-13, 2023."
   },
   {
     "id": "p10",

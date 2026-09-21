@@ -7,7 +7,8 @@ export default function Navbar({
   profile,
   darkMode,
   onToggleDarkMode,
-  onOpenSearch
+  onOpenSearch,
+  unreadInquiriesCount = 0
 }) {
   const projectsCount = profile?.projects?.length || 0;
 
@@ -172,7 +173,7 @@ export default function Navbar({
           {/* Admin Panel Toggle */}
           <button
             onClick={() => onSelectTab(activeTab === 'admin' ? 'research' : 'admin')}
-            className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-xl border text-label-md font-semibold transition-all ${
+            className={`relative inline-flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-xl border text-label-md font-semibold transition-all ${
               activeTab === 'admin'
                 ? 'bg-primary text-white border-primary shadow-sm'
                 : 'bg-surface-container-low hover:bg-surface-container text-on-surface border-outline/60 hover:text-secondary'
@@ -185,6 +186,11 @@ export default function Navbar({
             <span className="hidden sm:inline">
               {activeTab === 'admin' ? 'Exit Admin' : 'Admin'}
             </span>
+            {unreadInquiriesCount > 0 && activeTab !== 'admin' && (
+              <span className="inline-flex items-center justify-center min-w-[18px] h-[18px] px-1 text-[10px] font-bold rounded-full bg-red-500 text-white animate-pulse shadow-xs">
+                {unreadInquiriesCount}
+              </span>
+            )}
           </button>
         </div>
       </div>

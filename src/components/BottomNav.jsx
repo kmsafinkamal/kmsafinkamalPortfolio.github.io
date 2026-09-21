@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 
-export default function BottomNav({ activeTab, onSelectTab, darkMode, onToggleDarkMode, onOpenSearch }) {
+export default function BottomNav({
+  activeTab,
+  onSelectTab,
+  darkMode,
+  onToggleDarkMode,
+  onOpenSearch,
+  unreadInquiriesCount = 0
+}) {
   const [showDrawer, setShowDrawer] = useState(false);
 
   const primaryItems = [
@@ -78,6 +85,11 @@ export default function BottomNav({ activeTab, onSelectTab, darkMode, onToggleDa
                       {item.id === 'cv' && (
                         <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200 font-bold">
                           PDF
+                        </span>
+                      )}
+                      {item.id === 'admin' && unreadInquiriesCount > 0 && (
+                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">
+                          {unreadInquiriesCount} new
                         </span>
                       )}
                     </div>
@@ -164,19 +176,24 @@ export default function BottomNav({ activeTab, onSelectTab, darkMode, onToggleDa
           <button
             type="button"
             onClick={() => setShowDrawer(!showDrawer)}
-            className={`flex flex-col items-center justify-center py-1 px-2.5 rounded-xl transition-all ${
+            className={`relative flex flex-col items-center justify-center py-1 px-2.5 rounded-xl transition-all ${
               isSecondaryActive || showDrawer
                 ? 'text-secondary font-semibold'
                 : 'text-on-surface-variant hover:text-on-surface'
             }`}
           >
-            <span
-              className={`material-symbols-outlined text-[21px] ${
-                isSecondaryActive || showDrawer ? 'text-secondary font-bold scale-110' : ''
-              } transition-transform`}
-            >
-              {showDrawer ? 'expand_more' : 'more_horiz'}
-            </span>
+            <div className="relative">
+              <span
+                className={`material-symbols-outlined text-[21px] ${
+                  isSecondaryActive || showDrawer ? 'text-secondary font-bold scale-110' : ''
+                } transition-transform`}
+              >
+                {showDrawer ? 'expand_more' : 'more_horiz'}
+              </span>
+              {unreadInquiriesCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full animate-pulse ring-2 ring-surface" />
+              )}
+            </div>
             <span className="text-[11px] mt-0.5 tracking-tight font-medium">More</span>
           </button>
         </div>

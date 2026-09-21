@@ -11,7 +11,11 @@ import {
   getPublicationsData,
   replaceAllPublications,
   verifyAdminPin,
-  updateAdminPin
+  updateAdminPin,
+  getInquiries,
+  addInquiry,
+  updateInquiryStatus,
+  deleteInquiry
 } from './db.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -212,6 +216,53 @@ app.post('/api/sync-scholar', (req, res) => {
       res.status(500).json({ error: 'Error refreshing database after sync', details: dbSyncErr.message });
     }
   });
+});
+
+// 8. Inquiries Endpoints
+app.get('/api/inquiries', (req, res) => {
+  try {
+    const list = getInquiries();
+    res.json(list);
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to retrieve inquiries', details: err.message });
+  }
+});
+
+app.post('/api/inquiries', (req, res) => {
+  try {
+    const { name, email, institution, topic, message } = req.body;
+    if (!name || !email || !message) {
+      return res.status(400).json({ error: 'Name, email, and message are required' });
+    }
+    const created = addInquiry({ name, email, institution, topic, message });
+    res.status(201).json({ success: true, inquiry: created });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to submit inquiry', details: err.message });
+  }
+});
+
+app.put('/api/inquiries/:id/status', (req, res) => {
+  try {
+    const { id } = req.params;
+    const { status } = req.body;
+    if (!status) {
+      return res.status(400).json({ error: 'Status is required' });
+    }
+    updateInquiryStatus(id, status);
+    res.json({ success: true, id, status });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to update inquiry status', details: err.message });
+  }
+});
+
+app.delete('/api/inquiries/:id', (req, res) => {
+  try {
+    const { id } = req.params;
+    deleteInquiry(id);
+    res.json({ success: true, id });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to delete inquiry', details: err.message });
+  }
 });
 
 function runScholarSync(callback) {
