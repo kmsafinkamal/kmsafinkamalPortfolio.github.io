@@ -28,8 +28,8 @@ export default function Navbar({
     'https://scholar.google.com/citations?user=gpR1AC8AAAAJ&hl=en';
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-surface/80 dark:bg-surface/75 backdrop-blur-2xl border-b border-black/[0.06] dark:border-white/[0.08] shadow-[0_1px_3px_rgba(0,0,0,0.02),0_4px_16px_rgba(0,0,0,0.02)] transition-colors no-print">
-      <div className="max-w-6xl mx-auto px-3.5 sm:px-6 h-16 flex items-center justify-between gap-2 sm:gap-4">
+    <header className="sticky top-0 sm:top-3 z-40 w-full px-2 sm:px-4 md:px-6 pointer-events-none transition-all duration-300 no-print">
+      <div className="max-w-6xl mx-auto bg-surface/85 dark:bg-surface/80 backdrop-blur-2xl border border-black/[0.08] dark:border-white/[0.12] rounded-2xl sm:rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] px-3.5 sm:px-5 h-14 sm:h-16 flex items-center justify-between gap-2 sm:gap-4 pointer-events-auto transition-all">
         {/* Apple-style Brand & Faculty Identity */}
         <div
           onClick={() => onSelectTab('research')}
