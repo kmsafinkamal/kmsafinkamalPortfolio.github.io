@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { sortTimeline } from '../utils/timelineSort';
+import { getPhotoUrl } from '../utils/assetHelper';
 
 export default function AboutView({ profile = {}, onNavigate = () => {} }) {
   const [sortOrder, setSortOrder] = useState('desc'); // 'desc' (newest first) | 'asc' (oldest first)
@@ -7,6 +8,8 @@ export default function AboutView({ profile = {}, onNavigate = () => {} }) {
   const sortedTimeline = useMemo(() => {
     return sortTimeline(profile?.timeline || [], sortOrder);
   }, [profile?.timeline, sortOrder]);
+
+  const resolvedPhoto = getPhotoUrl(profile?.photoUrl);
   return (
     <div className="flex flex-col gap-8 animate-fadeIn pb-12">
       {/* Header Banner */}
@@ -28,10 +31,10 @@ export default function AboutView({ profile = {}, onNavigate = () => {} }) {
       {/* Main Narrative Card */}
       <div className="bg-surface-container-lowest border border-outline rounded-2xl p-6 sm:p-8 shadow-card flex flex-col gap-6">
         <div className="flex flex-col md:flex-row items-start gap-6">
-          {profile.photoUrl && (
+          {resolvedPhoto && (
             <div className="w-full md:w-48 h-56 rounded-2xl overflow-hidden shadow-md border-2 border-outline flex-shrink-0 bg-slate-100">
               <img
-                src={profile.photoUrl}
+                src={resolvedPhoto}
                 alt={profile.name}
                 className="w-full h-full object-cover"
               />

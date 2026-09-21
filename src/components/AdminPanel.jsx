@@ -5,6 +5,7 @@ import AdminHonorsManager from './AdminHonorsManager';
 import AdminNewsManager from './AdminNewsManager';
 import AdminInquiriesManager from './AdminInquiriesManager';
 import { sortTimeline } from '../utils/timelineSort';
+import { getPhotoUrl } from '../utils/assetHelper';
 
 export default function AdminPanel({
   profile,
@@ -831,7 +832,7 @@ export default function AdminPanel({
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-container to-primary text-white overflow-hidden flex items-center justify-center font-bold text-base shadow-xs ring-1 ring-black/5 dark:ring-white/10 shrink-0">
                 {formData.photoUrl ? (
-                  <img src={formData.photoUrl} alt="Avatar" className="w-full h-full object-cover" />
+                  <img src={getPhotoUrl(formData.photoUrl)} alt="Avatar" className="w-full h-full object-cover" />
                 ) : (
                   <span>SK</span>
                 )}
@@ -959,7 +960,7 @@ export default function AdminPanel({
                 <div className="relative w-32 h-32 rounded-2xl overflow-hidden shadow-md border-2 border-white bg-slate-200 flex items-center justify-center">
                   {previewUrl || formData.photoUrl ? (
                     <img
-                      src={previewUrl || formData.photoUrl}
+                      src={previewUrl || getPhotoUrl(formData.photoUrl)}
                       alt="Profile Avatar Preview"
                       className="w-full h-full object-cover"
                     />

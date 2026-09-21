@@ -72,6 +72,9 @@ export default function App() {
         const cached = localStorage.getItem('portfolio_profile');
         if (cached) {
           const parsed = JSON.parse(cached);
+          if (parsed.photoUrl && parsed.photoUrl.includes('profile-1789619013564.png')) {
+            parsed.photoUrl = './profile.jpg';
+          }
           return { ...initialProfileData, ...parsed };
         }
       } catch (e) {}

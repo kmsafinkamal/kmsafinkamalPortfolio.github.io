@@ -208,7 +208,7 @@
       "icon": "person"
     }
   ],
-  "photoUrl": "/uploads/profile-1789619013564.png",
+  "photoUrl": "./profile.jpg",
   "projects": [
     {
       "id": "oncovision-ai",

@@ -1,5 +1,6 @@
 import React from 'react';
 import PublicationCard from './PublicationCard';
+import { getPhotoUrl } from '../utils/assetHelper';
 
 export default function ResearchHubView({ profile, publications, onNavigate, onCiteClick }) {
   // Top 3 cited publications for featured section
@@ -10,6 +11,7 @@ export default function ResearchHubView({ profile, publications, onNavigate, onC
   const newsItems = profile.news || [];
   const projectsCount = profile.projects?.length || 0;
   const coursesCount = profile.teaching?.length || 0;
+  const resolvedPhoto = getPhotoUrl(profile.photoUrl);
 
   return (
     <div className="flex flex-col gap-8 animate-fadeIn pb-12">
@@ -19,9 +21,9 @@ export default function ResearchHubView({ profile, publications, onNavigate, onC
           {/* Avatar / Monogram */}
           <div className="relative">
             <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-primary-container to-primary text-white overflow-hidden flex items-center justify-center font-bold text-2xl sm:text-3xl shadow-md border-2 border-surface-container-lowest">
-              {profile.photoUrl ? (
+              {resolvedPhoto ? (
                 <img
-                  src={profile.photoUrl}
+                  src={resolvedPhoto}
                   alt={profile.name}
                   className="w-full h-full object-cover"
                 />
